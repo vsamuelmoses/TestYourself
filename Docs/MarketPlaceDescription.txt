@@ -1,0 +1,3 @@
+Test Yourself is a framework that has access to various databases of multiple choice questions (MCQs). It helps the user to test his/her abilities in a subject of interest. As of date, there is a vocabulary MCQ database readily available with the Test Yourself app. Watch out for more such databases in the near future..
+
+Test Yourself - Vocabulary helps develop vocabulary by presenting question & answers in a simple to understand multiple choice question format. As of date, the vocabulary database contains around 1000 question & answers. Updates to the database will be released periodically. Therefore, the application is highly recommended for anyone aspiring to take GRE, GMAT, TOEFL, IELTS or any other English language based exams.
