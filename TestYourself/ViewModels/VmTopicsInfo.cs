@@ -19,7 +19,7 @@ namespace TestYourself.ViewModels
                 notUsed =>
                 {
                     VmLocator.Instance.VmQuestionNew.Topic = Topic;
-                    this.navigationService.Navigate(new Uri("/Views/Question.xaml", UriKind.Relative));
+                    this.navigationService.Navigate(new Uri("/Views.New/Questions.xaml", UriKind.Relative));
                 });
 
             TitleName = Topic.Name;

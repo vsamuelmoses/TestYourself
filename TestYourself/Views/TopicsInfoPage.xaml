@@ -45,8 +45,8 @@
 		</Grid.RowDefinitions>
 
 	   <views:TitlePanelControl 
-           Title="{Binding TitleName}"
-           Percentage="{Binding Topic.Stats.ProgressPercentage}"/>
+		   Title="{Binding TitleName}"
+		   Percentage="{Binding Topic.Stats.ProgressPercentage}"/>
 
 		<!--ContentPanel - place additional content here-->
 		<Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">

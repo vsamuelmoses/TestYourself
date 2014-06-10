@@ -49,5 +49,6 @@ namespace TestYourself.ViewModel
 
         public VmSubjectPanorama VmSubjectPanorama { get; set; }
         public VmTopicsInfo VmTopicsInfo { get; set; }
+		public VmTopicQuestions VmTopicQuestions{ get; set; }
     }
 }

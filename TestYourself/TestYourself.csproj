@@ -99,15 +99,9 @@
     <Optimize>true</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Advertising.Mobile, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
-    <Reference Include="Microsoft.Advertising.Mobile.UI, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
-    <Reference Include="Microsoft.Expression.Interactions, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>Libraries\Microsoft.Phone.Controls.Toolkit\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Windows.Interactivity, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>C:\Program Files (x86)\Laurent Bugnion (GalaSoft)\Mvvm Light Toolkit\Binaries\WP71\System.Windows.Interactivity.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +134,8 @@
       <DependentUpon>TitlePanelControlDesignDatat.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\VmQuestion.cs" />
+    <Compile Include="ViewModels\VmQuestionContent.cs" />
+    <Compile Include="ViewModels\VmTopicQuestions.cs" />
     <Compile Include="ViewModels\VmTopicsInfo.cs" />
     <Compile Include="ViewModel\VmBase.cs" />
     <Compile Include="ViewModel\VmLocator.cs" />
@@ -147,6 +143,12 @@
     <Compile Include="ViewModel\VmSubjects.cs" />
     <Compile Include="ViewModel\VmTopics.cs" />
     <Compile Include="ViewModels\VmSubjectPanorama.cs" />
+    <Compile Include="Views.New\Questions.xaml.cs">
+      <DependentUpon>Questions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views.New\QuestionUserControl.xaml.cs">
+      <DependentUpon>QuestionUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Question.xaml.cs">
       <DependentUpon>Question.xaml</DependentUpon>
     </Compile>
@@ -198,6 +200,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </DesignTimeOnly>
+    <Page Include="ResourceDictionaries\StyleDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views.New\Questions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views.New\QuestionUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Question.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -276,8 +290,10 @@
     <Content Include="Images\Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\CorrectStamp.png" />
     <Content Include="Images\Icon62x62.png" />
     <Content Include="Images\Icon173x173.png" />
+    <Resource Include="Images\WrongStamp.png" />
     <Content Include="TestYourselfLifeInUk.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -324,6 +340,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdParty\SourceCode\MediaViewer\MediaViewer.csproj">
+      <Project>{41d422a7-5968-47df-8b7b-4dbfa1484b07}</Project>
+      <Name>MediaViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\SourceCode\TC.CustomControls\TC.CustomControls.csproj">
+      <Project>{adaa1108-2694-4e50-8c6f-042e44224475}</Project>
+      <Name>TC.CustomControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

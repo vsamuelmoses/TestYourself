@@ -10,13 +10,18 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ResourceDictionaries/ControlStyles.xaml" />
+				<ResourceDictionary Source="/TC.CustomControls;component/Styles/StylesDictionary.xaml"/>
+				<ResourceDictionary Source="/TC.CustomControls;component/Converters/ConvertersDictionary.xaml"/>
+
+				<ResourceDictionary Source="ResourceDictionaries/StyleDictionary.xaml"/>
+
+				<ResourceDictionary Source="ResourceDictionaries/ControlStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         	<SampleData:TitlePanelControlDesignDatat x:Key="TitlePanelControlDesignDatat" d:IsDataSource="True"/>
         </ResourceDictionary>
     </Application.Resources>
 
-    <Application.ApplicationLifetimeObjects>
+	<Application.ApplicationLifetimeObjects>
         <!--Required object that handles lifetime events for the application-->
         <shell:PhoneApplicationService 
             Launching="Application_Launching" Closing="Application_Closing" 

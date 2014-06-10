@@ -9,7 +9,7 @@ using TestYourself.ViewModel;
 
 namespace TestYourself.ViewModels
 {
-	public class VmQuestion : VmPage
+	public class VmQuestionContent : VmPage, IThumbnailedContent
 	{
 		public enum States
 		{
@@ -28,7 +28,7 @@ namespace TestYourself.ViewModels
 			set
 			{
 				selectedAnswers = new List<Answer>();
-				
+
 				if (value == null)
 					return;
 
@@ -57,7 +57,7 @@ namespace TestYourself.ViewModels
 				IsResultVisible = false;
 			}
 		}
-		
+
 		private Topic topic;
 		public Topic Topic
 		{
@@ -101,8 +101,8 @@ namespace TestYourself.ViewModels
 		public bool IsResultVisible
 		{
 			get { return isResultVisible; }
-			set 
-			{ 
+			set
+			{
 				isResultVisible = value;
 				InvokePropertyChanged("IsResultVisible");
 			}
@@ -123,7 +123,7 @@ namespace TestYourself.ViewModels
 																  param => true));
 			}
 		}
-		
+
 		private RelayCommand commandGetPreviousQuestion;
 		public ICommand CommandGetPreviousQuestion
 		{
@@ -148,22 +148,22 @@ namespace TestYourself.ViewModels
 			{
 				return commandCheckAnswer ??
 					   (commandCheckAnswer = new RelayCommand(param =>
+					   {
+						   question.Stats.NumberOfHits++;
+
+						   if ((selectedAnswers != null) && (AreAnswersCorrect(selectedAnswers)))
 						   {
-							   question.Stats.NumberOfHits++;
+							   Question.Stats.NumberOfHitsCorrectlyAnswered++;
+							   State = States.AnsweredCorrectly;
+						   }
+						   else
+						   {
+							   State = States.AnsweredInCorrectly;
+						   }
 
-							   if ((selectedAnswers != null) && (AreAnswersCorrect(selectedAnswers)))
-							   {
-								   Question.Stats.NumberOfHitsCorrectlyAnswered++;
-								   State = States.AnsweredCorrectly;
-							   }
-							   else
-							   {
-								   State = States.AnsweredInCorrectly;
-							   }
-
-							   question.AssociatedTopic.UpdateStats();
-							   IsResultVisible = true;
-							},
+						   question.AssociatedTopic.UpdateStats();
+						   IsResultVisible = true;
+					   },
 							param => true));
 			}
 		}
@@ -176,6 +176,11 @@ namespace TestYourself.ViewModels
 				return false;
 
 			return correctAnswers.All(answers.Contains);
+		}
+
+		public object GetContent()
+		{
+			return this;
 		}
 	}
 }

@@ -43,7 +43,7 @@
 		<converter:BoolToRightWrongImageConverter x:Key="RightWrongImageConverter"/>
 		<converter:QuestionToIndexConverter x:Key="QuestionToIndexConverter"/>
 		<converter:QuestionStateToImageConverter x:Key="QuestionStateToImageConverter"/>
-		<converter:ImageConverter x:Key="ImageConverter"/>
+		
 		
 		<Storyboard x:Name="StoryboardFllipNextQuestion">
 			<DoubleAnimation Duration="0:0:0.2" To="-1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="ScrollViewerQuestionAndAnswer" d:IsOptimized="True"/>

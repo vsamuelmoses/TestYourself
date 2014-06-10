@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="TC.CustomControls.MenuItem"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d">
+	
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
+		<Rectangle Grid.Row="0" Grid.Column="0"
+				   x:Name="MonoChromeImage"
+				   Fill="{StaticResource PhoneForegroundBrush}" 
+				   Visibility="{Binding IsMonochrome, Converter={StaticResource BooleanToVisibilityConverter}}">
+			<Rectangle.OpacityMask>
+				<ImageBrush ImageSource="{Binding ImagePath}"/>
+			</Rectangle.OpacityMask>
+		</Rectangle>
+
+		<Image x:Name="NotMonoChromeImage"
+			Grid.Row="0" Grid.Column="0" 
+			   Visibility="{Binding IsMonochrome, Converter={StaticResource InverseBooleanToVisibilityConverter}}"
+			   Source="{Binding ImagePath}"/>
+		
+		<TextBlock Grid.Row="0" Grid.Column="1" 
+				   VerticalAlignment="Center"
+				   Text="{Binding Text}" 
+				   FontFamily="{Binding TitleFontFamily}" 
+				   FontSize="{Binding TitleFontSize}" Margin="5,0,0,0"/>
+
+	</Grid>
+</UserControl>
