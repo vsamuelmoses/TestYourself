@@ -8,6 +8,7 @@
 	mc:Ignorable="d">
 
 	<converters:ImageConverter x:Key="ImageConverter"/>
+	<converters:ImageVisibilityConverter x:Key="ImageVisibilityConverter"/>	
 	
 	<Style TargetType="customControls:MenuItem"
 		   x:Key="PageHeader">

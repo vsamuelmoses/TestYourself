@@ -44,15 +44,15 @@ namespace TestYourself.Views.New
 
 		private void AppBarViewHideIconClick(object sender, EventArgs e)
 		{
-			var question = ((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex] as Question;
-			//question.ShowAnswers = !question.ShowAnswers;
+			var question = ((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex] as VmQuestionContent;
+			question.IsResultVisible = !question.IsResultVisible;
 
-			//if (question.ShowAnswers)
-			//	CorrectWrongStampImage.Visibility = System.Windows.Visibility.Visible;
-			//else
-			//{
-			//	CorrectWrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
-			//}
+			if (question.IsResultVisible)
+				CorrectWrongStampImage.Visibility = System.Windows.Visibility.Visible;
+			else
+			{
+				CorrectWrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
+			}
 		}
 		
 		private void AppBarInfoButtonClick(object sender, EventArgs e)

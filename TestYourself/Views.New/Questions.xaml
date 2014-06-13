@@ -83,7 +83,7 @@
 					x:Name="CorrectWrongStampImage"
 					Visibility="Collapsed"
 					VerticalAlignment="Bottom"
-				   Source="Images/CorrectStamp.png" Width="120" Height="120"
+				   Source="../Images/CorrectStamp.png" Width="120" Height="120"
 				   HorizontalAlignment="Right"/>
 			</Grid>
 
