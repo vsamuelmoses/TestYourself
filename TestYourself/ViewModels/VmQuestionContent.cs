@@ -105,6 +105,9 @@ namespace TestYourself.ViewModels
 			{
 				isResultVisible = value;
 				InvokePropertyChanged("IsResultVisible");
+
+				if(isResultVisible)
+					ValidateAnswers();
 			}
 		}
 
@@ -149,23 +152,28 @@ namespace TestYourself.ViewModels
 				return commandCheckAnswer ??
 					   (commandCheckAnswer = new RelayCommand(param =>
 					   {
-						   question.Stats.NumberOfHits++;
-
-						   if ((selectedAnswers != null) && (AreAnswersCorrect(selectedAnswers)))
-						   {
-							   Question.Stats.NumberOfHitsCorrectlyAnswered++;
-							   State = States.AnsweredCorrectly;
-						   }
-						   else
-						   {
-							   State = States.AnsweredInCorrectly;
-						   }
-
-						   question.AssociatedTopic.UpdateStats();
+						   ValidateAnswers();
 						   IsResultVisible = true;
 					   },
 							param => true));
 			}
+		}
+
+		private void ValidateAnswers()
+		{
+			question.Stats.NumberOfHits++;
+
+			if ((selectedAnswers != null) && (AreAnswersCorrect(selectedAnswers)))
+			{
+				Question.Stats.NumberOfHitsCorrectlyAnswered++;
+				State = States.AnsweredCorrectly;
+			}
+			else
+			{
+				State = States.AnsweredInCorrectly;
+			}
+
+			question.AssociatedTopic.UpdateStats();
 		}
 
 		private bool AreAnswersCorrect(IEnumerable<Answer> answers)

@@ -9,6 +9,8 @@
 
 	<converters:ImageConverter x:Key="ImageConverter"/>
 	<converters:ImageVisibilityConverter x:Key="ImageVisibilityConverter"/>	
+	<converters:AnswerCorrectnessImageConverter x:Key="AnswerCorrectnessImageConverter"/>
+	
 	
 	<Style TargetType="customControls:MenuItem"
 		   x:Key="PageHeader">

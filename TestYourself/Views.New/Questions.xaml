@@ -61,18 +61,20 @@
 					<mediaViewer:MediaViewer.ItemTemplate>
 						<DataTemplate>
 							<Grid>
-								<ViewportControl x:Name="Viewport">
-									<Canvas x:Name="Canvas">
+								<ViewportControl x:Name="Viewport"
+												 >
+									<Grid x:Name="Canvas" >
 										<mediaViewer:ThumbnailedContentViewer
 										x:Name="ZoomableContent"
 										CacheMode="BitmapCache"
 										RenderTransformOrigin="0,0"
+											
 										DataTemplate="{StaticResource QuestionDataTemplate}">
 											<mediaViewer:ThumbnailedContentViewer.RenderTransform>
 												<ScaleTransform x:Name="ZoomableContentTransform"/>
 											</mediaViewer:ThumbnailedContentViewer.RenderTransform>
 										</mediaViewer:ThumbnailedContentViewer>
-									</Canvas>
+									</Grid>
 								</ViewportControl>
 							</Grid>
 						</DataTemplate>
@@ -80,10 +82,16 @@
 				</mediaViewer:MediaViewer>
 
 				<Image
-					x:Name="CorrectWrongStampImage"
+					x:Name="CorrectStampImage"
 					Visibility="Collapsed"
 					VerticalAlignment="Bottom"
 				   Source="../Images/CorrectStamp.png" Width="120" Height="120"
+				   HorizontalAlignment="Right"/>
+				<Image
+					x:Name="WrongStampImage"
+					Visibility="Collapsed"
+					VerticalAlignment="Bottom"
+				   Source="../Images/WrongStamp.png" Width="120" Height="120"
 				   HorizontalAlignment="Right"/>
 			</Grid>
 

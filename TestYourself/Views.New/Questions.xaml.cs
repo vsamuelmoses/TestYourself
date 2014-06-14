@@ -40,6 +40,14 @@ namespace TestYourself.Views.New
 
 			VmLocator.Instance.VmTopicQuestions = new VmTopicQuestions(VmLocator.Instance.VmSubjectPanorama.SelectedTopic, NavigationService);
 			DataContext = VmLocator.Instance.VmTopicQuestions;
+
+			MediaViewer.ItemDisplayed += MediaViewer_ItemDisplayed;
+		}
+
+		void MediaViewer_ItemDisplayed(object sender, TC.CustomControls.MediaViewer.ItemDisplayedEventArgs e)
+		{
+			var question = ((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex] as VmQuestionContent;
+			RefreshCorrectWrongStampVisibility(question);
 		}
 
 		private void AppBarViewHideIconClick(object sender, EventArgs e)
@@ -47,14 +55,32 @@ namespace TestYourself.Views.New
 			var question = ((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex] as VmQuestionContent;
 			question.IsResultVisible = !question.IsResultVisible;
 
+			RefreshCorrectWrongStampVisibility(question);
+		}
+
+		private void RefreshCorrectWrongStampVisibility(VmQuestionContent question)
+		{
 			if (question.IsResultVisible)
-				CorrectWrongStampImage.Visibility = System.Windows.Visibility.Visible;
+			{
+				if (question.State == VmQuestionContent.States.AnsweredCorrectly)
+				{
+					CorrectStampImage.Visibility = System.Windows.Visibility.Visible;
+					WrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
+				}
+
+				if (question.State == VmQuestionContent.States.AnsweredInCorrectly)
+				{
+					CorrectStampImage.Visibility = System.Windows.Visibility.Collapsed;
+					WrongStampImage.Visibility = System.Windows.Visibility.Visible;
+				}
+			}
 			else
 			{
-				CorrectWrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
+				CorrectStampImage.Visibility = System.Windows.Visibility.Collapsed;
+				WrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
 			}
 		}
-		
+
 		private void AppBarInfoButtonClick(object sender, EventArgs e)
 		{
 			if (isMessageBoxShown)
