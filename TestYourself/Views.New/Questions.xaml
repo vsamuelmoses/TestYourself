@@ -46,11 +46,12 @@
 			<StackPanel Grid.Row="0" Margin="10">
 				<TextBlock Text="Driving Theory" Style="{StaticResource PhoneTextNormalStyle}"/>
 				<customControls:MenuItem
-				Text="road awareness"
-				Style="{StaticResource PageHeader}"
-				ImagePath="Assets/Images/Book.png"
-										 ImageHeight="70"
-										 ImageWidth="70"/>
+					Text="road awareness"
+					Style="{StaticResource PageHeader}"
+					ImagePath="Images/Book.png"
+					ImageHeight="70"
+					ImageWidth="70"
+					IsMonochrome="True"/>
 				<ProgressBar Value="68" Height="15"></ProgressBar>
 			</StackPanel>
 
