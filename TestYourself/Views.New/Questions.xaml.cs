@@ -47,7 +47,12 @@ namespace TestYourself.Views.New
 		void MediaViewer_ItemDisplayed(object sender, TC.CustomControls.MediaViewer.ItemDisplayedEventArgs e)
 		{
 			var question = ((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex] as VmQuestionContent;
-			RefreshCorrectWrongStampVisibility(question);
+			SetQuestionNumber(question.Question.QuestionNumber);
+		}
+
+		private void SetQuestionNumber(int questionNumber)
+		{
+			QuestionNumberTextBlock.Text = questionNumber.ToString();
 		}
 
 		private void AppBarViewHideIconClick(object sender, EventArgs e)
@@ -55,34 +60,11 @@ namespace TestYourself.Views.New
 			var question = ((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex] as VmQuestionContent;
 			question.IsResultVisible = !question.IsResultVisible;
 
-			RefreshCorrectWrongStampVisibility(question);
+			SetQuestionNumber(question.Question.QuestionNumber);
 
 			appBarViewHideIcon.IconUri = question.IsResultVisible 
 				? new Uri("/Images/ViewReset.png", UriKind.Relative) 
 				: new Uri("/Images/View.png", UriKind.Relative);
-		}
-
-		private void RefreshCorrectWrongStampVisibility(VmQuestionContent question)
-		{
-			//if (question.IsResultVisible)
-			//{
-			//	if (question.State == VmQuestionContent.States.AnsweredCorrectly)
-			//	{
-			//		CorrectStampImage.Visibility = System.Windows.Visibility.Visible;
-			//		WrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
-			//	}
-
-			//	if (question.State == VmQuestionContent.States.AnsweredInCorrectly)
-			//	{
-			//		CorrectStampImage.Visibility = System.Windows.Visibility.Collapsed;
-			//		WrongStampImage.Visibility = System.Windows.Visibility.Visible;
-			//	}
-			//}
-			//else
-			//{
-			//	CorrectStampImage.Visibility = System.Windows.Visibility.Collapsed;
-			//	WrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
-			//}
 		}
 
 		private void AppBarInfoButtonClick(object sender, EventArgs e)

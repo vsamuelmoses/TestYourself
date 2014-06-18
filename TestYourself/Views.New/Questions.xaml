@@ -96,8 +96,12 @@
 				   HorizontalAlignment="Right"/>-->
 			</Grid>
 
-			<TextBlock Grid.Row="2" HorizontalAlignment="Center"
-						   Text="12/200"/>
+			<StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBlock x:Name="QuestionNumberTextBlock"/>
+				<TextBlock Text="/"/>
+				<TextBlock Text="{Binding Topic.Questions.Count}"/>
+			</StackPanel>
+
 
 
 		</Grid>
