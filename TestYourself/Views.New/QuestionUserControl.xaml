@@ -24,9 +24,11 @@
 						   Text="{Binding Question.Text}"/>
 
 			<controls:SmartListBox Grid.Row="1" Margin="0,30,0,0"
-					ItemsSource="{Binding Question.Answers}"
-					 SelectionMode="Multiple"
-					BindableSelectedItems="{Binding SelectedAnswers, Mode=TwoWay}">
+								   x:Name="AnswerChoiceListBox"
+								   ItemsSource="{Binding Question.Answers}"
+								   SelectionMode="Multiple"
+								   SelectionChanged="Selector_OnSelectionChanged"
+								   BindableSelectedItems="{Binding SelectedAnswers, Mode=TwoWay}">
 
 				<ListBox.ItemTemplate>
 					<DataTemplate>
@@ -94,6 +96,22 @@
 					</DataTemplate>
 				</ListBox.ItemTemplate>
 			</controls:SmartListBox>
+
+			<Image Grid.Row="1"
+					x:Name="CorrectStampImage"
+					VerticalAlignment="Bottom"
+				   Source="../Images/CorrectStamp.png" Width="120" Height="120"
+				   HorizontalAlignment="Right"
+				   Visibility="{Binding Path=State, Converter={StaticResource StampVisibilityConverter},
+								ConverterParameter=AnsweredCorrectly}"/>
+			<Image Grid.Row="1"
+					x:Name="WrongStampImage"
+					VerticalAlignment="Bottom"
+				   Source="../Images/WrongStamp.png" Width="120" Height="120"
+				   HorizontalAlignment="Right"
+				   Visibility="{Binding Path=State, Converter={StaticResource StampVisibilityConverter},
+								ConverterParameter=AnsweredInCorrectly}"/>
+			
 		</Grid>
 	</ScrollViewer>
 </UserControl>

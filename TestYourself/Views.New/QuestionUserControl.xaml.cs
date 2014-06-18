@@ -14,5 +14,11 @@ namespace TestYourself.Views.New
 		{
 			
 		}
+
+		private void Selector_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+			var selectedItems = AnswerChoiceListBox.SelectedItems;
+
+		}
 	}
 }

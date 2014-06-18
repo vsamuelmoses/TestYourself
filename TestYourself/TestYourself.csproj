@@ -297,6 +297,9 @@
     <Content Include="Images\Icon173x173.png" />
     <Resource Include="Images\WrongStamp.png" />
     <Resource Include="Images\TickMarkpng.png" />
+    <Content Include="Images\View.png" />
+    <Content Include="Images\ViewReset.png" />
+    <Content Include="Images\info.png" />
     <Content Include="TestYourselfLifeInUk.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

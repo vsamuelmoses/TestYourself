@@ -81,7 +81,7 @@
 					</mediaViewer:MediaViewer.ItemTemplate>
 				</mediaViewer:MediaViewer>
 
-				<Image
+				<!--<Image
 					x:Name="CorrectStampImage"
 					Visibility="Collapsed"
 					VerticalAlignment="Bottom"
@@ -92,7 +92,7 @@
 					Visibility="Collapsed"
 					VerticalAlignment="Bottom"
 				   Source="../Images/WrongStamp.png" Width="120" Height="120"
-				   HorizontalAlignment="Right"/>
+				   HorizontalAlignment="Right"/>-->
 			</Grid>
 
 			<TextBlock Grid.Row="2" HorizontalAlignment="Center"

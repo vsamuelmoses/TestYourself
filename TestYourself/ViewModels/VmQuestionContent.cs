@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows.Input;
 using TC.CustomControls.MediaViewer;
@@ -21,24 +23,28 @@ namespace TestYourself.ViewModels
 		private const string PropertyNameQuestionAndAnswer = "Question";
 		private const string PropertyState = "State";
 
-		private List<Answer> selectedAnswers;
-		public IList SelectedAnswers
+		public VmQuestionContent()
+		{
+			SelectedAnswers = new ObservableCollection<object>();
+			SelectedAnswers.CollectionChanged += SelectedAnswers_CollectionChanged;
+		}
+
+		void SelectedAnswers_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+		{
+			IsResultVisible = false;
+		}
+
+
+		private ObservableCollection<object> selectedAnswers;
+		public ObservableCollection<object> SelectedAnswers
 		{
 			get { return selectedAnswers; }
 			set
 			{
-				selectedAnswers = new List<Answer>();
-
-				if (value == null)
-					return;
-
-				foreach (var answer in value)
-				{
-					selectedAnswers.Add((Answer)answer);
-				}
-
+				selectedAnswers = value;
+				InvokePropertyChanged("SelectedAnswers");
+				
 				IsResultVisible = false;
-				State = States.NotAnsweredYet;
 			}
 		}
 
@@ -108,6 +114,8 @@ namespace TestYourself.ViewModels
 
 				if(isResultVisible)
 					ValidateAnswers();
+				else
+					State = States.NotAnsweredYet;
 			}
 		}
 
@@ -163,7 +171,7 @@ namespace TestYourself.ViewModels
 		{
 			question.Stats.NumberOfHits++;
 
-			if ((selectedAnswers != null) && (AreAnswersCorrect(selectedAnswers)))
+			if ((selectedAnswers != null) && (AreAnswersCorrect(selectedAnswers.Cast<Answer>())))
 			{
 				Question.Stats.NumberOfHitsCorrectlyAnswered++;
 				State = States.AnsweredCorrectly;

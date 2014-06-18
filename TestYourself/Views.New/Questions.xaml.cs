@@ -27,13 +27,13 @@ namespace TestYourself.Views.New
 			ApplicationBar.IsMenuEnabled = false;
 
 			appBarInfoButton = new ApplicationBarIconButton();
-			appBarInfoButton.IconUri = new Uri("/Assets/Images/info.png", UriKind.Relative);
+			appBarInfoButton.IconUri = new Uri("/Images/info.png", UriKind.Relative);
 			appBarInfoButton.Text = "info";
 			ApplicationBar.Buttons.Add(appBarInfoButton);
 			appBarInfoButton.Click += AppBarInfoButtonClick;
 
 			appBarViewHideIcon = new ApplicationBarIconButton();
-			appBarViewHideIcon.IconUri = new Uri("/Assets/Images/View.png", UriKind.Relative);
+			appBarViewHideIcon.IconUri = new Uri("/Images/View.png", UriKind.Relative);
 			appBarViewHideIcon.Text = "view";
 			ApplicationBar.Buttons.Add(appBarViewHideIcon);
 			appBarViewHideIcon.Click += AppBarViewHideIconClick;
@@ -56,29 +56,33 @@ namespace TestYourself.Views.New
 			question.IsResultVisible = !question.IsResultVisible;
 
 			RefreshCorrectWrongStampVisibility(question);
+
+			appBarViewHideIcon.IconUri = question.IsResultVisible 
+				? new Uri("/Images/ViewReset.png", UriKind.Relative) 
+				: new Uri("/Images/View.png", UriKind.Relative);
 		}
 
 		private void RefreshCorrectWrongStampVisibility(VmQuestionContent question)
 		{
-			if (question.IsResultVisible)
-			{
-				if (question.State == VmQuestionContent.States.AnsweredCorrectly)
-				{
-					CorrectStampImage.Visibility = System.Windows.Visibility.Visible;
-					WrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
-				}
+			//if (question.IsResultVisible)
+			//{
+			//	if (question.State == VmQuestionContent.States.AnsweredCorrectly)
+			//	{
+			//		CorrectStampImage.Visibility = System.Windows.Visibility.Visible;
+			//		WrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
+			//	}
 
-				if (question.State == VmQuestionContent.States.AnsweredInCorrectly)
-				{
-					CorrectStampImage.Visibility = System.Windows.Visibility.Collapsed;
-					WrongStampImage.Visibility = System.Windows.Visibility.Visible;
-				}
-			}
-			else
-			{
-				CorrectStampImage.Visibility = System.Windows.Visibility.Collapsed;
-				WrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
-			}
+			//	if (question.State == VmQuestionContent.States.AnsweredInCorrectly)
+			//	{
+			//		CorrectStampImage.Visibility = System.Windows.Visibility.Collapsed;
+			//		WrongStampImage.Visibility = System.Windows.Visibility.Visible;
+			//	}
+			//}
+			//else
+			//{
+			//	CorrectStampImage.Visibility = System.Windows.Visibility.Collapsed;
+			//	WrongStampImage.Visibility = System.Windows.Visibility.Collapsed;
+			//}
 		}
 
 		private void AppBarInfoButtonClick(object sender, EventArgs e)

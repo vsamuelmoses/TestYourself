@@ -10,6 +10,7 @@
 	<converters:ImageConverter x:Key="ImageConverter"/>
 	<converters:ImageVisibilityConverter x:Key="ImageVisibilityConverter"/>	
 	<converters:AnswerCorrectnessImageConverter x:Key="AnswerCorrectnessImageConverter"/>
+	<converters:StampVisibilityConverter x:Key="StampVisibilityConverter"/>
 	
 	
 	<Style TargetType="customControls:MenuItem"
