@@ -12,7 +12,6 @@
 	<converters:AnswerCorrectnessImageConverter x:Key="AnswerCorrectnessImageConverter"/>
 	<converters:StampVisibilityConverter x:Key="StampVisibilityConverter"/>
 	
-	
 	<Style TargetType="customControls:MenuItem"
 		   x:Key="PageHeader">
 		<Style.Setters>

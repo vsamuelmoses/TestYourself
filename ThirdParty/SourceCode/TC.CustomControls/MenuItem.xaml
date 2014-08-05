@@ -7,32 +7,30 @@
 	
 	<Grid x:Name="LayoutRoot">
 		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
 		</Grid.RowDefinitions>
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="100"/>
 			<ColumnDefinition Width="*"/>
 		</Grid.ColumnDefinitions>
 
-		<Rectangle Grid.Row="0" Grid.Column="0"
-				   x:Name="MonoChromeImage"
-				   Fill="{StaticResource PhoneForegroundBrush}" 
-				   Visibility="{Binding IsMonochrome, Converter={StaticResource BooleanToVisibilityConverter}}">
-			<Rectangle.OpacityMask>
-				<ImageBrush ImageSource="{Binding ImagePath}"/>
-			</Rectangle.OpacityMask>
-		</Rectangle>
+		<Grid Grid.Column="0" 
+			  Visibility="{Binding IsMonochrome, Converter={StaticResource BooleanToVisibilityConverter}}"
+			  Background="{StaticResource PhoneContrastBackgroundBrush}">
+			<Grid.OpacityMask>
+				<ImageBrush Stretch="Uniform" ImageSource="{Binding ImagePath}"/>
+			</Grid.OpacityMask>
+		</Grid>
 
 		<Image x:Name="NotMonoChromeImage"
-			Grid.Row="0" Grid.Column="0" 
+			   Grid.Row="0" Grid.Column="0" 
 			   Visibility="{Binding IsMonochrome, Converter={StaticResource InverseBooleanToVisibilityConverter}}"
 			   Source="{Binding ImagePath}"/>
-		
+
 		<TextBlock Grid.Row="0" Grid.Column="1" 
 				   VerticalAlignment="Center"
 				   Text="{Binding Text}" 
 				   FontFamily="{Binding TitleFontFamily}" 
 				   FontSize="{Binding TitleFontSize}" Margin="5,0,0,0"/>
-
 	</Grid>
 </UserControl>

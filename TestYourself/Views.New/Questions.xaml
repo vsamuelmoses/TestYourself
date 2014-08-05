@@ -62,15 +62,13 @@
 					<mediaViewer:MediaViewer.ItemTemplate>
 						<DataTemplate>
 							<Grid>
-								<ViewportControl x:Name="Viewport"
-												 >
+								<ViewportControl x:Name="Viewport">
 									<Grid x:Name="Canvas" >
 										<mediaViewer:ThumbnailedContentViewer
-										x:Name="ZoomableContent"
-										CacheMode="BitmapCache"
-										RenderTransformOrigin="0,0"
-											
-										DataTemplate="{StaticResource QuestionDataTemplate}">
+											x:Name="ZoomableContent"
+											CacheMode="BitmapCache"
+											RenderTransformOrigin="0,0"
+											DataTemplate="{StaticResource QuestionDataTemplate}">
 											<mediaViewer:ThumbnailedContentViewer.RenderTransform>
 												<ScaleTransform x:Name="ZoomableContentTransform"/>
 											</mediaViewer:ThumbnailedContentViewer.RenderTransform>
@@ -82,7 +80,7 @@
 					</mediaViewer:MediaViewer.ItemTemplate>
 				</mediaViewer:MediaViewer>
 
-				<!--<Image
+				<Image
 					x:Name="CorrectStampImage"
 					Visibility="Collapsed"
 					VerticalAlignment="Bottom"
@@ -93,7 +91,7 @@
 					Visibility="Collapsed"
 					VerticalAlignment="Bottom"
 				   Source="../Images/WrongStamp.png" Width="120" Height="120"
-				   HorizontalAlignment="Right"/>-->
+				   HorizontalAlignment="Right"/>
 			</Grid>
 
 			<StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
@@ -8,14 +7,7 @@ namespace TC.CustomControls
 	public partial class MenuItem : UserControl
 	{
 		public static readonly DependencyProperty ImageWidthProperty = DependencyProperty.Register(
-			"ImageWidth", typeof (double), typeof (MenuItem), new PropertyMetadata(default(double), OnImageWidthChanged));
-
-		private static void OnImageWidthChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
-		{
-			var thisControl = (MenuItem)dependencyObject;
-			thisControl.MonoChromeImage.Width = thisControl.ImageWidth;
-			thisControl.NotMonoChromeImage.Width = thisControl.ImageWidth;
-		}
+			"ImageWidth", typeof (double), typeof (MenuItem), new PropertyMetadata(default(double)));
 
 		public double ImageWidth
 		{
@@ -24,14 +16,7 @@ namespace TC.CustomControls
 		}
 
 		public static readonly DependencyProperty ImageHeightProperty = DependencyProperty.Register(
-			"ImageHeight", typeof (double), typeof (MenuItem), new PropertyMetadata(default(double), OnImageHeightChanged));
-
-		private static void OnImageHeightChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
-		{
-			var thisControl = (MenuItem)dependencyObject;
-			thisControl.MonoChromeImage.Height = thisControl.ImageHeight;
-			thisControl.NotMonoChromeImage.Height = thisControl.ImageHeight;
-		}
+			"ImageHeight", typeof (double), typeof (MenuItem), new PropertyMetadata(default(double)));
 
 		public double ImageHeight
 		{
@@ -90,6 +75,11 @@ namespace TC.CustomControls
 		public MenuItem()
 		{
 			InitializeComponent();
+			Loaded += OnMenuItemLoaded;
+		}
+
+		void OnMenuItemLoaded(object sender, RoutedEventArgs e)
+		{
 			DataContext = this;
 		}
 	}

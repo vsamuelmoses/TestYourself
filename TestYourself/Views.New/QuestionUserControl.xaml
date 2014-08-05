@@ -10,7 +10,7 @@
 	Foreground="{StaticResource PhoneForegroundBrush}"
 	d:DesignHeight="480" d:DesignWidth="480">
 
-	<ScrollViewer>
+
 
 		<Grid x:Name="ContentPanel"
 			  Margin="12,0,12,0">
@@ -113,5 +113,5 @@
 								ConverterParameter=AnsweredInCorrectly}"/>
 			
 		</Grid>
-	</ScrollViewer>
+	
 </UserControl>

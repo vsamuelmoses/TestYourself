@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using Microsoft.Phone.Controls;
 using TestYourself.ViewModel;
 using TestYourself.ViewModels;
@@ -15,7 +14,7 @@ namespace TestYourself.Views
 
         private void TopicsInfoPage_OnLoaded(object sender, RoutedEventArgs e)
         {
-            VmLocator.Instance.VmTopicsInfo = new VmTopicsInfo(VmLocator.Instance.VmSubjectPanorama.SelectedTopic, NavigationService);
+            //VmLocator.Instance.VmTopicsInfo = new VmTopicsInfo(VmLocator.Instance.VmSubjectPanorama.SelectedTopic, NavigationService);
             DataContext = VmLocator.Instance.VmTopicsInfo;
         }
     }

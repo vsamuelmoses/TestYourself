@@ -8,103 +8,128 @@ using TestYourself.ViewModel;
 
 namespace TestYourself.ViewModels
 {
-    public class VmSubjectPanorama : VmPage
-    {
-        private readonly NavigationService navigationService;
+	public abstract class VmTopicsHostBase : VmPage
+	{
+		private Topic selectedTopic;
+		private ObservableCollection<Topic> topics;
+		private bool isTopicsDetailsVisible;
+		private int totalNumberOfQuestions;
+		private double progress;
+		private readonly NavigationService navigationService;
 
-        public VmSubjectPanorama(Subject subject, NavigationService navigationService)
-        {
-            this.navigationService = navigationService;
-            ParentSubject = subject;
+		protected VmTopicsHostBase(NavigationService navigationService)
+		{
+			this.navigationService = navigationService;
+		}
 
-            CommandResetProgress = new RelayCommand(notUsed => ParentSubject.ResetProgress());
-        }
+		public Topic SelectedTopic
+		{
+			get { return selectedTopic; }
+			set
+			{
+				if (selectedTopic == value)
+					return;
+				selectedTopic = value;
 
-        private Subject parentSubject;
-        public Subject ParentSubject
-        {
-            get { return parentSubject; }
-            set
-            {
-                parentSubject = value;
-                InvokePropertyChanged("ParentSubject");
-                
-                Topics = new ObservableCollection<Topic>(parentSubject.Topics);
-                TitleName = parentSubject.Name;
-                //SuccessPercentage = parentSubject.SuccessPercentage;
-                Progress = parentSubject.PercentageWorked;
-            }
-        }
+				if (selectedTopic == null)
+					return;
 
-        private Topic selectedTopic;
-        public Topic SelectedTopic
-        {
-            get { return selectedTopic; }
-            set
-            {
-                if (selectedTopic == value)
-                    return;
-                selectedTopic = value;
+				if (selectedTopic.SubTopics.Any())
+				{
+					var topicsPanoramaUri = 
+						new Uri(string.Format("{0}?Id={1}", "/Views/TopicsPanoramaPage.xaml", Guid.NewGuid()), UriKind.Relative);
+					VmLocator.Instance.VmTopicsPanorama = new VmTopicsPanorama(selectedTopic, navigationService);
+					navigationService.Navigate(topicsPanoramaUri);
+				}
+				else
+				{
+					VmLocator.Instance.VmTopicsInfo = new VmTopicsInfo(selectedTopic, navigationService);
+					navigationService.Navigate(new Uri("/Views/TopicsInfoPage.xaml", UriKind.Relative));
+				}
+			}
+		}
 
-                if (selectedTopic == null)
-                    return;
+		public ObservableCollection<Topic> Topics
+		{
+			get { return topics; }
+			set
+			{
+				topics = value;
+				InvokePropertyChanged("Topics");
+				TotalNumberOfQuestions = topics.Sum(topic => topic.TotalNumberOfQuestions);
+			}
+		}
 
-                navigationService.Navigate(new Uri("/Views/TopicsInfoPage.xaml", UriKind.Relative));
-            }
-        }
-        
-        private ObservableCollection<Topic> topics;
-        public ObservableCollection<Topic> Topics
-        {
-            get { return topics; }
-            set
-            {
-                topics = value;
-                InvokePropertyChanged("Topics");
-                TotalNumberOfQuestions = topics.Sum(topic => topic.TotalNumberOfQuestions);
-            }
-        }
+		public bool IsTopicsDetailsVisible
+		{
+			get { return isTopicsDetailsVisible; }
+			set
+			{
+				isTopicsDetailsVisible = value;
+				InvokePropertyChanged("IsTopicsDetailsVisible");
+			}
+		}
 
-        private bool isTopicsDetailsVisible;
-        public bool IsTopicsDetailsVisible
-        {
-            get { return isTopicsDetailsVisible; }
-            set
-            {
-                isTopicsDetailsVisible = value;
-                InvokePropertyChanged("IsTopicsDetailsVisible");
-            }
-        }
-        
-        private int totalNumberOfQuestions;
-        public int TotalNumberOfQuestions
-        {
-            get { return totalNumberOfQuestions; }
-            set
-            {
-                totalNumberOfQuestions = value;
-                InvokePropertyChanged("TotalNumberOfQuestions");
-            }
-        }
+		public int TotalNumberOfQuestions
+		{
+			get { return totalNumberOfQuestions; }
+			set
+			{
+				totalNumberOfQuestions = value;
+				InvokePropertyChanged("TotalNumberOfQuestions");
+			}
+		}
 
-        private double successPercentage;
-        private double progress;
+		public abstract double SuccessPercentage { get; }
+		
+		public double Progress
+		{
+			get { return progress; }
+			set
+			{
+				progress = value;
+				InvokePropertyChanged("Progress");
+			}
+		}
 
-        public double SuccessPercentage
-        {
-            get { return ParentSubject.SuccessPercentage; }
-        }
+		public abstract RelayCommand CommandResetProgress { get; set; }
+	}
 
-        public double Progress
-        {
-            get { return progress; }
-            set
-            {
-                progress = value;
-                InvokePropertyChanged("Progress");
-            }
-        }
+	public class VmSubjectPanorama : VmTopicsHostBase
+	{
+		private readonly NavigationService navigationService;
 
-        public RelayCommand CommandResetProgress { get; set; }
-    }
+		public VmSubjectPanorama(Subject subject, NavigationService navigationService) 
+			: base(navigationService)
+		{
+			ParentSubject = subject;
+			CommandResetProgress = new RelayCommand(notUsed => ParentSubject.ResetProgress());
+		}
+
+		private Subject parentSubject;
+
+
+
+		public Subject ParentSubject
+		{
+			get { return parentSubject; }
+			set
+			{
+				parentSubject = value;
+				InvokePropertyChanged("ParentSubject");
+
+				Topics = new ObservableCollection<Topic>(parentSubject.Topics);
+				TitleName = parentSubject.Name;
+				//SuccessPercentage = parentSubject.SuccessPercentage;
+				Progress = parentSubject.PercentageWorked;
+			}
+		}
+
+		public override double SuccessPercentage
+		{
+			get { return ParentSubject.SuccessPercentage; }
+		}
+
+		public override sealed RelayCommand CommandResetProgress { get; set; }
+	}
 }

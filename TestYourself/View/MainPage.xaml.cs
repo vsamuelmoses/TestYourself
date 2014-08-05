@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection;
 using System.Windows;
 using Microsoft.Phone.Controls;
 using TestYourself.Helpers;
@@ -17,7 +16,7 @@ namespace TestYourself.View
 
         private void ButtonClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Views/SubjectPanoramaPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Views/SubjectPage.xaml", UriKind.Relative));
         }
     }
 }

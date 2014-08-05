@@ -4,7 +4,7 @@ using TC.CustomControls.ViewModels;
 
 namespace TC.CustomControls
 {
-	public partial class PieChart : UserControl
+	public partial class PieChart : ContentControl
 	{
 		public static readonly DependencyProperty ProgressProperty = DependencyProperty.Register(
 			"Progress", typeof (double), typeof (PieChart), 
@@ -13,35 +13,33 @@ namespace TC.CustomControls
 		private static void PropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs eventArgs)
 		{
 			var circularProgressBar = (PieChart)dependencyObject;
+			RefreshCircularProgressBar(circularProgressBar);
+		}
 
-			circularProgressBar.Data = new PieDataCollection
+		private void PrepareData()
+		{
+			Data = new PieDataCollection
 			{
 				new PieData {Title = string.Empty},
 				new PieData {Title = string.Empty}
 			};
 
-			var progress = (double) eventArgs.NewValue;
-			if ((double) eventArgs.NewValue > 100)
+			var progress = Progress;
+			if ((double) Progress > 100)
 				progress = 100;
-			if ((double)eventArgs.NewValue < 0)
+			if ((double) Progress < 0)
 				progress = 0;
 
-			SetValue(circularProgressBar, progress);
-			circularProgressBar.Data[0].Title = circularProgressBar.ProgressTitle;
-			circularProgressBar.Data[1].Value = 100 - progress;
+			Data[0].Value = progress;
+			Data[0].Title = ProgressTitle;
+			Data[1].Value = 100 - progress;
 
-			RefreshCircularProgressBar(circularProgressBar);
-		}
-
-		private static void SetValue(PieChart circularProgressBar, double progress)
-		{
-			circularProgressBar.Data[0].Value = progress;
-			circularProgressBar.ProgressValueTextBlock.Text = progress + " %";
+			ProgressValueTextBlock.Text = progress + " %";
 		}
 
 		private static void RefreshCircularProgressBar(PieChart circularProgressBar)
 		{
-			circularProgressBar.AmPieChart.DataSource = null;
+			circularProgressBar.PrepareData();
 			circularProgressBar.AmPieChart.DataSource = circularProgressBar.Data;
 		}
 
@@ -63,7 +61,7 @@ namespace TC.CustomControls
 			{
 				circularProgressBar.Data[0].Title = (string)eventArgs.NewValue;
 				circularProgressBar.LegendTextBlock.Text = (string)eventArgs.NewValue;
-				RefreshCircularProgressBar(circularProgressBar);
+				//RefreshCircularProgressBar(circularProgressBar);
 			}
 		}
 
@@ -77,6 +75,12 @@ namespace TC.CustomControls
 		{
 			InitializeComponent();
 			Data = new PieDataCollection {new PieData(), new PieData()};
+			Loaded += PieChart_Loaded;
+		}
+
+		void PieChart_Loaded(object sender, RoutedEventArgs e)
+		{
+			RefreshCircularProgressBar(this);
 		}
 
 		public PieDataCollection Data { get; set; }
