@@ -14,7 +14,6 @@
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
 	SupportedOrientations="Portrait"  Orientation="Portrait"
-	Loaded="TopicsPanoramaPage_OnLoaded"
 	shell:SystemTray.IsVisible="False">
 
 	<toolkit:TransitionService.NavigationInTransition>
@@ -43,14 +42,13 @@
 	
 	<!--LayoutRoot contains the root grid where all other page content is placed-->
 	<Grid x:Name="LayoutRoot">
-		<phone:Panorama Title="{Binding Topic.Name}">
-
+		<phone:Panorama>
 			<!--Panorama item one-->
 			<phone:PanoramaItem>
 				<phone:PanoramaItem.Header>
 					<customControls:MenuItem
 						ImagePath="Images/Book.png"
-						Text="topics"
+						Text="{Binding Topic.Name}"
 						IsMonochrome="True"
 						Style="{StaticResource PageHeader}"/>
 				</phone:PanoramaItem.Header>

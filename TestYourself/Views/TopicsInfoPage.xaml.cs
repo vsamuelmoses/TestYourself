@@ -5,17 +5,19 @@ using TestYourself.ViewModels;
 
 namespace TestYourself.Views
 {
-    public partial class TopicsInfoPage : PhoneApplicationPage
-    {
-        public TopicsInfoPage()
-        {
-            InitializeComponent();
-        }
+	public partial class TopicsInfoPage : PhoneApplicationPage
+	{
+		public TopicsInfoPage()
+		{
+			InitializeComponent();
+			
+		}
 
-        private void TopicsInfoPage_OnLoaded(object sender, RoutedEventArgs e)
-        {
-            //VmLocator.Instance.VmTopicsInfo = new VmTopicsInfo(VmLocator.Instance.VmSubjectPanorama.SelectedTopic, NavigationService);
-            DataContext = VmLocator.Instance.VmTopicsInfo;
-        }
-    }
+		private void TopicsInfoPage_OnLoaded(object sender, RoutedEventArgs e)
+		{
+			
+			//VmLocator.Instance.VmTopicsInfo = new VmTopicsInfo(VmLocator.Instance.VmSubjectPanorama.SelectedTopic, NavigationService);
+			DataContext = VmLocator.Instance.VmTopicsInfo;
+		}
+	}
 }

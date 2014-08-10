@@ -15,22 +15,21 @@
 		</Grid.ColumnDefinitions>
 
 		<Grid Grid.Column="0" 
-			  Visibility="{Binding IsMonochrome, Converter={StaticResource BooleanToVisibilityConverter}}"
+			  x:Name="MonochromeImage"
 			  Background="{StaticResource PhoneContrastBackgroundBrush}">
 			<Grid.OpacityMask>
-				<ImageBrush Stretch="Uniform" ImageSource="{Binding ImagePath}"/>
+				<ImageBrush 
+					x:Name="MonochromeImageBrush"
+					Stretch="Uniform"/>
 			</Grid.OpacityMask>
 		</Grid>
 
 		<Image x:Name="NotMonoChromeImage"
-			   Grid.Row="0" Grid.Column="0" 
-			   Visibility="{Binding IsMonochrome, Converter={StaticResource InverseBooleanToVisibilityConverter}}"
-			   Source="{Binding ImagePath}"/>
+			   Grid.Row="0" Grid.Column="0" />
 
 		<TextBlock Grid.Row="0" Grid.Column="1" 
+				   x:Name="TitleTextBlock"
 				   VerticalAlignment="Center"
-				   Text="{Binding Text}" 
-				   FontFamily="{Binding TitleFontFamily}" 
-				   FontSize="{Binding TitleFontSize}" Margin="5,0,0,0"/>
+				   Margin="5,0,0,0"/>
 	</Grid>
 </UserControl>

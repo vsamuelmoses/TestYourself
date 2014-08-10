@@ -52,7 +52,9 @@
                         <DataTemplate>
                             <StackPanel>
                                 <TextBlock Text="{Binding Name}" Style="{StaticResource Heading3}"/>
-                                <ProgressBar Background="AliceBlue" Value="{Binding Stats.ProgressPercentage}" Foreground="Green"/>
+                                <ProgressBar 
+									Background="{StaticResource PhoneAccentBrush}" 
+									Value="38" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>

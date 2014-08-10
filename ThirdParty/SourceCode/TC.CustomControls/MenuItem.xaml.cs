@@ -1,32 +1,16 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using Microsoft.Phone.Networking.Voip;
 
 namespace TC.CustomControls
 {
 	public partial class MenuItem : UserControl
 	{
-		public static readonly DependencyProperty ImageWidthProperty = DependencyProperty.Register(
-			"ImageWidth", typeof (double), typeof (MenuItem), new PropertyMetadata(default(double)));
-
-		public double ImageWidth
-		{
-			get { return (double) GetValue(ImageWidthProperty); }
-			set { SetValue(ImageWidthProperty, value); }
-		}
-
-		public static readonly DependencyProperty ImageHeightProperty = DependencyProperty.Register(
-			"ImageHeight", typeof (double), typeof (MenuItem), new PropertyMetadata(default(double)));
-
-		public double ImageHeight
-		{
-			get { return (double) GetValue(ImageHeightProperty); }
-			set { SetValue(ImageHeightProperty, value); }
-		}
-
-
 		public static readonly DependencyProperty ImagePathProperty = DependencyProperty.Register(
-			"ImagePath", typeof (string), typeof (MenuItem), new PropertyMetadata(default(string)));
+			"ImagePath", typeof(string), typeof(MenuItem), new PropertyMetadata(default(string), OnDependentPropertyChanged));
 
 		public string ImagePath
 		{
@@ -35,7 +19,39 @@ namespace TC.CustomControls
 		}
 
 		public static readonly DependencyProperty TextProperty = DependencyProperty.Register(
-			"Text", typeof (string), typeof (MenuItem), new PropertyMetadata(default(string)));
+			"Text", typeof (string), typeof (MenuItem), 
+			new PropertyMetadata(default(string), OnDependentPropertyChanged));
+
+		private static void OnDependentPropertyChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
+		{
+			var thisControl = (MenuItem) dependencyObject;
+			thisControl.Refresh();
+		}
+
+		private void Refresh()
+		{
+			if (IsMonochrome)
+			{
+				MonochromeImage.Visibility = Visibility.Visible;
+				NotMonoChromeImage.Visibility = Visibility.Collapsed;
+			}
+			else
+			{
+				MonochromeImage.Visibility = Visibility.Collapsed;
+				NotMonoChromeImage.Visibility = Visibility.Visible;
+			}
+
+			if (!string.IsNullOrEmpty(ImagePath))
+			{
+				MonochromeImageBrush.ImageSource = new BitmapImage(new Uri(ImagePath, UriKind.RelativeOrAbsolute));
+				NotMonoChromeImage.Source = new BitmapImage(new Uri(ImagePath, UriKind.Relative));
+			}
+
+			TitleTextBlock.FontFamily = TitleFontFamily;
+			TitleTextBlock.FontSize = TitleFontSize;
+			TitleTextBlock.Text = Text;
+		}
+
 
 		public string Text
 		{
@@ -45,7 +61,7 @@ namespace TC.CustomControls
 
 		public static readonly DependencyProperty TitleFontSizeProperty = DependencyProperty.Register(
 			"TitleFontSize", typeof (double), typeof (MenuItem),
-			new PropertyMetadata((double)Application.Current.Resources["PhoneFontSizeLarge"]));
+			new PropertyMetadata((double)Application.Current.Resources["PhoneFontSizeLarge"], OnDependentPropertyChanged));
 
 		public double TitleFontSize
 		{
@@ -55,7 +71,7 @@ namespace TC.CustomControls
 
 		public static readonly DependencyProperty TitleFontFamilyProperty = DependencyProperty.Register(
 			"TitleFontFamily", typeof (FontFamily), typeof (MenuItem),
-			new PropertyMetadata(Application.Current.Resources["PhoneFontFamilyLight"]));
+			new PropertyMetadata(Application.Current.Resources["PhoneFontFamilyLight"], OnDependentPropertyChanged));
 
 		public FontFamily TitleFontFamily
 		{
@@ -75,12 +91,6 @@ namespace TC.CustomControls
 		public MenuItem()
 		{
 			InitializeComponent();
-			Loaded += OnMenuItemLoaded;
-		}
-
-		void OnMenuItemLoaded(object sender, RoutedEventArgs e)
-		{
-			DataContext = this;
 		}
 	}
 }

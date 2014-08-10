@@ -14,8 +14,8 @@ namespace TestYourself.Views.New
 	public partial class Questions : PhoneApplicationPage
 	{
 		private bool isMessageBoxShown = false;
-		private ApplicationBarIconButton appBarInfoButton;
-		private ApplicationBarIconButton appBarViewHideIcon;
+		private readonly ApplicationBarIconButton appBarInfoButton;
+		private readonly ApplicationBarIconButton appBarViewHideIcon;
 
 		public Questions()
 		{
@@ -48,6 +48,20 @@ namespace TestYourself.Views.New
 		{
 			var question = ((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex] as VmQuestionContent;
 			SetQuestionNumber(question.Question.QuestionNumber);
+			SetKeypointText(question.Question);
+		}
+
+		private void SetKeypointText(Model.Question question)
+		{
+			if (question.KeyPoint == null || string.IsNullOrEmpty(question.KeyPoint.Text))
+			{
+				appBarInfoButton.IsEnabled = false;
+			}
+			else
+			{
+				KeypointTextBlock.Text = question.KeyPoint.Text;
+				appBarInfoButton.IsEnabled = true;
+			}
 		}
 
 		private void SetQuestionNumber(int questionNumber)

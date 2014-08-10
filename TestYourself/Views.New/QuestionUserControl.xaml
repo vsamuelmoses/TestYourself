@@ -12,68 +12,96 @@
 
 
 
-		<Grid x:Name="ContentPanel"
+	<Grid x:Name="ContentPanel"
 			  Margin="12,0,12,0">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<Grid Grid.Row="0"
+			  HorizontalAlignment="Left" 
+			  VerticalAlignment="Top">
 			<Grid.RowDefinitions>
+				<RowDefinition/>
 				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="*"/>
 			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
 
-			<TextBlock x:Name="QuestionTextBlock" 
-				Grid.Row="0" TextWrapping="Wrap"
-						   Text="{Binding Question.Text}"/>
+			<Button Grid.Column="0" Grid.Row="0"
+										Margin="10,10,0,10"
+										Background="Transparent"
+										Height="100"
+										VerticalAlignment="Top"
+										Click="ButtonBase_OnClick"
+										Style="{StaticResource ButtonContentWithNoPadding}"
+										Visibility="{Binding Question.ImageData, Converter={StaticResource ImageVisibilityConverter}}">
+				<Image x:Name ="AnswerImage" 
+										   VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+										   Source="{Binding Question.ImageData.Path, Converter={StaticResource ImageConverter}}"/>
 
-			<controls:SmartListBox Grid.Row="1" Margin="0,30,0,0"
+			</Button>
+
+			<TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" 
+										   TextWrapping="Wrap" 
+										   Text="{Binding Question.Text}" 
+										   Margin="10,10,0,10"/>
+		</Grid>
+
+
+
+
+
+		<controls:SmartListBox Grid.Row="1" Margin="0,30,0,0"
 								   x:Name="AnswerChoiceListBox"
 								   ItemsSource="{Binding Question.Answers}"
 								   SelectionMode="Multiple"
 								   SelectionChanged="Selector_OnSelectionChanged"
 								   BindableSelectedItems="{Binding SelectedAnswers, Mode=TwoWay}">
 
-				<ListBox.ItemTemplate>
-					<DataTemplate>
-						<Grid Margin="0,0,0,0">
-							<Grid.ColumnDefinitions>
-								<ColumnDefinition Width="40"/>
-								<ColumnDefinition Width="*"/>
-								<ColumnDefinition Width="Auto"/>
-							</Grid.ColumnDefinitions>
-							<Grid.RowDefinitions>
-								<RowDefinition Height="Auto"/>
-							</Grid.RowDefinitions>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Grid Margin="0,0,0,0">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="40"/>
+							<ColumnDefinition Width="*"/>
+							<ColumnDefinition Width="Auto"/>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto"/>
+						</Grid.RowDefinitions>
 
-							<Grid Grid.Column="0" 
+						<Grid Grid.Column="0" 
 								  Background="{StaticResource PhoneBackgroundBrush}">
-								<Ellipse Margin="0,18,0,0"
+							<Ellipse Margin="0,18,0,0"
 										Width="15" Height="15"
 										VerticalAlignment="Top"
 										Fill="{StaticResource PhoneAccentBrush}"/>
 
-								<!--Source="../Images/TickMarkpng.png"-->
-								
-								
-								<Image Margin="0,10,0,0"
+							<Image Margin="0,10,0,0"
 									   VerticalAlignment="Top"
 									   Width="25" Height="25"
 									   Source="{Binding IsCorrect, Converter={StaticResource AnswerCorrectnessImageConverter}}"
 									   Visibility="{Binding ElementName=ContentPanel, 
 									Path=DataContext.IsResultVisible, 
 									Converter={StaticResource BooleanToVisibilityConverter}}"/>
-							</Grid>
-							<Grid Grid.Column="1"
+						</Grid>
+						<Grid Grid.Column="1"
 								HorizontalAlignment="Left" 
-								  VerticalAlignment="Top"
-								 >
-								<Grid.RowDefinitions>
-									<RowDefinition/>
-									<RowDefinition Height="Auto"/>
-								</Grid.RowDefinitions>
-								<Grid.ColumnDefinitions>
-									<ColumnDefinition Width="Auto"/>
-									<ColumnDefinition/>
-								</Grid.ColumnDefinitions>
+								  VerticalAlignment="Top">
+							<Grid.RowDefinitions>
+								<RowDefinition/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
 
-								<Button Grid.Column="0" Grid.Row="0"
+							<Button Grid.Column="0" Grid.Row="0"
 										Margin="10,10,0,10"
 										Background="Transparent"
 										Height="100"
@@ -81,37 +109,37 @@
 										Click="ButtonBase_OnClick"
 										Style="{StaticResource ButtonContentWithNoPadding}"
 										Visibility="{Binding ImageData, Converter={StaticResource ImageVisibilityConverter}}">
-									<Image x:Name ="AnswerImage" 
+								<Image x:Name ="AnswerImage" 
 										   VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
 										   Source="{Binding ImageData.Path, Converter={StaticResource ImageConverter}}"/>
-										   
-								</Button>
 
-								<TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" 
+							</Button>
+
+							<TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" 
 										   TextWrapping="Wrap" 
 										   Text="{Binding Text}" 
 										   Margin="10,10,0,10"/>
-							</Grid>
 						</Grid>
-					</DataTemplate>
-				</ListBox.ItemTemplate>
-			</controls:SmartListBox>
+					</Grid>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</controls:SmartListBox>
 
-			<Image Grid.Row="1"
+		<Image Grid.Row="1"
 					x:Name="CorrectStampImage"
 					VerticalAlignment="Bottom"
 				   Source="../Images/CorrectStamp.png" Width="120" Height="120"
 				   HorizontalAlignment="Right"
 				   Visibility="{Binding Path=State, Converter={StaticResource StampVisibilityConverter},
 								ConverterParameter=AnsweredCorrectly}"/>
-			<Image Grid.Row="1"
+		<Image Grid.Row="1"
 					x:Name="WrongStampImage"
 					VerticalAlignment="Bottom"
 				   Source="../Images/WrongStamp.png" Width="120" Height="120"
 				   HorizontalAlignment="Right"
 				   Visibility="{Binding Path=State, Converter={StaticResource StampVisibilityConverter},
 								ConverterParameter=AnsweredInCorrectly}"/>
-			
-		</Grid>
-	
+
+	</Grid>
+
 </UserControl>

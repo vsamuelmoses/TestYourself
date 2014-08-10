@@ -13,7 +13,7 @@ namespace TestYourself.Converters
             if (value == null) 
                 return null;
 
-            return ("../" + "Databases" + "/" + value);
+            return ("../Databases/DrivingTheory/" + value);
 
         }
 

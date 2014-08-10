@@ -49,8 +49,6 @@
 					Text="road awareness"
 					Style="{StaticResource PageHeader}"
 					ImagePath="Images/Book.png"
-					ImageHeight="70"
-					ImageWidth="70"
 					IsMonochrome="True"/>
 				<ProgressBar Value="68" Height="15"></ProgressBar>
 			</StackPanel>
@@ -105,7 +103,7 @@
 		</Grid>
 		<Grid x:Name="MessageBox" Height="300">
 			<ScrollViewer Background="{StaticResource PhoneAccentBrush}">
-				<TextBlock Text="This is a long long explanation of what ever"/>
+				<TextBlock x:Name="KeypointTextBlock"/>
 			</ScrollViewer>
 			<Grid.RenderTransform>
 				<ScaleTransform x:Name="MessageBoxScaleTransform" 

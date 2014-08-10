@@ -39,47 +39,26 @@
 	</toolkit:TransitionService.NavigationOutTransition>
 
 	<Grid x:Name="LayoutRoot">
-		<phone:Panorama Title="{Binding ParentSubject.Name}">
+		<phone:Panorama>
 
 			<!--Panorama item one-->
 			<phone:PanoramaItem>
 				<phone:PanoramaItem.Header>
 					<customControls:MenuItem
 						ImagePath="Images/Book.png"
-						Text="topics"
-						IsMonochrome="True"
-						Style="{StaticResource PageHeader}"/>
-				</phone:PanoramaItem.Header>
-				<ListBox ItemsSource="{Binding Topics}"
-						 SelectedItem="{Binding SelectedTopic, Mode=TwoWay}">
-					<ListBox.ItemTemplate>
-						<DataTemplate>
-							<StackPanel>
-								<TextBlock Text="{Binding Name}" Style="{StaticResource Heading3}"/>
-								<ProgressBar Background="AliceBlue" Value="{Binding Stats.ProgressPercentage}" Foreground="Green"/>
-							</StackPanel>
-						</DataTemplate>
-					</ListBox.ItemTemplate>
-				</ListBox>
-			</phone:PanoramaItem>
-
-			<!--Panorama item two-->
-			<phone:PanoramaItem>
-				<phone:PanoramaItem.Header>
-					<customControls:MenuItem
-						ImagePath="Images/Stats.png"
-						Text="statistics"
+						Text="{Binding Topic.Name}"
 						IsMonochrome="True"
 						Style="{StaticResource PageHeader}"/>
 				</phone:PanoramaItem.Header>
 				<ScrollViewer>
-					<Grid>
-						<Grid.ColumnDefinitions>
-							<ColumnDefinition/>
-							<ColumnDefinition/>
-						</Grid.ColumnDefinitions>
+					<StackPanel>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
 
-						<customControls:PieChart 
+							<customControls:PieChart 
 							VerticalAlignment="Top"
 							HorizontalAlignment="Left"
 							Progress="{Binding ParentSubject.PercentageWorked}"
@@ -87,7 +66,7 @@
 
 
 
-						<Border
+							<Border
 									Margin="30,20"
 									Grid.Column="1"
 								Width="1"
@@ -97,37 +76,42 @@
 							Background="{StaticResource PhoneAccentBrush}"/>
 
 
-						<StackPanel Grid.Column="1"
+							<StackPanel Grid.Column="1"
 									Orientation="Vertical"
 									Margin="40,20">
 
-							<customControls:PropertyView 
+								<customControls:PropertyView 
 								Title="Topics"
 								Value ="3"
 								Margin="5"/>
 
-							<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
+								<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
 
-							<customControls:PropertyView 
+								<customControls:PropertyView 
 								Title="Questions"
 								Value="190"
 								Margin="5"
 								/>
-							<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
+								<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
 
-							<customControls:PropertyView 
+								<customControls:PropertyView 
 								Title="Success Rate"
 								Value="78 %"
 								Margin="5"
 								/>
 
-						</StackPanel>
+							</StackPanel>
 
-					</Grid>
+						</Grid>
+						<Button Content ="Explore"
+								Command="{Binding CommandGoToQuestions}"/>
+
+					</StackPanel>
 				</ScrollViewer>
 
-
 			</phone:PanoramaItem>
+
+
 		</phone:Panorama>
 	</Grid>
 
