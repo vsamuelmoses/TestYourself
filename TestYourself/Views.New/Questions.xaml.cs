@@ -3,17 +3,21 @@ using System.Collections;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using TestYourself.Annotations;
+using TestYourself.ResourceDictionaries;
 using TestYourself.ViewModel;
 using TestYourself.ViewModels;
+using GestureEventArgs = System.Windows.Input.GestureEventArgs;
 
 namespace TestYourself.Views.New
 {
 	public partial class Questions : PhoneApplicationPage
 	{
 		private bool isMessageBoxShown = false;
+		private VmQuestionContent currentViewingQuestion;
 		private readonly ApplicationBarIconButton appBarInfoButton;
 		private readonly ApplicationBarIconButton appBarViewHideIcon;
 
@@ -46,9 +50,9 @@ namespace TestYourself.Views.New
 
 		void MediaViewer_ItemDisplayed(object sender, TC.CustomControls.MediaViewer.ItemDisplayedEventArgs e)
 		{
-			var question = ((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex] as VmQuestionContent;
-			SetQuestionNumber(question.Question.QuestionNumber);
-			SetKeypointText(question.Question);
+			currentViewingQuestion = (VmQuestionContent)((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex];
+			SetQuestionNumber(currentViewingQuestion.Question.QuestionNumber);
+			SetKeypointText(currentViewingQuestion.Question);
 		}
 
 		private void SetKeypointText(Model.Question question)
@@ -59,7 +63,6 @@ namespace TestYourself.Views.New
 			}
 			else
 			{
-				KeypointTextBlock.Text = question.KeyPoint.Text;
 				appBarInfoButton.IsEnabled = true;
 			}
 		}
@@ -71,35 +74,42 @@ namespace TestYourself.Views.New
 
 		private void AppBarViewHideIconClick(object sender, EventArgs e)
 		{
-			var question = ((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex] as VmQuestionContent;
-			question.IsResultVisible = !question.IsResultVisible;
 
-			SetQuestionNumber(question.Question.QuestionNumber);
+			if (ViewModel.IsPopupOpened)
+				return;
 
-			appBarViewHideIcon.IconUri = question.IsResultVisible 
+			currentViewingQuestion.IsResultVisible = !currentViewingQuestion.IsResultVisible;
+
+			SetQuestionNumber(currentViewingQuestion.Question.QuestionNumber);
+
+			appBarViewHideIcon.IconUri = currentViewingQuestion.IsResultVisible 
 				? new Uri("/Images/ViewReset.png", UriKind.Relative) 
 				: new Uri("/Images/View.png", UriKind.Relative);
 		}
 
 		private void AppBarInfoButtonClick(object sender, EventArgs e)
 		{
-			if (isMessageBoxShown)
+			if (ViewModel.IsPopupOpened)
 			{
-				MessageBoxCloseTransform.Begin();
-				isMessageBoxShown = false;
-				LayoutRoot.Opacity = 1.0;
+				ViewModel.ClearPopup();
 			}
 			else
 			{
-				LayoutRoot.Opacity = 0.3;
-				MessageBoxOpenTransform.Begin();
-				isMessageBoxShown = true;
+				ViewModel.SetContentAsPopup(currentViewingQuestion.Question.KeyPoint, MessageBoxResources.Instance.KeypointDataTemplate);
 			}
+		}
+
+		private VmTopicQuestions ViewModel { get { return (VmTopicQuestions) DataContext; }
 		}
 
 		public ObservableCollection<object> QuestionsCollection { get; set; }
 
 		public ObservableCollection<object> Names { get; set; }
+
+		private void MessageBoxPopupGrid_OnTap(object sender, GestureEventArgs e)
+		{
+			ViewModel.ClearPopup();
+		}
 	}
 
 	public class ViewModelBase : INotifyPropertyChanged

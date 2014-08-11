@@ -9,6 +9,9 @@
 	xmlns:customControls="clr-namespace:TC.CustomControls;assembly=TC.CustomControls"
 	xmlns:mediaViewer="clr-namespace:TC.CustomControls.MediaViewer;assembly=TC.CustomControls.MediaViewer"
 	xmlns:new="clr-namespace:TestYourself.Views.New"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+	xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
@@ -20,28 +23,95 @@
 		<DataTemplate x:Key="QuestionDataTemplate">
 			<new:QuestionUserControl />
 		</DataTemplate>
-
-		<Storyboard x:Name="MessageBoxOpenTransform">
-			<DoubleAnimation
-			Storyboard.TargetName="MessageBoxScaleTransform"
-			Storyboard.TargetProperty="(ScaleTransform.ScaleY)"
-			To="1.0" Duration="0:0:0.3" />
-		</Storyboard>
-		<Storyboard x:Name="MessageBoxCloseTransform">
-			<DoubleAnimation
-			Storyboard.TargetName="MessageBoxScaleTransform"
-			Storyboard.TargetProperty="(ScaleTransform.ScaleY)"
-			To="0.0" Duration="0:0:0.3" />
-		</Storyboard>
 	</phone:PhoneApplicationPage.Resources>
+	
+
+
 	<Grid>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="BackgroundGridStateGroup">
+				<VisualState x:Name="DimState">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="0.2" 
+									 Storyboard.TargetProperty="(UIElement.Opacity)" 
+									 Storyboard.TargetName="LayoutRoot" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="BrightState">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="1.0" 
+									 Storyboard.TargetProperty="(UIElement.Opacity)" 
+									 Storyboard.TargetName="LayoutRoot" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+			<VisualStateGroup x:Name="VisualStateGroup">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0:0:0.5">
+						<VisualTransition.GeneratedEasingFunction>
+							<QuadraticEase EasingMode="EaseOut"/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="ClosedState">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="0" 
+										 Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="MessageBoxPopupGrid" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="OpenedState">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="1" 
+										 Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="MessageBoxPopupGrid" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+			<VisualStateGroup x:Name="MediaViewerVisualStates">
+				<VisualState x:Name="DisabledState">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.IsEnabled)" 
+													   Storyboard.TargetName="MediaViewer">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<system:Boolean>False</system:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="EnabledState">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.IsEnabled)" 
+													   Storyboard.TargetName="MediaViewer">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<system:Boolean>True</system:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+
+		</VisualStateManager.VisualStateGroups>
+
 		<!--LayoutRoot is the root grid where all page content is placed-->
+
 		<Grid x:Name="LayoutRoot" Background="Transparent">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
 				<RowDefinition Height="*"/>
 				<RowDefinition Height="Auto"/>
 			</Grid.RowDefinitions>
+			
+			<i:Interaction.Triggers>
+				<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="true">
+					<ec:GoToStateAction StateName="DimState"/>
+				</ec:DataTrigger>
+				<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="false">
+					<ec:GoToStateAction StateName="BrightState"/>
+				</ec:DataTrigger>
+			</i:Interaction.Triggers>
 
 			<StackPanel Grid.Row="0" Margin="10">
 				<TextBlock Text="Driving Theory" Style="{StaticResource PhoneTextNormalStyle}"/>
@@ -57,6 +127,16 @@
 				<mediaViewer:MediaViewer
 					x:Name="MediaViewer"
 					Items="{Binding Questions}">
+					
+					<i:Interaction.Triggers>
+						<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="true">
+							<ec:GoToStateAction StateName="DisabledState"/>
+						</ec:DataTrigger>
+						<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="false">
+							<ec:GoToStateAction StateName="EnabledState"/>
+						</ec:DataTrigger>
+					</i:Interaction.Triggers>
+					
 					<mediaViewer:MediaViewer.ItemTemplate>
 						<DataTemplate>
 							<Grid>
@@ -98,18 +178,29 @@
 				<TextBlock Text="{Binding Topic.Questions.Count}"/>
 			</StackPanel>
 
-
-
 		</Grid>
-		<Grid x:Name="MessageBox" Height="300">
-			<ScrollViewer Background="{StaticResource PhoneAccentBrush}">
-				<TextBlock x:Name="KeypointTextBlock"/>
-			</ScrollViewer>
+
+		<Grid x:Name="MessageBoxPopupGrid"
+			  Tap="MessageBoxPopupGrid_OnTap"
+			Background="{StaticResource PhoneAccentBrush}" RenderTransformOrigin="0.5,0.5" Height="300">
+			<i:Interaction.Triggers>
+				<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="true">
+					<ec:GoToStateAction StateName="OpenedState"/>
+				</ec:DataTrigger>
+				<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="false">
+					<ec:GoToStateAction StateName="ClosedState"/>
+				</ec:DataTrigger>
+			</i:Interaction.Triggers>
 			<Grid.RenderTransform>
-				<ScaleTransform x:Name="MessageBoxScaleTransform" 
-									ScaleX="1" ScaleY="0" 
-									CenterX="0" CenterY="150"/>
+				<CompositeTransform 
+					ScaleY="0"/>
 			</Grid.RenderTransform>
+			<ScrollViewer x:Name="MessageBoxScrollViewer"
+						  Content="{Binding PopupContent}"
+						  ContentTemplate="{Binding PopupContentTemplate}">
+
+			</ScrollViewer>
 		</Grid>
 	</Grid>
+	
 </phone:PhoneApplicationPage>

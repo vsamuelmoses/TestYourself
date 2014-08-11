@@ -1,4 +1,6 @@
-﻿using TestYourself.ViewModels;
+﻿using System;
+using System.Windows;
+using TestYourself.ViewModels;
 
 namespace TestYourself.ViewModel
 {
@@ -10,6 +12,7 @@ namespace TestYourself.ViewModel
 		{
 			VmQuestion = new VmQuestion();
 			VmQuestionNew = new ViewModels.VmQuestion();
+			
 		}
 
 		public VmQuestion VmQuestion { get; private set; }
@@ -33,6 +36,8 @@ namespace TestYourself.ViewModel
 			}
 			set { vmTopics = value; }
 		}
+
+		public ResourceDictionary MessageBoxResourceDictionary { get; set; }
 
 
 		public static VmLocator Instance

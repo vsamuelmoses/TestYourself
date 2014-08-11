@@ -1,16 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 using TC.CustomControls.MediaViewer;
 using TestYourself.Helpers;
 using TestYourself.Model;
+using TestYourself.ResourceDictionaries;
 using TestYourself.ViewModel;
 
 namespace TestYourself.ViewModels
 {
 	public class VmQuestionContent : VmPage, IThumbnailedContent
 	{
+		private readonly VmTopicQuestions vmTopicQuestions;
+
 		public enum States
 		{
 			NotAnsweredYet,
@@ -21,11 +25,23 @@ namespace TestYourself.ViewModels
 		private const string PropertyNameQuestionAndAnswer = "Question";
 		private const string PropertyState = "State";
 
-		public VmQuestionContent()
+		public VmQuestionContent(VmTopicQuestions vmTopicQuestions)
 		{
+			this.vmTopicQuestions = vmTopicQuestions;
 			SelectedAnswers = new ObservableCollection<object>();
 			SelectedAnswers.CollectionChanged += SelectedAnswers_CollectionChanged;
+			CommandShowImage = new RelayCommand(ShowImage);
 		}
+
+		private void ShowImage(object image)
+		{
+			if(vmTopicQuestions.IsPopupOpened)
+				throw new Exception("Unexpected");
+
+			vmTopicQuestions.SetContentAsPopup(image, MessageBoxResources.Instance.ImageDataTemplate);
+		}
+
+		public ICommand CommandShowImage { get; set; }
 
 		void SelectedAnswers_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
 		{
