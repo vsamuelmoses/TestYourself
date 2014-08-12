@@ -1,12 +1,12 @@
 ﻿<Application
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
-	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.TitlePanelControlDesignDatat" mc:Ignorable="d" 
-	x:Class="TestYourself.App"
-	>
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" 
+	x:Class="TestYourself.App">
 
-	<!--Application Resources-->
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -17,7 +17,6 @@
 
 				<ResourceDictionary Source="ResourceDictionaries/ControlStyles.xaml" />
 			</ResourceDictionary.MergedDictionaries>
-			<SampleData:TitlePanelControlDesignDatat x:Key="TitlePanelControlDesignDatat" d:IsDataSource="True"/>
 		</ResourceDictionary>
 	</Application.Resources>
 

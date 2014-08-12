@@ -64,38 +64,27 @@
 							ProgressTitle="Explored"/>
 
 
-
 							<Border
-									Margin="30,20"
-									Grid.Column="1"
+								Margin="30,20"
+								Grid.Column="1"
 								Width="1"
-										Height="270"
+								Height="270"
 								VerticalAlignment="Top"
 								HorizontalAlignment="Left"
-							Background="{StaticResource PhoneAccentBrush}"/>
-
+								Background="{StaticResource PhoneAccentBrush}"/>
 
 							<StackPanel Grid.Column="1"
 									Orientation="Vertical"
 									Margin="40,20">
 
 								<customControls:PropertyView 
-								Title="Topics"
-								Value ="3"
-								Margin="5"/>
-
-								<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
-
-								<customControls:PropertyView 
 								Title="Questions"
-								Value="190"
-								Margin="5"
-								/>
-								<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
-
+								Value="{Binding Topic.TotalNumberOfQuestions}"
+								Margin="5"/>
+						
 								<customControls:PropertyView 
 								Title="Success Rate"
-								Value="77 %"
+								Value="TBD"
 								Margin="5"
 								/>
 

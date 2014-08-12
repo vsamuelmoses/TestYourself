@@ -49,7 +49,7 @@ namespace TestYourself.Views
 		void MediaViewer_ItemDisplayed(object sender, TC.CustomControls.MediaViewer.ItemDisplayedEventArgs e)
 		{
 			currentViewingQuestion = (VmQuestionContent)((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex];
-			SetQuestionNumber(currentViewingQuestion.Question.QuestionNumber);
+			SetQuestionNumber(currentViewingQuestion.Question.Index);
 			SetKeypointText(currentViewingQuestion.Question);
 		}
 
@@ -77,8 +77,6 @@ namespace TestYourself.Views
 				return;
 
 			currentViewingQuestion.IsResultVisible = !currentViewingQuestion.IsResultVisible;
-
-			SetQuestionNumber(currentViewingQuestion.Question.QuestionNumber);
 
 			appBarViewHideIcon.IconUri = currentViewingQuestion.IsResultVisible 
 				? new Uri("/Images/ViewReset.png", UriKind.Relative) 

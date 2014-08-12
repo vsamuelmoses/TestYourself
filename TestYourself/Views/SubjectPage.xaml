@@ -33,11 +33,7 @@
 						<DataTemplate>
 							<StackPanel>
 								<TextBlock Text="{Binding Name}" Style="{StaticResource Heading3}"/>
-								
-								<ProgressBar Value="{Binding Stats.ProgressPercentage}" 
-											 HorizontalContentAlignment="Stretch"
-											 VerticalAlignment="Stretch"
-											 VerticalContentAlignment="Stretch" />
+								<ProgressBar Value="{Binding Stats.ProgressPercentage}" />
 							</StackPanel>
 						</DataTemplate>
 					</ListBox.ItemTemplate>
@@ -84,17 +80,13 @@
 								
 							<customControls:PropertyView 
 								Title="Topics"
-								Value ="3"
+								Value ="{Binding ParentSubject.TotalNumberOfTopics}"
 								Margin="5"/>
-
-							<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
 
 							<customControls:PropertyView 
 								Title="Questions"
-								Value="190"
-								Margin="5"
-								/>
-							<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
+								Value="{Binding ParentSubject.TotalNumberOfQuestions}"
+								Margin="5"/>
 
 							<customControls:PropertyView 
 								Title="Success Rate"

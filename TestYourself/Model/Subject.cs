@@ -24,8 +24,14 @@ namespace TestYourself.Model
 			LoadCollectionsFromDatabase();
 			CreateStatasticsTable();
 
+			CalculateTotalQuestions();
 			CalculatePercentageWorked();
 			CalculateSuccessPercentage();
+		}
+
+		private void CalculateTotalQuestions()
+		{
+			TotalNumberOfQuestions = Topics.Sum(topic => topic.TotalNumberOfQuestions);
 		}
 
 		public void SaveChanges()

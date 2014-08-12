@@ -9,16 +9,20 @@ namespace TestYourself.Views
 {
 	public partial class SubjectPage : PhoneApplicationPage
 	{
+		private readonly Subject subject;
+
 		public SubjectPage()
 		{
 			InitializeComponent();
 			Loaded += OnSubjectPageLoaded;
+
+			subject = new Subject();
+			subject.LoadFrom(DatabaseHelper.Databases.First());
 		}
 
 		void OnSubjectPageLoaded(object sender, RoutedEventArgs e)
 		{
-			var subject = new Subject();
-			subject.LoadFrom(DatabaseHelper.Databases.First());
+			
 			VmLocator.Instance.VmSubjectPanorama = new VmSubjectPanorama(subject, NavigationService);
 			DataContext = VmLocator.Instance.VmSubjectPanorama;
 		}

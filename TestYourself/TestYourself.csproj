@@ -135,9 +135,6 @@
     <Compile Include="Repository\QuestionAndAnswerFactory.cs" />
     <Compile Include="Repository\TopicFactory.cs" />
     <Compile Include="ResourceDictionaries\MessageBoxResources.cs" />
-    <Compile Include="SampleData\TitlePanelControlDesignDatat\TitlePanelControlDesignDatat.xaml.cs">
-      <DependentUpon>TitlePanelControlDesignDatat.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\VmBase.cs" />
     <Compile Include="ViewModels\VmLocator.cs" />
     <Compile Include="ViewModels\VmQuestionContent.cs" />
@@ -179,12 +176,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <DesignTimeOnly Include="SampleData\TitlePanelControlDesignDatat\TitlePanelControlDesignDatat.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </DesignTimeOnly>
     <Page Include="ResourceDictionaries\MessageBoxStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -223,7 +214,6 @@
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
-    <DesignTimeOnly Include="SampleData\TitlePanelControlDesignDatat\TitlePanelControlDesignDatat.xsd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2810%29.jpg">
@@ -1585,13 +1575,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\SplashScreenImage.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <DesignData Include="SampleData\AnswerSampleData.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </DesignData>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

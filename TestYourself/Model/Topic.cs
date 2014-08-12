@@ -160,6 +160,7 @@ namespace TestYourself.Model
 
         public void UpdateStats()
         {
+	        UpdateTotalQuestionsAnsweredAtleastOnce();
             UpdateProgress();
             UpdateSuccessPercentage();
         }
@@ -174,7 +175,7 @@ namespace TestYourself.Model
             return totalQuestions;
         }
 
-        private void UpdateSuccessPercentage()
+        public void UpdateSuccessPercentage()
         {
             if (questions.Count > 0)
             {
@@ -192,37 +193,45 @@ namespace TestYourself.Model
             }
 
             if (ParentTopic != null)
-                ParentTopic.UpdateStats();
+                ParentTopic.UpdateSuccessPercentage();
             else
                 AssociatedSubject.CalculateSuccessPercentage();
 
             Stats.SuccessRate = Math.Round(Stats.SuccessRate, 2);
         }
 
-        private void UpdateProgress()
-
+        public void UpdateProgress()
         {
-            if (questions.Count > 0)
-            {
-                var questionsAnsweredAtleastOnce = from q in questions where q.Stats.NumberOfHits > 0 select q;
-                Stats.ProgressPercentage = ((double)questionsAnsweredAtleastOnce.Count() * 100) / questions.Count;
-            }
-            else
-            {
-                double totalPercentage = SubTopics.Sum(topic => topic.Stats.ProgressPercentage);
-                Stats.ProgressPercentage = totalPercentage / SubTopics.Count;
-            }
-
+	        Stats.ProgressPercentage = ((double)TotalQuestionsAnsweredAtleastOnce*100)/TotalNumberOfQuestions;
+			
             if (ParentTopic != null)
-                ParentTopic.UpdateStats();
+                ParentTopic.UpdateProgress();
             else
                 AssociatedSubject.CalculatePercentageWorked();
 
             Stats.ProgressPercentage = Math.Round(Stats.ProgressPercentage, 2);
         }
 
+	    public void UpdateTotalQuestionsAnsweredAtleastOnce()
+	    {
+		    var sum = (from q in questions where q.Stats.NumberOfHits > 0 select q).Count() + 
+				SubTopics.Sum(topic => topic.TotalQuestionsAnsweredAtleastOnce);
+		    TotalQuestionsAnsweredAtleastOnce = sum;
 
-        #region INotifyPropertyChanged Members
+			if (ParentTopic != null)
+				ParentTopic.UpdateTotalQuestionsAnsweredAtleastOnce();
+			else
+				AssociatedSubject.CalculatePercentageWorked();
+
+			
+	    }
+
+		public int TotalNumberOfTopics {get { return SubTopics.Count(); }}
+
+	    public int TotalQuestionsAnsweredAtleastOnce { get; set; }
+
+
+	    #region INotifyPropertyChanged Members
 
         public event PropertyChangedEventHandler PropertyChanged;
 

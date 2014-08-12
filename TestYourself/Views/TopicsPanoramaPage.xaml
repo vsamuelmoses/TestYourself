@@ -38,8 +38,6 @@
 	</toolkit:TransitionService.NavigationOutTransition>
 
 	
-	
-	
 	<!--LayoutRoot contains the root grid where all other page content is placed-->
 	<Grid x:Name="LayoutRoot">
 		<phone:Panorama>
@@ -84,20 +82,17 @@
 						<customControls:PieChart 
 							VerticalAlignment="Top"
 							HorizontalAlignment="Left"
-							Progress="{Binding Topic.PercentageWorked}"
+							Progress="{Binding Topic.Stats.ProgressPercentage}"
 							ProgressTitle="Explored"/>
 
-
-
 						<Border
-									Margin="30,20"
-									Grid.Column="1"
-								Width="1"
-										Height="270"
-								VerticalAlignment="Top"
-								HorizontalAlignment="Left"
+							Margin="30,20"
+							Grid.Column="1"
+							Width="1"
+							Height="270"
+							VerticalAlignment="Top"
+							HorizontalAlignment="Left"
 							Background="{StaticResource PhoneAccentBrush}"/>
-
 
 						<StackPanel Grid.Column="1"
 									Orientation="Vertical"
@@ -105,23 +100,18 @@
 
 							<customControls:PropertyView 
 								Title="Topics"
-								Value ="3"
+								Value="{Binding Topic.TotalNumberOfTopics, Mode=TwoWay}"
 								Margin="5"/>
-
-							<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
 
 							<customControls:PropertyView 
 								Title="Questions"
-								Value="190"
-								Margin="5"
-								/>
-							<!--Value="{Binding ParentSubject.TotalNumberOfTopics, Mode=TwoWay}"-->
+								Value="{Binding Topic.TotalNumberOfQuestions}"
+								Margin="5"/>
 
 							<customControls:PropertyView 
 								Title="Success Rate"
-								Value="78 %"
-								Margin="5"
-								/>
+								Value="TBD"
+								Margin="5"/>
 
 						</StackPanel>
 
@@ -132,99 +122,5 @@
 			</phone:PanoramaItem>
 		</phone:Panorama>
 	</Grid>
-	<!--<Grid x:Name="LayoutRoot">
-		<controls:Panorama>
-			<controls:Panorama.TitleTemplate>
-				<DataTemplate/>
-			</controls:Panorama.TitleTemplate>
-			--><!--Panorama item one--><!--
-			<controls:PanoramaItem Header="Topics">
-				<ListBox ItemsSource="{Binding Topic.SubTopics}"
-						 SelectedItem="{Binding SelectedTopic, Mode=TwoWay}">
-					<ListBox.ItemTemplate>
-						<DataTemplate>
-							<StackPanel>
-								<TextBlock Text="{Binding Name}" Style="{StaticResource Heading3}"/>
-								<ProgressBar Background="AliceBlue" Value="{Binding Stats.ProgressPercentage}" 
-											 Foreground="{StaticResource PhoneAccentBrush}"/>
-							</StackPanel>
-						</DataTemplate>
-					</ListBox.ItemTemplate>
-				</ListBox>
-			</controls:PanoramaItem>
-
-			--><!--Panorama item two--><!--
-			<controls:PanoramaItem Header="Info">
-				<Grid>
-				   <Grid.RowDefinitions>
-					   <RowDefinition Height="Auto"/>
-					   <RowDefinition/>
-				   </Grid.RowDefinitions>
-					<Grid Grid.Row="0">
-						<Grid.ColumnDefinitions>
-							<ColumnDefinition/>
-							<ColumnDefinition/>
-						</Grid.ColumnDefinitions>
-						<Grid.RowDefinitions>
-							<RowDefinition Height="Auto"/>
-							<RowDefinition Height="Auto"/>
-							<RowDefinition Height="*"/>
-						</Grid.RowDefinitions>
-
-						<TextBlock Grid.Row="0" Grid.ColumnSpan="2" 
-								   Text="Statistics" 
-								   Style="{StaticResource Heading3}"/>
-						
-						<TextBlock Grid.Row="1" Grid.Column="0"
-								   Text="Number of topics"/>
-						<TextBlock Grid.Row="1" Grid.Column="1"
-								   Text="{Binding Topics.Count}"/>
-
-						<TextBlock Grid.Row="2" Grid.Column="0" 
-								   Text="Number of questions"/>
-						<TextBlock Grid.Row="2" Grid.Column="1" 
-								   Text="{Binding TotalNumberOfQuestions}"/>
-						
-					</Grid>
-
-					<Grid Grid.Row="1">
-						<Grid.ColumnDefinitions>
-							<ColumnDefinition/>
-							<ColumnDefinition/>
-						</Grid.ColumnDefinitions>
-						<Grid.RowDefinitions>
-							<RowDefinition Height="Auto"/>
-							<RowDefinition Height="Auto"/>
-							<RowDefinition Height="Auto"/>
-							<RowDefinition Height="Auto"/>
-							<RowDefinition Height="Auto"/>
-						</Grid.RowDefinitions>
-
-						<TextBlock Grid.Row="0" Grid.ColumnSpan="2" 
-								   Text="Progress" Style="{StaticResource Heading3}"/>
-
-						<TextBlock Grid.Row="1" Grid.Column="0" 
-								   Text="Success rate"/>
-						<TextBlock Grid.Row="1" Grid.Column="1" 
-								   Text="{Binding Topic.SuccessPercentage, StringFormat='{}{0} %'}"/>
-
-						<TextBlock Grid.Row="2" Grid.Column="0" 
-								   Text="Progress"/>
-						<TextBlock Grid.Row="2" Grid.Column="1" 
-								   Text="{Binding Topic.PercentageWorked, StringFormat='{}{0} %'}"/>
-						<ProgressBar Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
-									 VerticalAlignment="Top" Height="33"
-									 Foreground="Green"
-									 Value="{Binding Topic.PercentageWorked}"/>
-
-						<Button Grid.Row="4" Grid.Column="1" Height="100"
-								Content="Reset Progress"
-								Command="{Binding CommandResetProgress}"/>
-					</Grid>
-				</Grid>
-			</controls:PanoramaItem>
-		</controls:Panorama>
-	</Grid>-->
-	<!--Panorama-based applications should not show an ApplicationBar-->
 
 </phone:PhoneApplicationPage>

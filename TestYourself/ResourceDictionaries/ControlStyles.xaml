@@ -50,11 +50,12 @@
 								</VisualState>
 							</VisualStateGroup>
 						</VisualStateManager.VisualStateGroups>
-						<Grid x:Name="DeterminateRoot" Margin="{TemplateBinding Padding}" Visibility="Visible">
+						<Grid x:Name="DeterminateRoot" Margin="{TemplateBinding Padding}" 
+							  Visibility="Visible">
 							<Rectangle x:Name="ProgressBarTrack" Fill="{TemplateBinding Background}" 
-										   Height="{TemplateBinding Height}"/>
+										   Height="10"/>
 							<Rectangle x:Name="ProgressBarIndicator" Fill="{TemplateBinding Foreground}" HorizontalAlignment="Left" 
-										   Height="{TemplateBinding Height}"/>
+										   Height="10"/>
 						</Grid>
 						<Border x:Name="IndeterminateRoot" Margin="{TemplateBinding Padding}" Visibility="Collapsed">
 							<Grid x:Name="SliderContainer" IsHitTestVisible="False">
