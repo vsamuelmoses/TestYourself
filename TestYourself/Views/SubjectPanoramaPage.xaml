@@ -53,8 +53,7 @@
                             <StackPanel>
                                 <TextBlock Text="{Binding Name}" Style="{StaticResource Heading3}"/>
                                 <ProgressBar 
-									Background="{StaticResource PhoneAccentBrush}" 
-									Value="38" />
+									Value="{Binding Stats.ProgressPercentage}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -121,7 +120,6 @@
                                    Text="{Binding ParentSubject.PercentageWorked, StringFormat='{}{0} %'}"/>
                         <ProgressBar Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
                                      VerticalAlignment="Top" Height="33"
-                                     Foreground="Green"
                                      Value="{Binding ParentSubject.PercentageWorked}"/>
 
                         <Button Grid.Row="4" Grid.Column="1" Height="100"

@@ -116,11 +116,11 @@
 			<StackPanel Grid.Row="0" Margin="10">
 				<TextBlock Text="Driving Theory" Style="{StaticResource PhoneTextNormalStyle}"/>
 				<customControls:MenuItem
-					Text="road awareness"
+					Text="{Binding Topic.Name}"
 					Style="{StaticResource PageHeader}"
 					ImagePath="Images/Book.png"
 					IsMonochrome="True"/>
-				<ProgressBar Value="68" Height="15"></ProgressBar>
+				<ProgressBar Value="{Binding Topic.Stats.ProgressPercentage}" Height="15"></ProgressBar>
 			</StackPanel>
 
 			<Grid Grid.Row="1">

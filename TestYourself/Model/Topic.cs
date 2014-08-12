@@ -200,6 +200,7 @@ namespace TestYourself.Model
         }
 
         private void UpdateProgress()
+
         {
             if (questions.Count > 0)
             {

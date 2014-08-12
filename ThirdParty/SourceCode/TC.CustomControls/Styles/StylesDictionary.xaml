@@ -8,6 +8,7 @@
 	<ResourceDictionary.MergedDictionaries>
 		<ResourceDictionary Source="ProgressRingStyle.xaml"/>
 		<ResourceDictionary Source="ButtonStyles.xaml"/>
+		<ResourceDictionary Source="ProgressBarStyle.xaml"/>
 	</ResourceDictionary.MergedDictionaries>
 	
 </ResourceDictionary>

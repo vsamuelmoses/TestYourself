@@ -61,7 +61,7 @@
 							<customControls:PieChart 
 							VerticalAlignment="Top"
 							HorizontalAlignment="Left"
-							Progress="{Binding ParentSubject.PercentageWorked}"
+							Progress="{Binding Topic.Stats.ProgressPercentage}"
 							ProgressTitle="Explored"/>
 
 
@@ -96,7 +96,7 @@
 
 								<customControls:PropertyView 
 								Title="Success Rate"
-								Value="78 %"
+								Value="77 %"
 								Margin="5"
 								/>
 

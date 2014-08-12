@@ -35,11 +35,9 @@
 								<TextBlock Text="{Binding Name}" Style="{StaticResource Heading3}"/>
 								
 								<ProgressBar Value="{Binding Stats.ProgressPercentage}" 
-											 Height="20" 
 											 HorizontalContentAlignment="Stretch"
 											 VerticalAlignment="Stretch"
-											 VerticalContentAlignment="Stretch"
-											 Foreground="{StaticResource PhoneAccentBrush}"/>
+											 VerticalContentAlignment="Stretch" />
 							</StackPanel>
 						</DataTemplate>
 					</ListBox.ItemTemplate>

@@ -39,7 +39,8 @@
         <DataTemplate x:Key="SubjectTemplate">
             <StackPanel Width="350" Margin="5">
                 <TextBlock Text="{Binding Name}" FontSize="24" Margin="5"/>
-                <ProgressBar Background="AliceBlue" Value="{Binding PercentageWorked}" Foreground="Green"/>
+                <ProgressBar 
+					Value="{Binding PercentageWorked}"/>
                 <toolkit:ExpanderView Header="Expander Header" x:Name="expander" IsNonExpandable="True"
                                       IsExpanded="{Binding ElementName=listBoxSubjects, Path=DataContext.IsDetailsVisible}">
                     <toolkit:ExpanderView.Items>

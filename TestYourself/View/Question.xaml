@@ -61,8 +61,7 @@
                 <TextBlock x:Name="PageTitle" Text="{Binding Question.AssociatedTopic.Name}" 
                            Style="{StaticResource PhoneTextTitle1Style}" TextWrapping="Wrap"/>
             </Controls:WrapPanel>
-            <ProgressBar Background="AliceBlue" Foreground="Green"
-                         Value="{Binding Question.AssociatedTopic.Stats.ProgressPercentage}"/>
+            <ProgressBar Value="{Binding Question.AssociatedTopic.Stats.ProgressPercentage}"/>
         </StackPanel>
 
         <ScrollViewer x:Name="scrollViewerQuestionAndAnswer" HorizontalScrollBarVisibility="Disabled" 

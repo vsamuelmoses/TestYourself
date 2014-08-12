@@ -42,7 +42,7 @@ namespace TestYourself.Views.New
 			ApplicationBar.Buttons.Add(appBarViewHideIcon);
 			appBarViewHideIcon.Click += AppBarViewHideIconClick;
 
-			VmLocator.Instance.VmTopicQuestions = new VmTopicQuestions(VmLocator.Instance.VmSubjectPanorama.SelectedTopic, NavigationService);
+			VmLocator.Instance.VmTopicQuestions = new VmTopicQuestions(VmLocator.Instance.VmTopicsInfo.Topic, NavigationService);
 			DataContext = VmLocator.Instance.VmTopicQuestions;
 
 			MediaViewer.ItemDisplayed += MediaViewer_ItemDisplayed;
