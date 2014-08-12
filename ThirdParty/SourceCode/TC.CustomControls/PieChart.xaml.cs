@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using TC.CustomControls.ViewModels;
 
@@ -24,10 +25,10 @@ namespace TC.CustomControls
 				new PieData {Title = string.Empty}
 			};
 
-			var progress = Progress;
-			if ((double) Progress > 100)
+			var progress = (int)Math.Round(Progress); // lets show only the round off value
+			if (Progress > 100)
 				progress = 100;
-			if ((double) Progress < 0)
+			if (Progress < 0)
 				progress = 0;
 
 			Data[0].Value = progress;

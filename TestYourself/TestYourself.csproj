@@ -138,57 +138,33 @@
     <Compile Include="SampleData\TitlePanelControlDesignDatat\TitlePanelControlDesignDatat.xaml.cs">
       <DependentUpon>TitlePanelControlDesignDatat.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\VmQuestion.cs" />
+    <Compile Include="ViewModels\VmBase.cs" />
+    <Compile Include="ViewModels\VmLocator.cs" />
     <Compile Include="ViewModels\VmQuestionContent.cs" />
+    <Compile Include="ViewModels\VmSubjectPanorama.cs" />
     <Compile Include="ViewModels\VmTopicQuestions.cs" />
+    <Compile Include="ViewModels\VmTopicsHostBase.cs" />
     <Compile Include="ViewModels\VmTopicsInfo.cs" />
     <Compile Include="ViewModels\VmTopicsPanorama.cs" />
-    <Compile Include="ViewModel\VmBase.cs" />
-    <Compile Include="ViewModel\VmLocator.cs" />
-    <Compile Include="ViewModel\VmQuestion.cs" />
-    <Compile Include="ViewModel\VmSubjects.cs" />
-    <Compile Include="ViewModel\VmTopics.cs" />
-    <Compile Include="ViewModels\VmSubjectPanorama.cs" />
-    <Compile Include="Views.New\Questions.xaml.cs">
+    <Compile Include="Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Questions.xaml.cs">
       <DependentUpon>Questions.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views.New\QuestionUserControl.xaml.cs">
+    <Compile Include="Views\QuestionUserControl.xaml.cs">
       <DependentUpon>QuestionUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Question.xaml.cs">
-      <DependentUpon>Question.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SubjectPage.xaml.cs">
       <DependentUpon>SubjectPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\TitlePanelControl.xaml.cs">
-      <DependentUpon>TitlePanelControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\TopicsInfoPage.xaml.cs">
       <DependentUpon>TopicsInfoPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\Question.xaml.cs">
-      <DependentUpon>Question.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\SubjectPanoramaPage.xaml.cs">
-      <DependentUpon>SubjectPanoramaPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\SubjectsPage.xaml.cs">
-      <DependentUpon>SubjectsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TopicsPage1.xaml.cs">
-      <DependentUpon>TopicsPage1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TopicsPage2.xaml.cs">
-      <DependentUpon>TopicsPage2.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TopicsPanoramaPage.xaml.cs">
       <DependentUpon>TopicsPanoramaPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -217,75 +193,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views.New\Questions.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Views\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views.New\QuestionUserControl.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Views\Questions.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Question.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Views\QuestionUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\SubjectPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\TitlePanelControl.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\TopicsInfoPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\MainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\Question.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\SubjectPanoramaPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\SubjectsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\TopicsPage1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\TopicsPage2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\TopicsPanoramaPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-	x:Class="TestYourself.Views.New.Questions"
+	x:Class="TestYourself.Views.Questions"
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -8,10 +8,10 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:customControls="clr-namespace:TC.CustomControls;assembly=TC.CustomControls"
 	xmlns:mediaViewer="clr-namespace:TC.CustomControls.MediaViewer;assembly=TC.CustomControls.MediaViewer"
-	xmlns:new="clr-namespace:TestYourself.Views.New"
 	xmlns:system="clr-namespace:System;assembly=mscorlib"
 	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
 	xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+	xmlns:views="clr-namespace:TestYourself.Views"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
@@ -21,7 +21,7 @@
 
 	<phone:PhoneApplicationPage.Resources>
 		<DataTemplate x:Key="QuestionDataTemplate">
-			<new:QuestionUserControl />
+			<views:QuestionUserControl />
 		</DataTemplate>
 	</phone:PhoneApplicationPage.Resources>
 	

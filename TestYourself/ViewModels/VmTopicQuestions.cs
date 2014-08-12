@@ -2,10 +2,8 @@
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Navigation;
-using TestYourself.Annotations;
 using TestYourself.Helpers;
 using TestYourself.Model;
-using TestYourself.ViewModel;
 
 namespace TestYourself.ViewModels
 {
@@ -24,8 +22,8 @@ namespace TestYourself.ViewModels
 			CommandGoToQuestions = new RelayCommand(
 				notUsed =>
 				{
-					VmLocator.Instance.VmQuestionNew.Topic = Topic;
-					this.navigationService.Navigate(new Uri("/Views.New/Questions.xaml", UriKind.Relative));
+					//VmLocator.Instance.VmQuestionNew.Topic = Topic;
+					this.navigationService.Navigate(new Uri("/Views/Questions.xaml", UriKind.Relative));
 				});
 
 			TitleName = Topic.Name;

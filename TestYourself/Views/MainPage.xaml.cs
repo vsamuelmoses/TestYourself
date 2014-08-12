@@ -3,7 +3,7 @@ using System.Windows;
 using Microsoft.Phone.Controls;
 using TestYourself.Helpers;
 
-namespace TestYourself.View
+namespace TestYourself.Views
 {
     public partial class MainPage : PhoneApplicationPage
     {

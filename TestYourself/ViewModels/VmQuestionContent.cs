@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -7,7 +7,6 @@ using TC.CustomControls.MediaViewer;
 using TestYourself.Helpers;
 using TestYourself.Model;
 using TestYourself.ResourceDictionaries;
-using TestYourself.ViewModel;
 
 namespace TestYourself.ViewModels
 {

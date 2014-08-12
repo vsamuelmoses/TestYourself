@@ -1,6 +1,8 @@
-﻿using System.Windows;
+﻿using System.Linq;
+using System.Windows;
 using Microsoft.Phone.Controls;
-using TestYourself.ViewModel;
+using TestYourself.Helpers;
+using TestYourself.Model;
 using TestYourself.ViewModels;
 
 namespace TestYourself.Views
@@ -15,7 +17,9 @@ namespace TestYourself.Views
 
 		void OnSubjectPageLoaded(object sender, RoutedEventArgs e)
 		{
-			VmLocator.Instance.VmSubjectPanorama = new VmSubjectPanorama(VmLocator.Instance.VmSubjects.DefaultSubject, NavigationService);
+			var subject = new Subject();
+			subject.LoadFrom(DatabaseHelper.Databases.First());
+			VmLocator.Instance.VmSubjectPanorama = new VmSubjectPanorama(subject, NavigationService);
 			DataContext = VmLocator.Instance.VmSubjectPanorama;
 		}
 	}

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Linq.Expressions;
 using TestYourself.Annotations;
 
-namespace TestYourself.ViewModel
+namespace TestYourself.ViewModels
 {
     public abstract class ObservableModel : INotifyPropertyChanged
     {

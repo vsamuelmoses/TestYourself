@@ -3,7 +3,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using TestYourself.Helpers;
-using TestYourself.ViewModel;
+using TestYourself.ViewModels;
 
 namespace TestYourself
 {
@@ -72,7 +72,7 @@ namespace TestYourself
         // This code will not execute when the application is deactivated
         private void Application_Closing(object sender, ClosingEventArgs e)
         {
-            VmLocator.Instance.VmSubjects.SaveAllSubjects();
+            //VmLocator.Instance.VmSubjectPanorama.SaveAllSubjects();
         }
 
         // Code to execute if a navigation fails

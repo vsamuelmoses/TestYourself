@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using Microsoft.Phone.Controls;
-using TestYourself.ViewModel;
 using TestYourself.ViewModels;
 
 namespace TestYourself.Views

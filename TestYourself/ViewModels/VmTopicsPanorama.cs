@@ -1,4 +1,4 @@
-﻿using System.Windows.Navigation;
+using System.Windows.Navigation;
 using TestYourself.Helpers;
 using TestYourself.Model;
 

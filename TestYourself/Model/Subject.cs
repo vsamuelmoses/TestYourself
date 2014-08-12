@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
-using TestYourself.ViewModel;
+using TestYourself.ViewModels;
 
 namespace TestYourself.Model
 {

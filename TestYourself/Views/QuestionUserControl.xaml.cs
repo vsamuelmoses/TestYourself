@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace TestYourself.Views.New
+namespace TestYourself.Views
 {
 	public partial class QuestionUserControl : UserControl
 	{

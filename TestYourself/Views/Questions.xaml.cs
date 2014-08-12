@@ -3,16 +3,14 @@ using System.Collections;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Windows;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using TestYourself.Annotations;
 using TestYourself.ResourceDictionaries;
-using TestYourself.ViewModel;
 using TestYourself.ViewModels;
 using GestureEventArgs = System.Windows.Input.GestureEventArgs;
 
-namespace TestYourself.Views.New
+namespace TestYourself.Views
 {
 	public partial class Questions : PhoneApplicationPage
 	{
