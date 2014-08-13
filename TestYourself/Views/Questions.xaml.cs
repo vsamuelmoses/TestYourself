@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using TestYourself.Annotations;
+using TestYourself.Helpers;
 using TestYourself.ResourceDictionaries;
 using TestYourself.ViewModels;
 using GestureEventArgs = System.Windows.Input.GestureEventArgs;
@@ -42,8 +44,23 @@ namespace TestYourself.Views
 
 			VmLocator.Instance.VmTopicQuestions = new VmTopicQuestions(VmLocator.Instance.VmTopicsInfo.Topic, NavigationService);
 			DataContext = VmLocator.Instance.VmTopicQuestions;
-
+			Loaded += OnLoaded;
+			Unloaded += OnUnloaded;
 			MediaViewer.ItemDisplayed += MediaViewer_ItemDisplayed;
+		}
+
+		private void OnUnloaded(object sender, RoutedEventArgs routedEventArgs)
+		{
+			var topicSettings = AppSettings.Instance.GetTopicSettings(ViewModel.Topic);
+			topicSettings.LastVisitedQuestionNumber = currentViewingQuestion.Question.Index;
+			AppSettings.Instance.SetTopicSettings(ViewModel.Topic, topicSettings);
+		}
+
+		private void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
+		{
+			var topicSettings = AppSettings.Instance.GetTopicSettings(ViewModel.Topic);
+			if (topicSettings.LastVisitedQuestionNumber.HasValue)
+				MediaViewer.JumpToItem(topicSettings.LastVisitedQuestionNumber.Value - 1); // index is 0 based
 		}
 
 		void MediaViewer_ItemDisplayed(object sender, TC.CustomControls.MediaViewer.ItemDisplayedEventArgs e)
@@ -51,6 +68,7 @@ namespace TestYourself.Views
 			currentViewingQuestion = (VmQuestionContent)((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex];
 			SetQuestionNumber(currentViewingQuestion.Question.Index);
 			SetKeypointText(currentViewingQuestion.Question);
+			
 		}
 
 		private void SetKeypointText(Model.Question question)

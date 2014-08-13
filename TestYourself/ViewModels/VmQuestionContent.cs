@@ -87,17 +87,6 @@ namespace TestYourself.ViewModels
 					return;
 
 				topic = value;
-
-				if (topic.Questions.Count <= 0)
-					return;
-
-				var settings = AppSettings.Instance.GetTopicSettings(topic);
-
-				if (settings.LastVisitedQuestionNumber.HasValue)
-					Question = topic.Questions.Single(q => q.QuestionNumber == settings.LastVisitedQuestionNumber.Value);
-				else
-					Question = topic.Questions[0];
-
 				TitleName = Topic.Name;
 			}
 		}
@@ -132,53 +121,6 @@ namespace TestYourself.ViewModels
 			}
 		}
 
-		private RelayCommand commandGetNextQuestion;
-		public ICommand CommandGetNextQuestion
-		{
-			get
-			{
-				return commandGetNextQuestion ??
-					   (commandGetNextQuestion = new RelayCommand(param =>
-					   {
-						   if (Topic.Questions.Count > Topic.Questions.IndexOf(Question) + 1)
-							   Question = Topic.Questions[Topic.Questions.IndexOf(Question) + 1];
-
-					   },
-																  param => true));
-			}
-		}
-
-		private RelayCommand commandGetPreviousQuestion;
-		public ICommand CommandGetPreviousQuestion
-		{
-			get
-			{
-				return commandGetPreviousQuestion ??
-					   (commandGetPreviousQuestion = new RelayCommand(param =>
-					   {
-						   if ((Topic.Questions.Count > Topic.Questions.IndexOf(Question) - 1) &&
-							   (Topic.Questions.IndexOf(Question) - 1) >= 0)
-							   Question = Topic.Questions[Topic.Questions.IndexOf(Question) - 1];
-					   },
-																  param => true));
-			}
-		}
-
-		private RelayCommand commandCheckAnswer;
-
-		public ICommand CommandCheckAnswer
-		{
-			get
-			{
-				return commandCheckAnswer ??
-					   (commandCheckAnswer = new RelayCommand(param =>
-					   {
-						   ValidateAnswers();
-						   IsResultVisible = true;
-					   },
-							param => true));
-			}
-		}
 
 		private void ValidateAnswers()
 		{

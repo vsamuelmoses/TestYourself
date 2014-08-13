@@ -72,7 +72,7 @@ namespace TestYourself
         // This code will not execute when the application is deactivated
         private void Application_Closing(object sender, ClosingEventArgs e)
         {
-            //VmLocator.Instance.VmSubjectPanorama.SaveAllSubjects();
+            VmLocator.Instance.VmSubjectPanorama.ParentSubject.SaveChanges();
         }
 
         // Code to execute if a navigation fails

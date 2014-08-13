@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using TC.CustomControls.ViewModels;
 
 namespace TC.CustomControls
@@ -85,5 +86,10 @@ namespace TC.CustomControls
 		}
 
 		public PieDataCollection Data { get; set; }
+
+		private void AmPieChart_OnTap(object sender, GestureEventArgs e)
+		{
+			e.Handled = true;
+		}
 	}
 }
