@@ -181,6 +181,7 @@
 			</StackPanel>
 			
 			<controls:QuestionNavigationPanel 
+				x:Name="questionNavigationPanel"
 				Grid.Row="3"
 				NeedAcknowledgements="{Binding Questions}"/>
 

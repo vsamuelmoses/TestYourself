@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -16,6 +17,23 @@ namespace TC.CustomControls
 		{
 			DefaultStyleKey = typeof(Slider);
 			itemToRectangle = new Dictionary<INeedAcknowledgement, Rectangle>();
+
+			this.LayoutUpdated += SliderProgressBar_LayoutUpdated;
+		}
+
+		void SliderProgressBar_LayoutUpdated(object sender, System.EventArgs e)
+		{
+			UpdateHolderWidth();
+		}
+
+		private void UpdateHolderWidth()
+		{
+			if (!itemToRectangle.Any() || trackHolderWidthIsSet)
+				return;
+
+			trackHolder.Width = itemToRectangle.First().Value.ActualWidth;
+			trackHolderWidthIsSet = true;
+
 		}
 
 		public static readonly DependencyProperty NeedAcknowledgementsProperty = DependencyProperty.Register(
@@ -23,12 +41,13 @@ namespace TC.CustomControls
 			new PropertyMetadata(default(ObservableCollection<object>), OnItemsCollectionChanged));
 
 		private Grid trackGrid;
+		private Rectangle trackHolder;
+		private bool trackHolderWidthIsSet;
 
 		private static void OnItemsCollectionChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs args)
 		{
 			var thisControl = (SliderProgressBar)dependencyObject;
 			thisControl.Refresh();
-
 		}
 
 		private void Refresh()
@@ -41,7 +60,7 @@ namespace TC.CustomControls
 			if (NeedAcknowledgements == null)
 				return;
 
-			Maximum = NeedAcknowledgements.Count;
+			Maximum = NeedAcknowledgements.Count - 1;
 			Minimum = 0;
 			trackGrid.Children.Clear();
 			trackGrid.ColumnDefinitions.Clear();
@@ -97,6 +116,7 @@ namespace TC.CustomControls
 			base.OnApplyTemplate();
 
 			trackGrid = GetTemplateChild("HorizontalTrack") as Grid;
+			trackHolder = GetTemplateChild("HorizontalCenterElement") as Rectangle;
 			Refresh();
 		}
 	}

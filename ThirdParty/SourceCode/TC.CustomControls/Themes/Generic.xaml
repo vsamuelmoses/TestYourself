@@ -53,6 +53,7 @@
 									</Rectangle.Clip>
 								</Rectangle>
 								<Rectangle x:Name="HorizontalCenterElement" Fill="{StaticResource PhoneForegroundBrush}" 
+										   Stroke="Transparent" StrokeThickness="5"
 									   HorizontalAlignment="Left" Height="24" Margin="0" Width="3">
 									<Rectangle.RenderTransform>
 										<TranslateTransform/>

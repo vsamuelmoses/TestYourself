@@ -48,6 +48,9 @@ namespace TestYourself.Views
 			Loaded += OnLoaded;
 			Unloaded += OnUnloaded;
 			MediaViewer.ItemDisplayed += MediaViewer_ItemDisplayed;
+
+			questionNavigationPanel.MediaViewer = MediaViewer;
+
 		}
 
 		private void OnUnloaded(object sender, RoutedEventArgs routedEventArgs)
