@@ -6,9 +6,11 @@
 	mc:Ignorable="d">
 
 	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="../Themes/Generic.xaml"/>
 		<ResourceDictionary Source="ProgressRingStyle.xaml"/>
 		<ResourceDictionary Source="ButtonStyles.xaml"/>
 		<ResourceDictionary Source="ProgressBarStyle.xaml"/>
 	</ResourceDictionary.MergedDictionaries>
 	
 </ResourceDictionary>
+	

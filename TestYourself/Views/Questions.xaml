@@ -12,6 +12,7 @@
 	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
 	xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
 	xmlns:views="clr-namespace:TestYourself.Views"
+	xmlns:controls="clr-namespace:TestYourself.Controls"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
@@ -102,6 +103,7 @@
 				<RowDefinition Height="Auto"/>
 				<RowDefinition Height="*"/>
 				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
 			</Grid.RowDefinitions>
 			
 			<i:Interaction.Triggers>
@@ -120,7 +122,7 @@
 					Style="{StaticResource PageHeader}"
 					ImagePath="Images/Book.png"
 					IsMonochrome="True"/>
-				<ProgressBar Value="{Binding Topic.Stats.ProgressPercentage}" Height="15"></ProgressBar>
+				<!--<ProgressBar Value="{Binding Topic.Stats.ProgressPercentage}" Height="15"></ProgressBar>-->
 			</StackPanel>
 
 			<Grid Grid.Row="1">
@@ -177,6 +179,10 @@
 				<TextBlock Text="/"/>
 				<TextBlock Text="{Binding Topic.Questions.Count}"/>
 			</StackPanel>
+			
+			<controls:QuestionNavigationPanel 
+				Grid.Row="3"
+				NeedAcknowledgements="{Binding Questions}"/>
 
 		</Grid>
 

@@ -98,6 +98,7 @@
     <Compile Include="PropertyView.xaml.cs">
       <DependentUpon>PropertyView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SliderProgressBar.cs" />
     <Compile Include="ViewModels\PieData.cs" />
     <Compile Include="ViewModels\PieDataCollection.cs" />
   </ItemGroup>
@@ -131,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Styles\StylesDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -13,6 +13,7 @@ namespace TestYourself.ViewModels
 		private bool isPopupOpened;
 		private object popupContent;
 		private DataTemplate popupContentTemplate;
+		private ObservableCollection<object> questions;
 
 		public VmTopicQuestions(Topic topic, NavigationService navigationService)
 		{
@@ -39,7 +40,16 @@ namespace TestYourself.ViewModels
 		public RelayCommand CommandGoToQuestions { get; set; }
 		public RelayCommand CommandResetProgress { get; set; }
 		public Topic Topic { get; set; }
-		public ObservableCollection<object> Questions { get; set; }
+
+		public ObservableCollection<object> Questions
+		{
+			get { return questions; }
+			set
+			{
+				questions = value;
+				InvokePropertyChanged("Questions");
+			}
+		}
 
 		public bool IsPopupOpened
 		{

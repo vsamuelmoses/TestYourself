@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
+using System.Windows.Controls;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using TestYourself.Annotations;
@@ -123,6 +124,11 @@ namespace TestYourself.Views
 		private void MessageBoxPopupGrid_OnTap(object sender, GestureEventArgs e)
 		{
 			ViewModel.ClearPopup();
+		}
+
+		private void RangeBase_OnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+		{
+			MediaViewer.JumpToItem((int)e.NewValue);
 		}
 	}
 

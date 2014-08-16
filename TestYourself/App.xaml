@@ -13,9 +13,10 @@
 				<ResourceDictionary Source="/TC.CustomControls;component/Styles/StylesDictionary.xaml"/>
 				<ResourceDictionary Source="/TC.CustomControls;component/Converters/ConvertersDictionary.xaml"/>
 
+				<!--<ResourceDictionary Source="Assets/ButtonIcons.xaml"/>-->
 				<ResourceDictionary Source="ResourceDictionaries/StyleDictionary.xaml"/>
-
 				<ResourceDictionary Source="ResourceDictionaries/ControlStyles.xaml" />
+				
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>

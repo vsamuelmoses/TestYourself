@@ -110,6 +110,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\QuestionNavigationPanel.xaml.cs">
+      <DependentUpon>QuestionNavigationPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SmartListBox.cs" />
     <Compile Include="Converters\AnswerCorrectnessImageConverter.cs" />
     <Compile Include="Converters\BoolToRightWrongImageConverter.cs" />
@@ -170,6 +173,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Assets\ButtonIcons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\QuestionNavigationPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResourceDictionaries\ControlStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

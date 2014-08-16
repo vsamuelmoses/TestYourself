@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
+using TC.CustomControls;
 using TC.CustomControls.MediaViewer;
 using TestYourself.Helpers;
 using TestYourself.Model;
@@ -10,7 +11,7 @@ using TestYourself.ResourceDictionaries;
 
 namespace TestYourself.ViewModels
 {
-	public class VmQuestionContent : VmPage, IThumbnailedContent
+	public class VmQuestionContent : VmPage, IThumbnailedContent, INeedAcknowledgement
 	{
 		private readonly VmTopicQuestions vmTopicQuestions;
 
@@ -73,6 +74,7 @@ namespace TestYourself.ViewModels
 				question = value;
 				InvokePropertyChanged(PropertyNameQuestionAndAnswer);
 				State = States.NotAnsweredYet;
+				UpdateIsAcknowledged();
 				IsResultVisible = false;
 			}
 		}
@@ -101,11 +103,14 @@ namespace TestYourself.ViewModels
 					return;
 
 				state = value;
+				//IsAcknowledged = (state == States.AnsweredCorrectly || state == States.AnsweredInCorrectly);
 				InvokePropertyChanged(PropertyState);
 			}
 		}
 
 		private bool isResultVisible;
+		private bool isAcknowledged;
+
 		public bool IsResultVisible
 		{
 			get { return isResultVisible; }
@@ -137,6 +142,12 @@ namespace TestYourself.ViewModels
 			}
 
 			question.AssociatedTopic.UpdateStats();
+			UpdateIsAcknowledged();
+		}
+
+		private void UpdateIsAcknowledged()
+		{
+			IsAcknowledged = question.Stats.NumberOfHits > 0;
 		}
 
 		private bool AreAnswersCorrect(IEnumerable<Answer> answers)
@@ -152,6 +163,20 @@ namespace TestYourself.ViewModels
 		public object GetContent()
 		{
 			return this;
+		}
+
+		public bool IsAcknowledged
+		{
+			get { return isAcknowledged; }
+			set
+			{
+				if (isAcknowledged == value)
+					return;
+
+				isAcknowledged = value;
+				InvokePropertyChanged("IsAcknowledged");
+
+			}
 		}
 	}
 }
