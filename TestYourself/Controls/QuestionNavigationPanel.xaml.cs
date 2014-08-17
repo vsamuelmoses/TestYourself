@@ -1,7 +1,10 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.Linq;
+using System.Reactive.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Threading;
 using TC.CustomControls;
 using TC.CustomControls.MediaViewer;
 
@@ -14,6 +17,7 @@ namespace TestYourself.Controls
 			new PropertyMetadata(default(ObservableCollection<object>), OnItemsCollectionChanged));
 
 		private MediaViewer mediaViewer;
+		private Dispatcher dispatcher;
 
 		private static void OnItemsCollectionChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs args)
 		{
@@ -30,18 +34,36 @@ namespace TestYourself.Controls
 		public QuestionNavigationPanel()
 		{
 			InitializeComponent();
-			sliderProgressBar.ValueChanged += OnSliderProgressBarValueChanged;
+
+			dispatcher = Deployment.Current.Dispatcher;
+
+			var sliderValueChangingEvents = Observable.FromEventPattern<RoutedPropertyChangedEventHandler<double>, 
+				RoutedPropertyChangedEventArgs<double>>(
+				handler => sliderProgressBar.ValueChanged += handler,
+				handler => sliderProgressBar.ValueChanged -= handler);
+
+			var observable = sliderValueChangingEvents
+				.Throttle(TimeSpan.FromMilliseconds(500))
+				.Subscribe(args => JumpToQuestionWithSliderProgressValue());
+
+
+			//sliderProgressBar.ValueChanged += OnSliderProgressBarValueChanged;
 		}
 
-		void OnSliderProgressBarValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+		//void OnSliderProgressBarValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+		private void JumpToQuestionWithSliderProgressValue()
 		{
-			if (MediaViewer == null)
-				return;
+			dispatcher.BeginInvoke(() =>
+			{
+				if (MediaViewer == null)
+					return;
 
-			if (MediaViewer.DisplayedItemIndex == sliderProgressBar.Value)
-				return;
+				if (MediaViewer.DisplayedItemIndex == sliderProgressBar.Value)
+					return;
 
-			MediaViewer.JumpToItem((int)sliderProgressBar.Value);
+
+					MediaViewer.JumpToItem((int) sliderProgressBar.Value);
+			});
 		}
 
 		private void OnPreviousButtonClicked(object sender, RoutedEventArgs e)

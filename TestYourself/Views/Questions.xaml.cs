@@ -53,6 +53,20 @@ namespace TestYourself.Views
 
 		}
 
+
+		protected override void OnBackKeyPress(CancelEventArgs e)
+		{
+			if (ViewModel.IsPopupOpened)
+			{
+				ViewModel.ClearPopup();
+				e.Cancel = true;
+			}
+			else
+			{
+				base.OnBackKeyPress(e);
+			}
+		}
+
 		private void OnUnloaded(object sender, RoutedEventArgs routedEventArgs)
 		{
 			var topicSettings = AppSettings.Instance.GetTopicSettings(ViewModel.Topic);
