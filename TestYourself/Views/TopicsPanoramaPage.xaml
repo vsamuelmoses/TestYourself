@@ -40,13 +40,21 @@
 	
 	<!--LayoutRoot contains the root grid where all other page content is placed-->
 	<Grid x:Name="LayoutRoot">
-		<phone:Panorama>
+		<phone:Panorama Title="{Binding Topic.Name}">
+			<phone:Panorama.TitleTemplate>
+				<DataTemplate>
+					<TextBlock Text="{Binding}"
+							   Margin="0,50,0,10"
+							   Style="{StaticResource PhoneTextNormalStyle}"/>
+				</DataTemplate>
+			</phone:Panorama.TitleTemplate>
 			<!--Panorama item one-->
+			<!--Text="{Binding Topic.Name}"-->
 			<phone:PanoramaItem>
 				<phone:PanoramaItem.Header>
 					<customControls:MenuItem
 						ImagePath="Images/Book.png"
-						Text="{Binding Topic.Name}"
+						Text="topics"
 						IsMonochrome="True"
 						Style="{StaticResource PageHeader}"/>
 				</phone:PanoramaItem.Header>

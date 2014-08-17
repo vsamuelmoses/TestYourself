@@ -15,6 +15,7 @@
 	<Style TargetType="customControls:MenuItem"
 		   x:Key="PageHeader">
 		<Style.Setters>
+			<Setter Property="Margin" Value="0,10,0,0"/>
 			<Setter Property="TitleFontSize" Value="{StaticResource PhoneFontSizeExtraExtraLarge}"/>
 			<Setter Property="TitleFontFamily" Value="{StaticResource PhoneFontFamilyNormal}"/>
 		</Style.Setters>
