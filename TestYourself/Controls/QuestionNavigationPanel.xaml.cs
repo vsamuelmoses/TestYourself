@@ -48,7 +48,7 @@ namespace TestYourself.Controls
 		{
 			if (sliderProgressBar.Value > 0)
 			{
-				for (int i = (int)sliderProgressBar.Value; i >= 0; i--)
+				for (int i = (int)sliderProgressBar.Value - 1; i >= 0; i--)
 				{
 					if (!((INeedAcknowledgement)NeedAcknowledgements[i]).IsAcknowledged)
 					{
@@ -64,7 +64,7 @@ namespace TestYourself.Controls
 		{
 			if (sliderProgressBar.Value < sliderProgressBar.Maximum)
 			{
-				for (int i = (int) sliderProgressBar.Value; i <= sliderProgressBar.Maximum; i++)
+				for (int i = (int) sliderProgressBar.Value + 1; i <= sliderProgressBar.Maximum; i++)
 				{
 					if (!((INeedAcknowledgement) NeedAcknowledgements[i]).IsAcknowledged)
 					{

@@ -9,6 +9,12 @@ namespace TestYourself.Views
 		{
 			InitializeComponent();
 			DataContext = VmLocator.Instance.VmTopicsPanorama;
+			this.Loaded += TopicsPanoramaPage_Loaded;
+		}
+
+		void TopicsPanoramaPage_Loaded(object sender, System.Windows.RoutedEventArgs e)
+		{
+			topicsListBox.SelectedItem = null;
 		}
 	}
 }

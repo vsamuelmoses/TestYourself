@@ -50,8 +50,9 @@
 						IsMonochrome="True"
 						Style="{StaticResource PageHeader}"/>
 				</phone:PanoramaItem.Header>
-				<ListBox ItemsSource="{Binding Topic.SubTopics}"
-						 SelectedItem="{Binding SelectedTopic, Mode=TwoWay}">
+				<ListBox x:Name="topicsListBox"
+					ItemsSource="{Binding Topic.SubTopics}"
+					SelectedItem="{Binding SelectedTopic, Mode=TwoWay}">
 					<ListBox.ItemTemplate>
 						<DataTemplate>
 							<StackPanel>
