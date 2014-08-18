@@ -31,6 +31,7 @@
 				<ColumnDefinition/>
 			</Grid.ColumnDefinitions>
 
+
 			<Button Grid.Column="0" Grid.Row="0"
 										Margin="10,10,0,10"
 										Background="Transparent"
@@ -46,10 +47,12 @@
 
 			</Button>
 
-			<TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" 
-										   TextWrapping="Wrap" 
-										   Text="{Binding Question.Text}" 
-										   Margin="10,10,0,10"/>
+			<TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="1"
+					   TextWrapping="Wrap" 
+					   Text="{Binding Question.Text}" 
+					   Foreground="{StaticResource PhoneAccentBrush}"	
+					   FontFamily="{StaticResource PhoneFontFamilyBold}"
+					   Margin="10,10,0,10"/>
 		</Grid>
 
 
@@ -69,7 +72,7 @@
 						<Grid.ColumnDefinitions>
 							<ColumnDefinition Width="40"/>
 							<ColumnDefinition Width="*"/>
-							<ColumnDefinition Width="Auto"/>
+							<!--<ColumnDefinition Width="Auto"/>-->
 						</Grid.ColumnDefinitions>
 						<Grid.RowDefinitions>
 							<RowDefinition Height="Auto"/>
