@@ -17,9 +17,26 @@
 	<!--LayoutRoot contains the root grid where all other page content is placed-->
 	<Grid x:Name="LayoutRoot">
 		<phone:Panorama Title="{Binding ParentSubject.Name}">
+			<phone:Panorama.TitleTemplate>
+				<DataTemplate>
+					<StackPanel>
+						<StackPanel 
+							Margin="0,50,0,10"
+							Orientation="Horizontal"
+							Opacity="0.8">
+							<Image Source="../Images/Icon.png" Width="200"
+								   Height="200"/>
+							<TextBlock 
+								VerticalAlignment="Center"
+								Text="Driving Theory"></TextBlock>
+						</StackPanel>
+						<Rectangle Height="4" Fill="{StaticResource PhoneAccentBrush}"/>
+					</StackPanel>
+				</DataTemplate>
+			</phone:Panorama.TitleTemplate>
 
 			<!--Panorama item one-->
-			<phone:PanoramaItem>
+			<phone:PanoramaItem Margin="0,20,0,0">
 				<phone:PanoramaItem.Header>
 					<customControls:MenuItem
 						ImagePath="Images/Book.png"
@@ -41,7 +58,7 @@
 			</phone:PanoramaItem>
 
 			<!--Panorama item two-->
-			<phone:PanoramaItem>
+			<phone:PanoramaItem Margin="0,20,0,0">
 				<phone:PanoramaItem.Header>
 					<customControls:MenuItem
 						ImagePath="Images/Stats.png"

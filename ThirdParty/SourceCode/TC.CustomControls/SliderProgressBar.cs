@@ -41,6 +41,9 @@ namespace TC.CustomControls
 
 		private void OnSliderProgressBarLayoutUpdated(object sender, EventArgs e)
 		{
+			if (NeedAcknowledgements == null || NeedAcknowledgements.Count == 0)
+				return;
+
 			if (!isRefreshedAfterLayoutUpdated)
 			{
 				Refresh();

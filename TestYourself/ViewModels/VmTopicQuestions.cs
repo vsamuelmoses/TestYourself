@@ -15,6 +15,17 @@ namespace TestYourself.ViewModels
 		private DataTemplate popupContentTemplate;
 		private ObservableCollection<object> questions;
 
+		public VmTopicQuestions(Topic topic)
+		{
+			Topic = topic;
+			TitleName = Topic.Name;
+			Questions = new ObservableCollection<object>();
+			foreach (var question in Topic.Questions)
+				Questions.Add(new VmQuestionContent(this) { Topic = Topic, Question = question });
+			IsPopupOpened = false;
+		}
+
+
 		public VmTopicQuestions(Topic topic, NavigationService navigationService)
 		{
 			this.navigationService = navigationService;

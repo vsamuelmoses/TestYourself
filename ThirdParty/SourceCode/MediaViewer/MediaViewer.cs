@@ -1057,7 +1057,14 @@ namespace TC.CustomControls.MediaViewer
 
 		private void OnMediaViewerSizeChanged(object sender, SizeChangedEventArgs e)
 		{
+			//if (GetElementCount() == 0)
+			//	return;
+
 			_size = e.NewSize;
+
+
+			if (GetElementCount() == 0)
+				return;
 
 			if (_state == MediaViewerState.Uninitialized)
 			{

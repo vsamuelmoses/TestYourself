@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using Microsoft.Phone.Controls;
@@ -21,6 +23,7 @@ namespace TestYourself.Views
 		private VmQuestionContent currentViewingQuestion;
 		private readonly ApplicationBarIconButton appBarInfoButton;
 		private readonly ApplicationBarIconButton appBarViewHideIcon;
+		private bool isLoading;
 
 		public Questions()
 		{
@@ -43,16 +46,48 @@ namespace TestYourself.Views
 			ApplicationBar.Buttons.Add(appBarViewHideIcon);
 			appBarViewHideIcon.Click += AppBarViewHideIconClick;
 
-			VmLocator.Instance.VmTopicQuestions = new VmTopicQuestions(VmLocator.Instance.VmTopicsInfo.Topic, NavigationService);
-			DataContext = VmLocator.Instance.VmTopicQuestions;
-			Loaded += OnLoaded;
-			Unloaded += OnUnloaded;
 			MediaViewer.ItemDisplayed += MediaViewer_ItemDisplayed;
+			IsLoading = true;
 
-			questionNavigationPanel.MediaViewer = MediaViewer;
+			Task.Factory.StartNew(() =>
+			{
+				return new VmTopicQuestions(VmLocator.Instance.VmTopicsInfo.Topic);
+			}).ContinueWith(task =>
+			{
+				IsLoading = false;
+				VmLocator.Instance.VmTopicQuestions = task.Result;
+				DataContext = VmLocator.Instance.VmTopicQuestions;
+				Loaded += OnLoaded;
+				Unloaded += OnUnloaded;
+				questionNavigationPanel.MediaViewer = MediaViewer;
 
+			}, TaskScheduler.FromCurrentSynchronizationContext());
 		}
 
+		public bool IsLoading
+		{
+			get { return isLoading; }
+			set
+			{
+				isLoading = value;
+
+				if (isLoading)
+				{
+					loadingTextBlock.Text = string.Format("Loading questions for " + VmLocator.Instance.VmTopicsInfo.Topic.Name);
+					loadingViewer.Visibility = Visibility.Visible;
+					ApplicationBar.IsVisible = false;
+					LayoutRoot.Visibility = Visibility.Collapsed;
+
+				}
+				else
+				{
+					loadingViewer.Visibility = Visibility.Collapsed;
+					LayoutRoot.Visibility = Visibility.Visible;
+					ApplicationBar.IsVisible = true;
+					
+				}
+			}
+		}
 
 		protected override void OnBackKeyPress(CancelEventArgs e)
 		{

@@ -1565,6 +1565,8 @@
     </Content>
     <Resource Include="Images\CorrectStamp.png" />
     <Content Include="Images\Book.png" />
+    <Content Include="Images\Icon.png" />
+    <Content Include="Images\Icon1.png" />
     <Content Include="Images\Icon62x62.png" />
     <Content Include="Images\Icon173x173.png" />
     <Resource Include="Images\WrongStamp.png" />

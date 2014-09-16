@@ -18,6 +18,8 @@
 			<Setter Property="Margin" Value="0,10,0,0"/>
 			<Setter Property="TitleFontSize" Value="{StaticResource PhoneFontSizeExtraExtraLarge}"/>
 			<Setter Property="TitleFontFamily" Value="{StaticResource PhoneFontFamilyNormal}"/>
+			<Setter Property="Foreground" Value="{StaticResource PhoneAccentBrush}"/>
+			
 		</Style.Setters>
 	</Style>
 

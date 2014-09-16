@@ -26,8 +26,6 @@
 		</DataTemplate>
 	</phone:PhoneApplicationPage.Resources>
 	
-
-
 	<Grid>
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="BackgroundGridStateGroup">
@@ -98,6 +96,22 @@
 
 		<!--LayoutRoot is the root grid where all page content is placed-->
 
+
+		<Grid x:Name="loadingViewer">
+			<StackPanel VerticalAlignment="Center" 
+							HorizontalAlignment="Stretch">
+				<TextBlock 
+					x:Name="loadingTextBlock"
+					Text="Loading" HorizontalAlignment="Center"
+					TextWrapping="Wrap"/>
+				<TextBlock 
+					Text="Please wait. This can take few seconds..." 
+					HorizontalAlignment="Center"
+					TextWrapping="Wrap"/>
+				<ProgressBar IsIndeterminate="True" />
+			</StackPanel>
+		</Grid>
+
 		<Grid x:Name="LayoutRoot" Background="Transparent">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
@@ -115,7 +129,8 @@
 				</ec:DataTrigger>
 			</i:Interaction.Triggers>
 
-			<StackPanel Grid.Row="0" Margin="10">
+			<StackPanel Grid.Row="0" Margin="10"
+						x:Name="headerPanel">
 				<customControls:MenuItem
 					Text="{Binding Topic.Name}"
 					Style="{StaticResource PageHeader}"
@@ -123,11 +138,11 @@
 					IsMonochrome="True"/>
 			</StackPanel>
 
+			
 			<Grid Grid.Row="1">
 				<mediaViewer:MediaViewer
 					x:Name="MediaViewer"
 					Items="{Binding Questions}">
-					
 					<i:Interaction.Triggers>
 						<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="true">
 							<ec:GoToStateAction StateName="DisabledState"/>
@@ -174,7 +189,8 @@
 
 			<StackPanel Grid.Row="2" Orientation="Horizontal" 
 						Grid.RowSpan="2"
-						HorizontalAlignment="Center">
+						HorizontalAlignment="Center"
+						x:Name="questionIndexPanel">
 				<TextBlock x:Name="QuestionNumberTextBlock" Margin="0"/>
 				<TextBlock Text="/" Margin="0"/>
 				<TextBlock Text="{Binding Topic.Questions.Count}" Margin="0"/>

@@ -29,6 +29,7 @@
 
 		<TextBlock Grid.Row="0" Grid.Column="1" 
 				   x:Name="TitleTextBlock"
+				   TextTrimming="WordEllipsis"
 				   VerticalAlignment="Center"
 				   Margin="5,0,0,0"/>
 	</Grid>
