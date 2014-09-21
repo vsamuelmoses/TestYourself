@@ -241,1321 +241,1697 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2810%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2810%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28100%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28100%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28101%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28101%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28102%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28102%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28103%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28103%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28104%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28104%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28105%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28105%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28106%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28106%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28107%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28107%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28108%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28108%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28109%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28109%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2811%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2811%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28110%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28110%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28111%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28111%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28112%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28112%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28113%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28113%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28114%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28114%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28115%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28115%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28116%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28116%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28117%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28117%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28118%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28118%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28119%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28119%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2812%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2812%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28120%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28120%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28121%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28121%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28122%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28122%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28123%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28123%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28124%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28124%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28125%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28125%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28126%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28126%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28127%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28127%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28128%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28128%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28129%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28129%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2813%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2813%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28130%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28130%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28131%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28131%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28132%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28132%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28133%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28133%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28134%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28134%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28135%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28135%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28136%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28136%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28137%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28137%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28138%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28138%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28139%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28139%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2814%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2814%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28140%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28140%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28141%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28141%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28142%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28142%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28143%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28143%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28144%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28144%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28145%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28145%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28146%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28146%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28147%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28147%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28148%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28148%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28149%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28149%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2815%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2815%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28150%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28150%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28151%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28151%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28152%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28152%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28153%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28153%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28154%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28154%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28155%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28155%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28156%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28156%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28157%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28157%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28158%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28158%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28159%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28159%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2816%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2816%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28160%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28160%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28161%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28161%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28162%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28162%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28163%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28163%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28164%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28164%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28165%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28165%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28166%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28166%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28167%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28167%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28168%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28168%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28169%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28169%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2817%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2817%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28170%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28170%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28171%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28171%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28172%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28172%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28173%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28173%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28174%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28174%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28175%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28175%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28176%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28176%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28177%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28177%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28178%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28178%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28179%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28179%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2818%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2818%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28180%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28180%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28181%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28181%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28182%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28182%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28183%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28183%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28184%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28184%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28185%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28185%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28186%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28186%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28187%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28187%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28188%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28188%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28189%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28189%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2819%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2819%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28190%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28190%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28191%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28191%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28192%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28192%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28193%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28193%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28194%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28194%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28195%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28195%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28196%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28196%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28197%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28197%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28198%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28198%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28199%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28199%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %282%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %282%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2820%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2820%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28200%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28200%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28201%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28201%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28202%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28202%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28203%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28203%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28204%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28204%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28205%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28205%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28206%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28206%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28207%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28207%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28208%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28208%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28209%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28209%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2821%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2821%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28210%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28210%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28211%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28211%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28212%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28212%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28213%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28213%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28214%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28214%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28215%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28215%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28216%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28216%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28217%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28217%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28218%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28218%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28219%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28219%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2822%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2822%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28220%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28220%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28221%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28221%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28222%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28222%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28223%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28223%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28224%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28224%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28225%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28225%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28226%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28226%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28227%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28227%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28228%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28228%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28229%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28229%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2823%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2823%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28230%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28230%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28231%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28231%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28232%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28232%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28233%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28233%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28234%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28234%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28235%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28235%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28236%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28236%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28237%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28237%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28238%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28238%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28239%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28239%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2824%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2824%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28240%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28240%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28241%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28241%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28242%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28242%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28243%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28243%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28244%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28244%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28245%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28245%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28246%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28246%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28247%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28247%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28248%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28248%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28249%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28249%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2825%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2825%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28250%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28250%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28251%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28251%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28252%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28252%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28253%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28253%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28254%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28254%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28255%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28255%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28256%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28256%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28257%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28257%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28258%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28258%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28259%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28259%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2826%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2826%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28260%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28260%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28261%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28261%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28262%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28262%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28263%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28263%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28264%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28264%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28265%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28265%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28266%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28266%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28267%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28267%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28268%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28268%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28269%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28269%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2827%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2827%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28270%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28270%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28271%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28271%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28272%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28272%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28273%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28273%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28274%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28274%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28275%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28275%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28276%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28276%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28277%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28277%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28278%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28278%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28279%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28279%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2828%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2828%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28280%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28280%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28281%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28281%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28282%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28282%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28283%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28283%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28284%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28284%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28285%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28285%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28286%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28286%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28287%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28287%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28288%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28288%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28289%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28289%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2829%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2829%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28290%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28290%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28291%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28291%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28292%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28292%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28293%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28293%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28294%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28294%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28295%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28295%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28296%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28296%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28297%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28297%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28298%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28298%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28299%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28299%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %283%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %283%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2830%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2830%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28300%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28300%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28301%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28301%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28302%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28302%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28303%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28303%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28304%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28304%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28305%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28305%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28306%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28306%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28307%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28307%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28308%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28308%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28309%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28309%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2831%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2831%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28310%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28310%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28311%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28311%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28312%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28312%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28313%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28313%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28314%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28314%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28315%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28315%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28316%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28316%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28317%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28317%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28318%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28318%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28319%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28319%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2832%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2832%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28320%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28320%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28321%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28321%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28322%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28322%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28323%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28323%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28324%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28324%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28325%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28325%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28326%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28326%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28327%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28327%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %28328%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %28328%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2833%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2833%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2834%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2834%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2835%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2835%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2836%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2836%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2837%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2837%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2838%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2838%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2839%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2839%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %284%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %284%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2840%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2840%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2841%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2841%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2842%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2842%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2843%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2843%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2844%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2844%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2845%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2845%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2846%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2846%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2847%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2847%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2848%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2848%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2849%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2849%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %285%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %285%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2850%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2850%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2851%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2851%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2852%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2852%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2853%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2853%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2854%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2854%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2855%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2855%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2856%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2856%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2857%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2857%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2858%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2858%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2859%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2859%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %286%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %286%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2860%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2860%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2861%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2861%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2862%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2862%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2863%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2863%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2864%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2864%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2865%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2865%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2866%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2866%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2867%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2867%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2868%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2868%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2869%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2869%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %287%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %287%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2870%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2870%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2871%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2871%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2872%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2872%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2873%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2873%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2874%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2874%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2875%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2875%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2876%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2876%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2877%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2877%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2878%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2878%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2879%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2879%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %288%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %288%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2880%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2880%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2881%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2881%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2882%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2882%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2883%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2883%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2884%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2884%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2885%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2885%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2886%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2886%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2887%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2887%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2888%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2888%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2889%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2889%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %289%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %289%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2890%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2890%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2891%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2891%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2892%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2892%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2893%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2893%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2894%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2894%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2895%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2895%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2896%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2896%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2897%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2897%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2898%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2898%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy %2899%29.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy %2899%29.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1 - Copy.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1 - Copy.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\TestYourselfDatabaseCreator\TestYourself.DatabaseCreator\DrivingTheory\Images\Img1.jpg">
-      <Link>Databases\DrivingTheory\Images\Img1.jpg</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Databases\DrivingTheory\Images\AB2006.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2003.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2007.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2009.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2023.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2024.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2036.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2055.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2060.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2065.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2081.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2082.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2084.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2085.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2086.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2087.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2088.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2089.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2090.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2091.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2092.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2093.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2094.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2096.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2097.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2098.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2099.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2100.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2101.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2102.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2103.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2105.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2106.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2117a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2117b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2117c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2117d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2118.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2119.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2120.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2121.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2126.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2127.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2129.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2130.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2131.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2132a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2132b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2132c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2132d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2133a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2133b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2133c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2133d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2134.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2138.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2141.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2145.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2154.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2167.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2169.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2176a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2176b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2176c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2176d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2178.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2179.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2180.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2181.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2182.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2188.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2190.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2193.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2205.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2210.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2211.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2212.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2212a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2212b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2212c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2212d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2223.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2226.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2228.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2235.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2237.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2239.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2241.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2243.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2246.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2251.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2252.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2253.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2254.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2264.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2269.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2281.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2282.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2287.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2294a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2294b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2294c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2294d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2295a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2295b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2295c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2295d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2296.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2297a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2297b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2297c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2297d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2298a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2298b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2298c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2298d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2299.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2300.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2301.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2302.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2303.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2304a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2304b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2304c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2304d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2305.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2306.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2307a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2307b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2307c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2307d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2308.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2309.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2310a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2310b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2310c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2310d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2311.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2312.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2313.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2314a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2314b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2314c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2314d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2315.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2316.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2317.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2318.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2319.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2320.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2321a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2321b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2321c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2321d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2322.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2323.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2324a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2324b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2324c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2324d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2325.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2326a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2326b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2326c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2326d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2327.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2328a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2328b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2328c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2328d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2329.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2330.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2331.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2332.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2333.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2334a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2334b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2334c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2334d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2336.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2337.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2338.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2339.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2340.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2341.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2342.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2343.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2344.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2345.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2346.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2347a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2347b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2347c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2347d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2348a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2348b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2348c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2348d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2349.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2350.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2351a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2351b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2351c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2351d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2352.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2353.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2354.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2355.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2356a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2356b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2356c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2356d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2357a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2357b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2357c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2357d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2358.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2359.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2360.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2361.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2362.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2363.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2364.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2365.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2366.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2367.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2368.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2369.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2370.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2371a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2371b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2371c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2371d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2372a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2372b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2372c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2372d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2373.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2374.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2375a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2375b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2375c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2375d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2376.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2377.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2378.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2379.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2381.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2382.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2383.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2384.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2385.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2386.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2387.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2388.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2389a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2389b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2389c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2389d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2390.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2391.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2393.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2394.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2395.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2396.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2397.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2398.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2399.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2400.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2401a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2401b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2401c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2401d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2402.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2403.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2404.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2407.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2408.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2409.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2410a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2410b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2410c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2410d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2416.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2418.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2419.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2420.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2421.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2422.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2426.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2427.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2428.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2429a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2429b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2429c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2429d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2476a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2476b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2476c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2476d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2490.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2513.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2515.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2518.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2519.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2521.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2528.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2529.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2530.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2531.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2544.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2545.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2546.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2549.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2559.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2564.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2567.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2570.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2572.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2578.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2579.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2585.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2591.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2592.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2593.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2596.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2597.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2598.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2599.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2601.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2604.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2611.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2612.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2624.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2627.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2631.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2632.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2633a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2633b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2633c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2633d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2657.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2659.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2665.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2669.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2670.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2671.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2672.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2673.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2674a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2674b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2674c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2674d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2675.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2676.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2677.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2678.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2681.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2701.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2706.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2717.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2718.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2719.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2720.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2724.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2726.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2727.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2729.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2733.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2737.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2738.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2747.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2748.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2756.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2758.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2759.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2760.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2761.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2762.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2763a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2763b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2763c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2763d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2764.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2765.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2766.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2767.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2768a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2768b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2768c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2768d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2769.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2771.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2772.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2789.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2790.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2793.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2794.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2795.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2821.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2823.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2826.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2840.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2841.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2847.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2848.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2849.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2850.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2856.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2857.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2885a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2885b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2885c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2885d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2886.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2887a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2887b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2887c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2887d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2888.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2889.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2890a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2890b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2890c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2890d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2892a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2892b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2892c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2892d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2897a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2897b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2897c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2897d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2898a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2898b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2898c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2898d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2899.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2909.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2911.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2912.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2935a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2935b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2935c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\AB2935d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1004.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1010.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1013.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1021.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1022.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1037.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1038a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1038b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1038c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1038d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1039.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1053.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1054.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1076.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1077.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1078.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1079.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1080.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1081.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1082.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1083.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1084.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1085.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1086.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1087.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1088.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1089.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1090.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1091.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1092.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1093.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1094.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1095.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1096.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1097.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1098.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1099.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1100.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1109.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1130.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1142.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1144.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1173.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1191.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1197.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1201.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1202.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1205.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1207.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1209.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1213.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1214.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1218.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1226.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1227.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1234a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1234b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1234c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1234d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1235.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1236.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1237a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1237b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1237c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1237d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1239.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1241.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1252.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1273.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1330.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1351.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1353.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1356.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1362.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1377.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1397.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1399.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1426.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1427.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1438.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1439.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1447.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1454.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1455.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1495.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1504.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1507.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1521.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1522.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1547.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1558.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1562.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1565.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1571.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1576.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1577.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1581.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1584.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1591a.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1591b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1591c.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1591d.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1633.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1636.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1657.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1664.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1665.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1666.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1675.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1676.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1684.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1694.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1702.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1718.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1748.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1781.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1782.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1784.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Databases\DrivingTheory\Images\BB1789.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

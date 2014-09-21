@@ -108,7 +108,6 @@
 							<Button Grid.Column="0" Grid.Row="0"
 										Margin="10,10,0,10"
 										Background="Transparent"
-										Height="100"
 										VerticalAlignment="Top"
 										Click="ButtonBase_OnClick"
 									Command="{Binding ElementName=AnswerChoiceListBox, Path=DataContext.CommandShowImage}"
