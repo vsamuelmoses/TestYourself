@@ -6,8 +6,10 @@
 	mc:Ignorable="d">
 
 	<DataTemplate x:Key="KeypointDataTemplate">
-		<TextBlock Text="{Binding Text}"
-					   TextWrapping="Wrap"/>
+		<TextBlock Text="{Binding Text}" Margin="15"
+				   TextWrapping="Wrap"
+				   FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+				   FontSize="{StaticResource PhoneFontSizeMedium}"/>
 	</DataTemplate>
 
 

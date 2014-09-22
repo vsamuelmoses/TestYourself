@@ -52,6 +52,7 @@
 					   Text="{Binding Question.Text}" 
 					   Foreground="{StaticResource PhoneAccentBrush}"	
 					   FontFamily="{StaticResource PhoneFontFamilyBold}"
+					   FontSize="{StaticResource PhoneFontSizeMedium}"
 					   Margin="10,10,0,10"/>
 		</Grid>
 
@@ -122,9 +123,10 @@
 							</Button>
 
 							<TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" 
-										   TextWrapping="Wrap" 
-										   Text="{Binding Text}" 
-										   Margin="10,10,0,10"/>
+									   TextWrapping="Wrap" 
+									   Text="{Binding Text}" 
+									   Margin="10,10,0,10"
+									   FontSize="{StaticResource PhoneFontSizeMedium}"/>
 						</Grid>
 					</Grid>
 				</DataTemplate>

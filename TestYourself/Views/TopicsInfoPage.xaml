@@ -50,7 +50,7 @@
 				<phone:PanoramaItem.Header>
 					<customControls:MenuItem
 						ImagePath="Images/Book.png"
-						Text="topic info"
+						Text="{Binding Topic.Name}"
 						IsMonochrome="True"
 						Style="{StaticResource PageHeader}"/>
 				</phone:PanoramaItem.Header>
@@ -87,11 +87,11 @@
 								Value="{Binding Topic.TotalNumberOfQuestions}"
 								Margin="5"/>
 						
-								<customControls:PropertyView 
+								<!--<customControls:PropertyView 
 								Title="Success Rate"
 								Value="TBD"
 								Margin="5"
-								/>
+								/>-->
 
 							</StackPanel>
 

@@ -49,7 +49,9 @@
 					<ListBox.ItemTemplate>
 						<DataTemplate>
 							<StackPanel>
-								<TextBlock Text="{Binding Name}" Style="{StaticResource Heading3}"/>
+								<TextBlock Text="{Binding Name}" 
+										   TextWrapping="Wrap"
+										   Style="{StaticResource Heading3}"/>
 								<ProgressBar Value="{Binding Stats.ProgressPercentage}" />
 							</StackPanel>
 						</DataTemplate>
@@ -105,11 +107,11 @@
 								Value="{Binding ParentSubject.TotalNumberOfQuestions}"
 								Margin="5"/>
 
-							<customControls:PropertyView 
+							<!--<customControls:PropertyView 
 								Title="Success Rate"
 								Value="78 %"
 								Margin="5"
-								/>
+								/>-->
 
 			         			</StackPanel>
 
@@ -118,6 +120,37 @@
 
 
 			</phone:PanoramaItem>
+
+			<!--Panorama item three-->
+			<phone:PanoramaItem Margin="0,20,0,0">
+				<phone:PanoramaItem.Header>
+					<TextBlock Text="about"	
+							   FontFamily="{StaticResource PhoneFontFamilyNormal}"
+							   FontSize="{StaticResource PhoneFontSizeExtraExtraLarge}"
+							   Foreground="{StaticResource PhoneAccentBrush}"/>
+				</phone:PanoramaItem.Header>
+				<ScrollViewer>
+					<Grid>
+						<StackPanel Margin="5,10,5,15">
+							<StackPanel>
+								<TextBlock Text="Acknowledgement" Style="{StaticResource PhoneTextTitle3Style}"/>
+								<TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"
+										   
+									   Text="Crown copyright material has been reproduced by permission of the Driver and Vehicle Standards Agency, which does not accept any responsibility for the accuracy of the reproduction."/>
+							</StackPanel>
+							<StackPanel Margin="5,30,5,15">
+								<!--<TextBlock Text="Info" Style="{StaticResource PhoneTextTitle3Style}"/>-->
+								<TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}"
+										   Text="Please be aware that all the questions in this app are reproduced from DVSA revision question bank."/>
+							</StackPanel>
+						</StackPanel>
+					</Grid>
+				</ScrollViewer>
+
+
+			</phone:PanoramaItem>
+
+
 		</phone:Panorama>
 	</Grid>
 
