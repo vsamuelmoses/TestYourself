@@ -7,8 +7,6 @@ namespace TestYourself.ViewModels
 {
 	public class VmSubjectPanorama : VmTopicsHostBase
 	{
-		private readonly NavigationService navigationService;
-
 		public VmSubjectPanorama(Subject subject, NavigationService navigationService) 
 			: base(navigationService)
 		{
@@ -35,7 +33,7 @@ namespace TestYourself.ViewModels
 			}
 		}
 
-		public override double SuccessPercentage
+		public override double? SuccessPercentage
 		{
 			get { return ParentSubject.SuccessPercentage; }
 		}

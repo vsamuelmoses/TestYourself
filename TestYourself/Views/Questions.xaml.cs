@@ -3,10 +3,8 @@ using System.Collections;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using TestYourself.Annotations;
@@ -19,7 +17,6 @@ namespace TestYourself.Views
 {
 	public partial class Questions : PhoneApplicationPage
 	{
-		private bool isMessageBoxShown = false;
 		private VmQuestionContent currentViewingQuestion;
 		private readonly ApplicationBarIconButton appBarInfoButton;
 		private readonly ApplicationBarIconButton appBarViewHideIcon;

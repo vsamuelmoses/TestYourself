@@ -18,8 +18,7 @@
     </TargetFrameworkProfile>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>
-    </SupportedCultures>
+    <SupportedCultures>en-GB</SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>TestYourself_$(Configuration)_$(Platform).xap</XapFilename>
@@ -1951,9 +1950,6 @@
     <Content Include="Images\View.png" />
     <Content Include="Images\ViewReset.png" />
     <Content Include="Images\info.png" />
-    <Content Include="TestYourselfLifeInUk.sdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="TYDrivingTheroy.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

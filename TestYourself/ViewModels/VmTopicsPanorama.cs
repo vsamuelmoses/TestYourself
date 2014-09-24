@@ -15,7 +15,7 @@ namespace TestYourself.ViewModels
 			CommandResetProgress = new RelayCommand(notUsed => Topic.ResetProgress());
 		}
 
-		public override double SuccessPercentage
+		public override double? SuccessPercentage
 		{
 			get { return Topic.Stats.SuccessRate; }
 		}

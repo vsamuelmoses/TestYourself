@@ -26,10 +26,10 @@ namespace TestYourself.Model
         }
 
         // Define item name: private field, public property, and database column.
-        private double successRate;
+        private double? successRate;
 
         [Column]
-        public double SuccessRate
+        public double? SuccessRate
         {
             get { return successRate; }
             set

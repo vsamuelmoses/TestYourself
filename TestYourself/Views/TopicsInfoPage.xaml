@@ -87,17 +87,23 @@
 								Value="{Binding Topic.TotalNumberOfQuestions}"
 								Margin="5"/>
 						
-								<!--<customControls:PropertyView 
+								<customControls:PropertyView 
 								Title="Success Rate"
-								Value="TBD"
-								Margin="5"
-								/>-->
+								Value="{Binding Topic.Stats.SuccessRate}"
+								Margin="5" />
 
 							</StackPanel>
 
 						</Grid>
 						<Button Content ="Explore"
-								Command="{Binding CommandGoToQuestions}"/>
+								Command="{Binding CommandGoToQuestions}"
+								Background="{StaticResource PhoneAccentBrush}"
+								Foreground="{StaticResource PhoneContrastBackgroundBrush}"/>
+
+						<Button Content ="Reset Progress"
+								Command="{Binding CommandResetProgress}"
+								Background="{StaticResource PhoneAccentBrush}"
+								Foreground="{StaticResource PhoneContrastBackgroundBrush}"/>
 
 					</StackPanel>
 				</ScrollViewer>

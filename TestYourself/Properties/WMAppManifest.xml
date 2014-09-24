@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="" />
+  <Languages xmlns="">
+    <Language code="en-GB" />
+  </Languages>
   <App xmlns="" ProductID="{936beede-a8ef-47b9-8dab-ef3138d482de}" Title="Driving Theory" RuntimeType="Silverlight" Version="1.1.0.0" Genre="apps.normal" Author="TestYourself author" Description="Sample description" Publisher="TestYourself" PublisherID="{62b06a10-42b9-4b77-b381-f62150dc5625}">
     <IconPath IsRelative="true" IsResource="false">Images\Icon.png</IconPath>
     <Capabilities>
@@ -31,14 +34,10 @@
           <Count>0</Count>
           <BackgroundImageURI IsResource="false" IsRelative="true">Images\Icon.png</BackgroundImageURI>
           <Title>Driving Theory</Title>
-          <BackContent>
-          </BackContent>
-          <BackBackgroundImageURI>
-          </BackBackgroundImageURI>
-          <BackTitle>
-          </BackTitle>
-          <DeviceLockImageURI>
-          </DeviceLockImageURI>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <DeviceLockImageURI></DeviceLockImageURI>
           <HasLarge>false</HasLarge>
         </TemplateFlip>
       </PrimaryToken>

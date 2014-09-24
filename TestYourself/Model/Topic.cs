@@ -177,27 +177,38 @@ namespace TestYourself.Model
 
         public void UpdateSuccessPercentage()
         {
-            if (questions.Count > 0)
-            {
-                var questionsAnsweredAtleastOnce = from q in questions where q.Stats.NumberOfHits > 0 select q;
+	        if (questions.Count > 0)
+	        {
+		        var questionsAnsweredAtleastOnce = from q in questions where q.Stats.NumberOfHits > 0 select q;
 
-                if (questionsAnsweredAtleastOnce.Count() <= 0)
-                    Stats.SuccessRate = 100;
-                else
-                    Stats.SuccessRate = questionsAnsweredAtleastOnce.Sum(question => question.SuccessPercentage) / questionsAnsweredAtleastOnce.Count();
-            }
-            else
-            {
-                double totalPercentage = SubTopics.Sum(topic => topic.Stats.SuccessRate);
-                Stats.SuccessRate = totalPercentage / SubTopics.Count;
-            }
+		        if (questionsAnsweredAtleastOnce.Count() <= 0)
+			        Stats.SuccessRate = null;
+		        else
+			        Stats.SuccessRate = questionsAnsweredAtleastOnce.Sum(question => question.SuccessPercentage)/
+			                            questionsAnsweredAtleastOnce.Count();
+	        }
+	        else
+	        {
+
+		        if (SubTopics.Any(topic => topic.Stats.SuccessRate.HasValue))
+		        {
+			        double totalPercentage = SubTopics.Where(topic => topic.Stats.SuccessRate.HasValue).Sum(topic => topic.Stats.SuccessRate.Value);
+			        Stats.SuccessRate = totalPercentage/SubTopics.Count;
+		        }
+		        else
+		        {
+			        Stats.SuccessRate = null;
+		        }
+	        }
+        
 
             if (ParentTopic != null)
                 ParentTopic.UpdateSuccessPercentage();
             else
                 AssociatedSubject.CalculateSuccessPercentage();
 
-            Stats.SuccessRate = Math.Round(Stats.SuccessRate, 2);
+			if(Stats.SuccessRate.HasValue)
+				Stats.SuccessRate = Math.Round(Stats.SuccessRate.Value, 2);
         }
 
         public void UpdateProgress()

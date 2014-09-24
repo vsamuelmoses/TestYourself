@@ -10,7 +10,7 @@ namespace TestYourself.Model
 		// LINQ to SQL data context for the local database.
 		private TopicsDataContext topicsDb;
 		private double percentageWorked;
-		private double successPercentage;
+		private double? successPercentage;
 		  
 		public void LoadFrom(string dataBaseName)
 		{
@@ -77,7 +77,7 @@ namespace TestYourself.Model
 			foreach (var subTopic in topic.SubTopics)
 				CreateStatsForTopic(subTopic);
 
-			topicsDb.TopicStats.InsertOnSubmit(new TopicStats(){AssociatedTopic = topic, SuccessRate = 100});
+			topicsDb.TopicStats.InsertOnSubmit(new TopicStats(){AssociatedTopic = topic, SuccessRate = null});
 		}
 
 		private void PopulateQuestionStatsTable()
@@ -119,10 +119,17 @@ namespace TestYourself.Model
 
 		public void CalculateSuccessPercentage()
 		{
-			double totalPercentage = Topics.Sum(subtopic => subtopic.Stats.SuccessRate);
-			SuccessPercentage = totalPercentage / Topics.Count;
-
-			SuccessPercentage = Math.Round(SuccessPercentage, 2);
+			if (Topics.Any(topic => topic.Stats.SuccessRate.HasValue))
+			{
+				double totalPercentage = Topics.Where(topic => topic.Stats.SuccessRate.HasValue).Sum(topic => topic.Stats.SuccessRate.Value);
+				SuccessPercentage = totalPercentage / Topics.Count;
+				SuccessPercentage = Math.Round(SuccessPercentage.Value, 2);
+			}
+			else
+			{
+				SuccessPercentage = null;
+			}
+			
 		}
 
 		public string Name { get; private set; }
@@ -139,7 +146,7 @@ namespace TestYourself.Model
 		}
 		public int TotalNumberOfQuestions { get; private set; }
 		public int TotalNumberOfTopics { get { return Topics.Count(); } }
-		public double SuccessPercentage
+		public double? SuccessPercentage
 		{
 			get { return successPercentage; }
 			set

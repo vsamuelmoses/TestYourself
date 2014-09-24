@@ -57,7 +57,6 @@ namespace TC.CustomControls
 			new PropertyMetadata(default(ObservableCollection<object>), OnItemsCollectionChanged));
 
 		private Grid trackGrid;
-		private Button leftNavigateButton;
 		private Rectangle trackHolder;
 		private bool isRefreshedAfterLayoutUpdated;
 		private bool trackHolderWidthIsSet;

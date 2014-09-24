@@ -79,7 +79,7 @@ namespace TestYourself.ViewModels
 			}
 		}
 
-		public abstract double SuccessPercentage { get; }
+		public abstract double? SuccessPercentage { get; }
 		
 		public double Progress
 		{
