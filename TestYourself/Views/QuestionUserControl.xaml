@@ -34,8 +34,7 @@
 
 			<Button Grid.Column="0" Grid.Row="0"
 										Margin="10,10,0,10"
-										Background="Transparent"
-										Height="100"
+										MaxHeight="100"
 										VerticalAlignment="Top"
 										Command="{Binding CommandShowImage}"
 										CommandParameter="{Binding Question.ImageData}"
@@ -56,12 +55,12 @@
 					   Margin="10,10,0,10"/>
 
 			<TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
-					   TextWrapping="Wrap" 
+					   Visibility="{Binding Question, Converter={StaticResource MarkNumerOfAnswersVisibilityConverter}}"
 					   Text="{Binding Question, Converter={StaticResource QuestionToMarkNumberOfAnswersTextConverter}}" 
 					   Foreground="{StaticResource PhoneAccentBrush}"	
 					   FontFamily="{StaticResource PhoneFontFamilyBold}"
 					   FontSize="{StaticResource PhoneFontSizeMedium}"
-					   Margin="10,10,0,10"/>
+					   Margin="20,10,0,10"/>
 		</Grid>
 
 

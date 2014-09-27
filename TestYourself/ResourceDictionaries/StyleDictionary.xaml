@@ -12,6 +12,8 @@
 	<converters:AnswerCorrectnessImageConverter x:Key="AnswerCorrectnessImageConverter"/>
 	<converters:StampVisibilityConverter x:Key="StampVisibilityConverter"/>
 	<converters:QuestionToMarkNumberOfAnswersTextConverter x:Key="QuestionToMarkNumberOfAnswersTextConverter"/>
+	<converters:MarkNumerOfAnswersVisibilityConverter x:Key="MarkNumerOfAnswersVisibilityConverter"/>
+	
 	
 	<Style TargetType="customControls:MenuItem"
 		   x:Key="PageHeader">
