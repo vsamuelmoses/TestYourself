@@ -1,8 +1,8 @@
 <MarketplaceDetails>
-  <SmallAppTile>Icon99x99.png</SmallAppTile>
+  <SmallAppTile>Icon.png</SmallAppTile>
   <LargeAppTile>Icon173x173.png</LargeAppTile>
   <PCAppTile>Icon200x200.png</PCAppTile>
-  <ScreenShots>Screenshot0.png;Screenshot1.png;Screenshot2.png;Screenshot3.png;Screenshot4.png;Screenshot5.png;Screenshot6.png;;</ScreenShots>
-  <ScreenShotsWXGA>;;;;;;;;</ScreenShotsWXGA>
-  <ScreenShots720P>;;;;;;;;</ScreenShots720P>
+  <ScreenShots>2.MainPage-Topics.png;3.SubjectStatistics.png;4.AboutPage.png;6.QuestionPage.png;8.KnowledgeAndUnderstanding.png;14.ViewingAnswerGraphics.png;10.RevealingTheAnswer.png;11.ProgressAfterExploring.png;</ScreenShots>
+  <ScreenShotsWXGA>12.ProgressInMainPageAfterExploring.png;;;;;;;;</ScreenShotsWXGA>
+  <ScreenShots720P>9.SelectingAnAnswer.png;;;;;;;;</ScreenShots720P>
 </MarketplaceDetails>

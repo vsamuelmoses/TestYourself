@@ -24,7 +24,10 @@ namespace TestYourself.ResourceDictionaries
 
 		public DataTemplate ImageDataTemplate
 		{
-			get { return (DataTemplate)MessageBoxResourceDictionary["ImageDataTemplate"]; }
+			get
+			{
+				return (DataTemplate)MessageBoxResourceDictionary["ImageDataTemplate"];
+			}
 		}
 
 
@@ -35,7 +38,7 @@ namespace TestYourself.ResourceDictionaries
 		{
 			get
 			{
-				if (instance == null)
+				//if (instance == null)
 				{
 					instance = new MessageBoxResources();
 				}

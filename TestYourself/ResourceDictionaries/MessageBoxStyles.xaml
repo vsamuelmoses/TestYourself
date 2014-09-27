@@ -3,6 +3,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:views="clr-namespace:TestYourself.Views"
 	mc:Ignorable="d">
 
 	<DataTemplate x:Key="KeypointDataTemplate">
@@ -14,10 +15,11 @@
 
 
 	<DataTemplate x:Key="ImageDataTemplate">
-		<Grid Height="250">
+		<!--<Grid>
 			<Image 
 				VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
 				Source="{Binding Path, Converter={StaticResource ImageConverter}}"/>
-		</Grid>
+		</Grid>-->
+		<views:ImageControl/>
 	</DataTemplate>
 </ResourceDictionary>
