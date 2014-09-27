@@ -115,9 +115,25 @@ namespace TestYourself.Views
 
 		void MediaViewer_ItemDisplayed(object sender, TC.CustomControls.MediaViewer.ItemDisplayedEventArgs e)
 		{
+			if (currentViewingQuestion != null)
+			{
+				currentViewingQuestion.ResultVisibilityChanged -= CurrentViewingQuestionOnResultVisibilityChanged;
+				//currentViewingQuestion.IsResultVisible = false;
+			}
+
+
 			currentViewingQuestion = (VmQuestionContent)((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex];
+			currentViewingQuestion.ResultVisibilityChanged += CurrentViewingQuestionOnResultVisibilityChanged;
+			
 			SetQuestionNumber(currentViewingQuestion.Question.Index);
 			SetKeypointText(currentViewingQuestion.Question);
+			SetQuestionResultImageIcon();
+			//currentViewingQuestion.IsResultVisible = false;
+
+		}
+
+		private void CurrentViewingQuestionOnResultVisibilityChanged(object sender, EventArgs eventArgs)
+		{
 			SetQuestionResultImageIcon();
 		}
 
@@ -140,17 +156,10 @@ namespace TestYourself.Views
 
 		private void AppBarViewHideIconClick(object sender, EventArgs e)
 		{
-
 			if (ViewModel.IsPopupOpened)
 				return;
 
 			currentViewingQuestion.IsResultVisible = !currentViewingQuestion.IsResultVisible;
-
-			appBarViewHideIcon.IconUri = currentViewingQuestion.IsResultVisible 
-				? new Uri("/Images/ViewReset.png", UriKind.Relative) 
-				: new Uri("/Images/View.png", UriKind.Relative);
-
-			SetQuestionResultImageIcon();
 		}
 
 

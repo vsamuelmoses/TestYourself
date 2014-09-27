@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
+using Microsoft.Phone.Reactive;
 using TC.CustomControls;
 using TC.CustomControls.MediaViewer;
 using TestYourself.Helpers;
@@ -123,6 +124,8 @@ namespace TestYourself.ViewModels
 					ValidateAnswers();
 				else
 					State = States.NotAnsweredYet;
+
+				OnResultVisibilityChanged();
 			}
 		}
 
@@ -177,6 +180,14 @@ namespace TestYourself.ViewModels
 				InvokePropertyChanged("IsAcknowledged");
 
 			}
+		}
+
+		public event EventHandler ResultVisibilityChanged;
+
+		protected virtual void OnResultVisibilityChanged()
+		{
+			EventHandler handler = ResultVisibilityChanged;
+			if (handler != null) handler(this, EventArgs.Empty);
 		}
 	}
 }

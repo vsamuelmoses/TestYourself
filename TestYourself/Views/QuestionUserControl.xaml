@@ -47,9 +47,17 @@
 
 			</Button>
 
-			<TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="1"
+			<TextBlock Grid.Row="0" Grid.Column="1"
 					   TextWrapping="Wrap" 
 					   Text="{Binding Question.Text}" 
+					   Foreground="{StaticResource PhoneAccentBrush}"	
+					   FontFamily="{StaticResource PhoneFontFamilyBold}"
+					   FontSize="{StaticResource PhoneFontSizeMedium}"
+					   Margin="10,10,0,10"/>
+
+			<TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+					   TextWrapping="Wrap" 
+					   Text="{Binding Question, Converter={StaticResource QuestionToMarkNumberOfAnswersTextConverter}}" 
 					   Foreground="{StaticResource PhoneAccentBrush}"	
 					   FontFamily="{StaticResource PhoneFontFamilyBold}"
 					   FontSize="{StaticResource PhoneFontSizeMedium}"

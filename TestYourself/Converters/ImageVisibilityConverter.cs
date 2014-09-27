@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Globalization;
 using System.Windows;
-using System.Windows.Automation.Provider;
 using System.Windows.Data;
 using TestYourself.Model;
 using TestYourself.ViewModels;
