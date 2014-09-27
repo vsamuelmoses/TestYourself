@@ -118,7 +118,7 @@ namespace TestYourself.Views
 			currentViewingQuestion = (VmQuestionContent)((IList)(MediaViewer.Items))[MediaViewer.DisplayedItemIndex];
 			SetQuestionNumber(currentViewingQuestion.Question.Index);
 			SetKeypointText(currentViewingQuestion.Question);
-			
+			SetQuestionResultImageIcon();
 		}
 
 		private void SetKeypointText(Model.Question question)
@@ -148,6 +148,17 @@ namespace TestYourself.Views
 
 			appBarViewHideIcon.IconUri = currentViewingQuestion.IsResultVisible 
 				? new Uri("/Images/ViewReset.png", UriKind.Relative) 
+				: new Uri("/Images/View.png", UriKind.Relative);
+
+			SetQuestionResultImageIcon();
+		}
+
+
+
+		private void SetQuestionResultImageIcon()
+		{
+			appBarViewHideIcon.IconUri = currentViewingQuestion.IsResultVisible
+				? new Uri("/Images/ViewReset.png", UriKind.Relative)
 				: new Uri("/Images/View.png", UriKind.Relative);
 		}
 
