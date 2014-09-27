@@ -196,14 +196,15 @@
 			<StackPanel Grid.Row="2" Orientation="Horizontal" 
 						Grid.RowSpan="2"
 						HorizontalAlignment="Center"
-						x:Name="questionIndexPanel">
+						x:Name="questionIndexPanel"
+						Margin="0,3,0,40">
 				<TextBlock x:Name="QuestionNumberTextBlock" Margin="0"/>
 				<TextBlock Text="/" Margin="0"/>
 				<TextBlock Text="{Binding Topic.Questions.Count}" Margin="0"/>
 			</StackPanel>
 			
 			<controls:QuestionNavigationPanel 
-				Margin="0,3,0,0"
+				Margin="5,2,5,2"
 				x:Name="questionNavigationPanel"
 				Grid.Row="3"
 				NeedAcknowledgements="{Binding Questions}"/>

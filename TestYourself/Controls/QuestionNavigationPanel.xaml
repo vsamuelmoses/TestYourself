@@ -54,20 +54,23 @@
 
 		<Button
 			BorderThickness="0" 
-			Padding="0" Width="70" 
+			Padding="0" Width="50" 
 			RenderTransformOrigin="0.5,0.5"
-			Click="OnPreviousButtonClicked">
+			Click="OnPreviousButtonClicked"
+			Style="{StaticResource ButtonStyleNoPressedState}">
 			<Button.RenderTransform>
 				<CompositeTransform Rotation="180"/>
 			</Button.RenderTransform>
-			<Button.Content>
+			<!--<Button.Content>
 				<Viewbox>
 					<Grid Height="100" Width="100">
-						<Ellipse Stroke="{StaticResource PhoneChromeBrush}" StrokeThickness="5"/>
+						<Ellipse Stroke="{StaticResource PhoneAccentBrush}" StrokeThickness="5"/>
 						<Rectangle HorizontalAlignment="Left" Height="42" Margin="18,31,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="5" Fill="{StaticResource PhoneAccentBrush}"/>
 						<Path Data="M299.134,162.984L334.087,194.984 299.134,226.984 299.134,162.984z" 
-			Stretch="Uniform" 
-			Fill="{StaticResource PhoneAccentBrush}" Margin="37,31,27.381,27" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False">
+							  Stretch="Uniform" 
+							  Fill="{StaticResource PhoneAccentBrush}" 
+							  Margin="37,31,27.381,27" RenderTransformOrigin="0.5,0.5" 
+							  UseLayoutRounding="False">
 							<Path.RenderTransform>
 								<TransformGroup>
 									<TransformGroup.Children>
@@ -77,10 +80,12 @@
 								</TransformGroup>
 							</Path.RenderTransform>
 						</Path>
-						<Rectangle HorizontalAlignment="Left" Height="42" Margin="76,31,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="5" Fill="{StaticResource PhoneChromeBrush}"/>
+						<Rectangle HorizontalAlignment="Left" Height="42" Margin="76,31,0,0" 
+								   Stroke="{TemplateBinding Foreground}" 
+								   StrokeThickness="0" VerticalAlignment="Top" Width="5" Fill="{StaticResource PhoneChromeBrush}"/>
 					</Grid>
 				</Viewbox>
-			</Button.Content>
+			</Button.Content>-->
 		</Button>
 
 
@@ -90,15 +95,16 @@
 			Margin="0"/>
 
 		<Button HorizontalAlignment="Left" 
-					Grid.Column="2"
-					BorderThickness="0" 
-					Width="70" Height="65" 
+				Grid.Column="2"
+				BorderThickness="0" 
+				Width="50"
 				Padding="0"
+				Style="{StaticResource ButtonStyleNoPressedState}"
 				Click="OnNextButtonClicked">
-			<Button.Content>
+			<!--<Button.Content>
 				<Viewbox>
 					<Grid Height="100" Width="100">
-						<Ellipse Stroke="{StaticResource PhoneChromeBrush}" StrokeThickness="5"/>
+						<Ellipse Stroke="{StaticResource PhoneAccentBrush}" StrokeThickness="5"/>
 						<Rectangle HorizontalAlignment="Left" Height="42" Margin="18,31,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="5" Fill="{StaticResource PhoneAccentBrush}"/>
 						<Path Data="M299.134,162.984L334.087,194.984 299.134,226.984 299.134,162.984z" 
 			Stretch="Uniform" 
@@ -115,7 +121,7 @@
 						<Rectangle HorizontalAlignment="Left" Height="42" Margin="76,31,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="5" Fill="{StaticResource PhoneChromeBrush}"/>
 					</Grid>
 				</Viewbox>
-			</Button.Content>
+			</Button.Content>-->
 		</Button>
 
 	</Grid>
