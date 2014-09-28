@@ -20,6 +20,6 @@
 				VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
 				Source="{Binding Path, Converter={StaticResource ImageConverter}}"/>
 		</Grid>-->
-		<views:ImageControl/>
+		<views:ImageControl Height="300"/>
 	</DataTemplate>
 </ResourceDictionary>
