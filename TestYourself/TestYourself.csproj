@@ -1949,9 +1949,6 @@
     <Resource Include="Images\CorrectStamp.png" />
     <Content Include="Images\Book.png" />
     <Content Include="Images\Icon.png" />
-    <Content Include="Images\Icon1.png" />
-    <Content Include="Images\Icon62x62.png" />
-    <Content Include="Images\Icon173x173.png" />
     <Resource Include="Images\WrongStamp.png" />
     <Resource Include="Images\TickMarkpng.png" />
     <Content Include="Images\Stats.png" />
@@ -1961,20 +1958,6 @@
     <Content Include="TYDrivingTheroy.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Images\iconNext.png" />
-    <Resource Include="Images\iconPrevious.png" />
-    <Content Include="Images\CollapseAll.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\ExpandAll.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\ExpandDown.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Resource Include="Images\iconBulb.png" />
-    <Resource Include="Images\iconBulbGreen.png" />
-    <Resource Include="Images\iconBulbRed.png" />
     <Content Include="Images\imageCorrect.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

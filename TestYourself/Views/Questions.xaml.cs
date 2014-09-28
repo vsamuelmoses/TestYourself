@@ -39,7 +39,7 @@ namespace TestYourself.Views
 
 			appBarViewHideIcon = new ApplicationBarIconButton();
 			appBarViewHideIcon.IconUri = new Uri("/Images/View.png", UriKind.Relative);
-			appBarViewHideIcon.Text = "view";
+			appBarViewHideIcon.Text = "answers";
 			ApplicationBar.Buttons.Add(appBarViewHideIcon);
 			appBarViewHideIcon.Click += AppBarViewHideIconClick;
 
