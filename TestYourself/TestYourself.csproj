@@ -1951,6 +1951,9 @@
     <Content Include="Images\Icon.png" />
     <Resource Include="Images\WrongStamp.png" />
     <Resource Include="Images\TickMarkpng.png" />
+    <Content Include="Images\Icon110x110.png" />
+    <Content Include="Images\Icon202x202.png" />
+    <Content Include="Images\Icon99x99.png" />
     <Content Include="Images\Stats.png" />
     <Content Include="Images\View.png" />
     <Content Include="Images\ViewReset.png" />

@@ -4,8 +4,8 @@
   <Languages xmlns="">
     <Language code="en-GB" />
   </Languages>
-  <App xmlns="" ProductID="{936beede-a8ef-47b9-8dab-ef3138d482de}" Title="Driving Theory" RuntimeType="Silverlight" Version="1.1.0.0" Genre="apps.normal" Author="TestYourself author" Description="Sample description" Publisher="TestYourself" PublisherID="{62b06a10-42b9-4b77-b381-f62150dc5625}">
-    <IconPath IsRelative="true" IsResource="false">Images\Icon.png</IconPath>
+  <App xmlns="" ProductID="{936beede-a8ef-47b9-8dab-ef3138d482de}" Title="UK Driving Theory" RuntimeType="Silverlight" Version="1.1.0.0" Genre="apps.normal" Author="Technology Carvers Limited" Description="Sample description" Publisher="UK Driving Theory" PublisherID="{62b06a10-42b9-4b77-b381-f62150dc5625}">
+    <IconPath IsRelative="true" IsResource="false">Images\Icon99x99.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES" />
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />
@@ -29,17 +29,25 @@
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="TestYourselfToken" TaskName="_default">
-        <TemplateFlip>
-          <SmallImageURI IsResource="false" IsRelative="true">Images\Icon.png</SmallImageURI>
+        <TemplateIconic>
+          <SmallImageURI IsRelative="true" IsResource="false">Images\Icon110x110.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsResource="false" IsRelative="true">Images\Icon.png</BackgroundImageURI>
-          <Title>Driving Theory</Title>
-          <BackContent></BackContent>
-          <BackBackgroundImageURI></BackBackgroundImageURI>
-          <BackTitle></BackTitle>
-          <DeviceLockImageURI></DeviceLockImageURI>
+          <IconImageURI IsRelative="true" IsResource="false">Images\Icon202x202.png</IconImageURI>
+          <Title>UK Driving Theory</Title>
+          <Message>
+          </Message>
+          <BackgroundColor>
+          </BackgroundColor>
           <HasLarge>false</HasLarge>
-        </TemplateFlip>
+          <LargeContent1>
+          </LargeContent1>
+          <LargeContent2>
+          </LargeContent2>
+          <LargeContent3>
+          </LargeContent3>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
+          </DeviceLockImageURI>
+        </TemplateIconic>
       </PrimaryToken>
     </Tokens>
     <ScreenResolutions>

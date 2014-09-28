@@ -2,7 +2,7 @@
   <SmallAppTile>Icon.png</SmallAppTile>
   <LargeAppTile>Icon173x173.png</LargeAppTile>
   <PCAppTile>Icon200x200.png</PCAppTile>
-  <ScreenShots>2.MainPage-Topics.png;3.SubjectStatistics.png;4.AboutPage.png;6.QuestionPage.png;8.KnowledgeAndUnderstanding.png;14.ViewingAnswerGraphics.png;10.RevealingTheAnswer.png;11.ProgressAfterExploring.png;</ScreenShots>
-  <ScreenShotsWXGA>12.ProgressInMainPageAfterExploring.png;;;;;;;;</ScreenShotsWXGA>
-  <ScreenShots720P>9.SelectingAnAnswer.png;;;;;;;;</ScreenShots720P>
+  <ScreenShots>2.MainPage-Topics.png;3.SubjectStatistics.png;4.AboutPage.png;5.SpecificTopicPage.png;6.QuestionPage.png;7.ShowingGraphic.png;8.KnowledgeAndUnderstanding.png;10.RevealingTheAnswer.png;</ScreenShots>
+  <ScreenShotsWXGA>WXGA1.png;WXGA2.png;WXGA3.png;WXGA4.png;WXGA5.png;WXGA6.png;WXGA8.png;WXGA7.png;</ScreenShotsWXGA>
+  <ScreenShots720P>1.png;2.png;3.png;4.png;5.png;6.png;7.png;8.png;</ScreenShots720P>
 </MarketplaceDetails>

@@ -24,8 +24,16 @@
 							Margin="0,50,0,10"
 							Orientation="Horizontal"
 							Opacity="0.8">
-							<Image Source="../Images/Icon.png" Width="200"
-								   Height="200"/>
+							<Grid x:Name="MonochromeImage"
+								  Background="{StaticResource PhoneContrastBackgroundBrush}"
+								  Width="200" Height="200">
+								<Grid.OpacityMask>
+									<ImageBrush 
+										x:Name="MonochromeImageBrush"
+										Stretch="Uniform"
+										ImageSource="../Images/Icon.png"/>
+								</Grid.OpacityMask>
+							</Grid>
 							<TextBlock 
 								VerticalAlignment="Center"
 								Text="Driving Theory"></TextBlock>
