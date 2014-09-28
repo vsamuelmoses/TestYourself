@@ -69,6 +69,7 @@
 						Style="{StaticResource PageHeader}"/>
 				</phone:PanoramaItem.Header>
 				<ScrollViewer>
+					<StackPanel>
 					<Grid>
 						<Grid.ColumnDefinitions>
 							<ColumnDefinition/>
@@ -83,19 +84,17 @@
 
 						
 
-						<Border
-									Margin="30,20"
-									Grid.Column="1"
+						<Border Margin="30,20"
+								Grid.Column="1"
 								Width="1"
-										Height="270"
+								Height="280"
 								VerticalAlignment="Top"
 								HorizontalAlignment="Left"
-							Background="{StaticResource PhoneAccentBrush}"/>
-
+								Background="{StaticResource PhoneAccentBrush}"/>
 
 						<StackPanel Grid.Column="1"
 									Orientation="Vertical"
-									Margin="40,20">
+									Margin="40,20, 0, 0">
 								
 							<customControls:PropertyView 
 								Title="Topics"
@@ -107,15 +106,23 @@
 								Value="{Binding ParentSubject.TotalNumberOfQuestions}"
 								Margin="5"/>
 
-							<!--<customControls:PropertyView 
+							<customControls:PropertyView 
 								Title="Success Rate"
-								Value="78 %"
-								Margin="5"
-								/>-->
+								Value="{Binding ParentSubject.SuccessPercentage, 
+								Converter={StaticResource SuccessRateToTextConverter}}"
+								Margin="5"/>
 
-			         			</StackPanel>
+			         	</StackPanel>
 
 					</Grid>
+						<Button Content ="Reset Progress"
+								Height="70"
+								BorderThickness="1"
+								Margin="0,0,0,20"
+								Style="{StaticResource ButtonContentWithNoPadding}"								Command="{Binding CommandResetProgress}"
+								Background="{StaticResource PhoneAccentBrush}"
+								Foreground="{StaticResource PhoneContrastBackgroundBrush}"/>
+					</StackPanel>
 				</ScrollViewer>
 
 

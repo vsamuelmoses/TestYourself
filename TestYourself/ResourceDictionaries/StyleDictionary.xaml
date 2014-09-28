@@ -13,6 +13,7 @@
 	<converters:StampVisibilityConverter x:Key="StampVisibilityConverter"/>
 	<converters:QuestionToMarkNumberOfAnswersTextConverter x:Key="QuestionToMarkNumberOfAnswersTextConverter"/>
 	<converters:MarkNumerOfAnswersVisibilityConverter x:Key="MarkNumerOfAnswersVisibilityConverter"/>
+	<converters:SuccessRateToTextConverter x:Key="SuccessRateToTextConverter"/>
 	
 	
 	<Style TargetType="customControls:MenuItem"

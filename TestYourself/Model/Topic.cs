@@ -192,8 +192,9 @@ namespace TestYourself.Model
 
 		        if (SubTopics.Any(topic => topic.Stats.SuccessRate.HasValue))
 		        {
-			        double totalPercentage = SubTopics.Where(topic => topic.Stats.SuccessRate.HasValue).Sum(topic => topic.Stats.SuccessRate.Value);
-			        Stats.SuccessRate = totalPercentage/SubTopics.Count;
+			        var topicsWithSuccessRate = SubTopics.Where(topic => topic.Stats.SuccessRate.HasValue);
+					double totalPercentage = topicsWithSuccessRate.Sum(topic => topic.Stats.SuccessRate.Value);
+					Stats.SuccessRate = totalPercentage / topicsWithSuccessRate.Count();
 		        }
 		        else
 		        {

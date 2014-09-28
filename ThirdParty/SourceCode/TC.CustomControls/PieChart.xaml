@@ -19,6 +19,7 @@
 		<StackPanel>
 			<Grid>
 				<quickCharts:PieChart
+					IsEnabled="False"
 					Width="200" Height="200"
 					Name="AmPieChart"
 					ValueMemberPath="Value"

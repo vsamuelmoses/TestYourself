@@ -4,13 +4,18 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:customControls="clr-namespace:TC.CustomControls;assembly=TC.CustomControls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    d:DesignHeight="480" d:DesignWidth="480">
+    d:DesignHeight="80" d:DesignWidth="480">
 
 	<Grid x:Name="layoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="Auto"/>
 			<ColumnDefinition Width="*"/>
@@ -53,6 +58,7 @@
 
 
 		<Button
+			Grid.RowSpan="2"
 			BorderThickness="0" 
 			Padding="0" Width="50" 
 			RenderTransformOrigin="0.5,0.5"
@@ -61,68 +67,23 @@
 			<Button.RenderTransform>
 				<CompositeTransform Rotation="180"/>
 			</Button.RenderTransform>
-			<!--<Button.Content>
-				<Viewbox>
-					<Grid Height="100" Width="100">
-						<Ellipse Stroke="{StaticResource PhoneAccentBrush}" StrokeThickness="5"/>
-						<Rectangle HorizontalAlignment="Left" Height="42" Margin="18,31,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="5" Fill="{StaticResource PhoneAccentBrush}"/>
-						<Path Data="M299.134,162.984L334.087,194.984 299.134,226.984 299.134,162.984z" 
-							  Stretch="Uniform" 
-							  Fill="{StaticResource PhoneAccentBrush}" 
-							  Margin="37,31,27.381,27" RenderTransformOrigin="0.5,0.5" 
-							  UseLayoutRounding="False">
-							<Path.RenderTransform>
-								<TransformGroup>
-									<TransformGroup.Children>
-										<RotateTransform Angle="0" />
-										<ScaleTransform ScaleX="1" ScaleY="1" />
-									</TransformGroup.Children>
-								</TransformGroup>
-							</Path.RenderTransform>
-						</Path>
-						<Rectangle HorizontalAlignment="Left" Height="42" Margin="76,31,0,0" 
-								   Stroke="{TemplateBinding Foreground}" 
-								   StrokeThickness="0" VerticalAlignment="Top" Width="5" Fill="{StaticResource PhoneChromeBrush}"/>
-					</Grid>
-				</Viewbox>
-			</Button.Content>-->
 		</Button>
 
 
 		<customControls:SliderProgressBar 
 			x:Name="sliderProgressBar"
 			Grid.Row="0" Grid.Column="1"
+			Grid.RowSpan="2"
 			Margin="0"/>
 
 		<Button HorizontalAlignment="Left" 
+				Grid.RowSpan="2"
 				Grid.Column="2"
 				BorderThickness="0" 
 				Width="50"
 				Padding="0"
 				Style="{StaticResource ButtonStyleNoPressedState}"
 				Click="OnNextButtonClicked">
-			<!--<Button.Content>
-				<Viewbox>
-					<Grid Height="100" Width="100">
-						<Ellipse Stroke="{StaticResource PhoneAccentBrush}" StrokeThickness="5"/>
-						<Rectangle HorizontalAlignment="Left" Height="42" Margin="18,31,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="5" Fill="{StaticResource PhoneAccentBrush}"/>
-						<Path Data="M299.134,162.984L334.087,194.984 299.134,226.984 299.134,162.984z" 
-			Stretch="Uniform" 
-			Fill="{StaticResource PhoneAccentBrush}" Margin="37,31,27.381,27" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False">
-							<Path.RenderTransform>
-								<TransformGroup>
-									<TransformGroup.Children>
-										<RotateTransform Angle="0" />
-										<ScaleTransform ScaleX="1" ScaleY="1" />
-									</TransformGroup.Children>
-								</TransformGroup>
-							</Path.RenderTransform>
-						</Path>
-						<Rectangle HorizontalAlignment="Left" Height="42" Margin="76,31,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="5" Fill="{StaticResource PhoneChromeBrush}"/>
-					</Grid>
-				</Viewbox>
-			</Button.Content>-->
 		</Button>
-
 	</Grid>
 </UserControl>

@@ -8,8 +8,9 @@ namespace TestYourself.ViewModels
     public class VmTopicsInfo : VmPage
     {
         private readonly NavigationService navigationService;
+	    private bool isPopupOpened;
 
-        public VmTopicsInfo(Topic topic, NavigationService navigationService)
+	    public VmTopicsInfo(Topic topic, NavigationService navigationService)
         {
             this.navigationService = navigationService;
             Topic = topic;
@@ -23,6 +24,16 @@ namespace TestYourself.ViewModels
 
             TitleName = Topic.Name;
         }
+
+		public bool IsPopupOpened
+		{
+			get { return isPopupOpened; }
+			set
+			{
+				isPopupOpened = value;
+				InvokePropertyChanged("IsPopupOpened");
+			}
+		}
 
         public RelayCommand CommandGoToQuestions { get; set; }
         public RelayCommand CommandResetProgress { get; set; }

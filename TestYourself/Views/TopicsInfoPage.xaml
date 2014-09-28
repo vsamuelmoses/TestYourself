@@ -8,6 +8,9 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
 	xmlns:customControls="clr-namespace:TC.CustomControls;assembly=TC.CustomControls"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+	xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
@@ -38,7 +41,74 @@
 	</toolkit:TransitionService.NavigationOutTransition>
 
 	<Grid x:Name="LayoutRoot">
-		<phone:Panorama Title="{Binding Topic.Name}">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="BackgroundGridStateGroup">
+				<VisualState x:Name="DimState">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="0.2" 
+									 Storyboard.TargetProperty="(UIElement.Opacity)" 
+									 Storyboard.TargetName="panoramaPage" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="BrightState">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="1.0" 
+									 Storyboard.TargetProperty="(UIElement.Opacity)" 
+									 Storyboard.TargetName="panoramaPage" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="DisabledState">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.IsEnabled)" 
+													   Storyboard.TargetName="panoramaPage">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<system:Boolean>False</system:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="EnabledState">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.IsEnabled)" 
+													   Storyboard.TargetName="panoramaPage">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<system:Boolean>True</system:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+			<VisualStateGroup x:Name="VisualStateGroup">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0:0:0.5">
+						<VisualTransition.GeneratedEasingFunction>
+							<QuadraticEase EasingMode="EaseOut"/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="ClosedState">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="0" 
+										 Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="MessageBoxPopupGrid" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="OpenedState">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="1" 
+										 Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="MessageBoxPopupGrid" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+				
+			</VisualStateGroup>
+			
+
+		</VisualStateManager.VisualStateGroups>
+
+		<phone:Panorama x:Name="panoramaPage" Title="{Binding Topic.Name}">
 			<phone:Panorama.TitleTemplate>
 				<DataTemplate>
 					<TextBlock Text="{Binding}"
@@ -46,6 +116,18 @@
 							   Style="{StaticResource PhoneTextNormalStyle}"/>
 				</DataTemplate>
 			</phone:Panorama.TitleTemplate>
+
+			<i:Interaction.Triggers>
+				<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="true">
+					<ec:GoToStateAction StateName="DimState"/>
+					<ec:GoToStateAction StateName="DisabledState"/>
+				</ec:DataTrigger>
+				<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="false">
+					<ec:GoToStateAction StateName="BrightState"/>
+					<ec:GoToStateAction StateName="EnabledState"/>
+				</ec:DataTrigger>
+			</i:Interaction.Triggers>
+			
 			<phone:PanoramaItem>
 				<phone:PanoramaItem.Header>
 					<customControls:MenuItem
@@ -62,11 +144,15 @@
 								<ColumnDefinition/>
 							</Grid.ColumnDefinitions>
 
-							<customControls:PieChart 
+							<Button Click="OnHelpButtonClick"
+										Style="{StaticResource ButtonContentWithNoPaddingNoPressed}"
+										HorizontalContentAlignment="Left">
+								<customControls:PieChart 
 							VerticalAlignment="Top"
 							HorizontalAlignment="Left"
 							Progress="{Binding Topic.Stats.ProgressPercentage}"
 							ProgressTitle="Explored"/>
+							</Button>
 
 
 							<Border
@@ -80,27 +166,39 @@
 
 							<StackPanel Grid.Column="1"
 									Orientation="Vertical"
-									Margin="40,20">
+									Margin="40,20,0,0">
 
 								<customControls:PropertyView 
 								Title="Questions"
 								Value="{Binding Topic.TotalNumberOfQuestions}"
-								Margin="5"/>
-						
-								<customControls:PropertyView 
-								Title="Success Rate"
-								Value="{Binding Topic.Stats.SuccessRate}"
-								Margin="5" />
+								Margin="5,0,0,0"/>
+
+								<Button Click="OnHelpButtonClick"
+										Style="{StaticResource ButtonContentWithNoPaddingNoPressed}"
+										HorizontalContentAlignment="Left">
+									<customControls:PropertyView 
+									Title="Success Rate"
+									Value="{Binding Topic.Stats.SuccessRate, Converter={StaticResource SuccessRateToTextConverter}}"
+									Margin="5,10,0,0" />
+								</Button>
 
 							</StackPanel>
 
 						</Grid>
 						<Button Content ="Explore"
+								Height="70"
+								BorderThickness="1"
+								Margin="3"
+								Style="{StaticResource ButtonContentWithNoPadding}"
 								Command="{Binding CommandGoToQuestions}"
 								Background="{StaticResource PhoneAccentBrush}"
 								Foreground="{StaticResource PhoneContrastBackgroundBrush}"/>
 
 						<Button Content ="Reset Progress"
+								Height="70"
+								Margin="3"
+								BorderThickness="1"
+								Style="{StaticResource ButtonContentWithNoPadding}"
 								Command="{Binding CommandResetProgress}"
 								Background="{StaticResource PhoneAccentBrush}"
 								Foreground="{StaticResource PhoneContrastBackgroundBrush}"/>
@@ -112,18 +210,53 @@
 
 
 		</phone:Panorama>
+
+		<Grid x:Name="MessageBoxPopupGrid"
+			  Tap="MessageBoxPopupGrid_OnTap"
+			Background="{StaticResource PhoneAccentBrush}" RenderTransformOrigin="0.5,0.5" Height="300">
+			<i:Interaction.Triggers>
+				<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="true">
+					<ec:GoToStateAction StateName="OpenedState"/>
+				</ec:DataTrigger>
+				<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="false">
+					<ec:GoToStateAction StateName="ClosedState"/>
+				</ec:DataTrigger>
+			</i:Interaction.Triggers>
+			<Grid.RenderTransform>
+				<CompositeTransform 
+					ScaleY="0"/>
+			</Grid.RenderTransform>
+			<ScrollViewer x:Name="MessageBoxScrollViewer">
+						  <!--Content="{Binding PopupContent}"
+						  ContentTemplate="{Binding PopupContentTemplate}">-->
+				<StackPanel>
+					<TextBlock Text="Progress"
+							   Style="{StaticResource PhoneTextSmallStyle}"
+							   Margin="10,30,10,0"/>
+					
+					<TextBlock Text="Progress is calculated as percentage of questions answered (and checked the result) to the total number of questions in the topic."
+							   TextWrapping="Wrap"
+							   Style="{StaticResource PhoneTextNormalStyle}"/>
+
+					<TextBlock Text="Success Rate"
+							   Margin="10,30,10,0"
+							   Style="{StaticResource PhoneTextSmallStyle}"/>
+					<TextBlock Text="Success rate is calculated as percentage of number of times a question is correctly answered to the total number of times it is answered."
+							   TextWrapping="Wrap"
+							   Style="{StaticResource PhoneTextNormalStyle}"/>
+				</StackPanel>
+				
+
+			</ScrollViewer>
+		</Grid>
 	</Grid>
 
 	<!--Sample code showing usage of ApplicationBar-->
-	<!--<phone:PhoneApplicationPage.ApplicationBar>
-		<shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-			<shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-			<shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-			<shell:ApplicationBar.MenuItems>
-				<shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-				<shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-			</shell:ApplicationBar.MenuItems>
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar Mode="Minimized" IsVisible="False">
+			<shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="help"
+											Click="OnViewHelpButtonClicked"/>
 		</shell:ApplicationBar>
-	</phone:PhoneApplicationPage.ApplicationBar>-->
+	</phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>

@@ -193,21 +193,76 @@
 				   HorizontalAlignment="Right"/>
 			</Grid>
 
-			<StackPanel Grid.Row="2" Orientation="Horizontal" 
-						Grid.RowSpan="2"
-						HorizontalAlignment="Center"
-						x:Name="questionIndexPanel"
-						Margin="0,3,0,40">
-				<TextBlock x:Name="QuestionNumberTextBlock" Margin="0"/>
-				<TextBlock Text="/" Margin="0"/>
-				<TextBlock Text="{Binding Topic.Questions.Count}" Margin="0"/>
-			</StackPanel>
-			
 			<controls:QuestionNavigationPanel 
-				Margin="5,2,5,2"
+				Margin="5,2,5,30"
 				x:Name="questionNavigationPanel"
-				Grid.Row="3"
+				Grid.Row="2"
+				Grid.RowSpan="2"
 				NeedAcknowledgements="{Binding Questions}"/>
+
+			<Grid Grid.Row="2"
+						x:Name="questionIndexPanel"
+						Margin="0,30,0,0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="70"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="70"/>
+					
+				</Grid.ColumnDefinitions>
+				<StackPanel Orientation="Horizontal"
+							Grid.Column="1">
+					<TextBlock x:Name="QuestionNumberTextBlock" 
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Margin="0"
+							   FontFamily="{StaticResource PhoneFontFamilyLight}"
+							   FontSize="{StaticResource PhoneFontSizeSmall}"/>
+					<TextBlock Text="/" 
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Margin="0"/>
+					<TextBlock Text="{Binding Topic.Questions.Count}" 
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Margin="0"
+							   FontFamily="{StaticResource PhoneFontFamilyLight}"
+							   FontSize="{StaticResource PhoneFontSizeSmall}"/>
+
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal"
+							Grid.Column="3">
+					<Rectangle Width="10" Height="10"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Margin="0,3,3,0"
+							   Fill="{StaticResource PhoneAccentBrush}"/>
+					<TextBlock Text="Read"
+							   Margin="0"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontFamily="{StaticResource PhoneFontFamilyLight}"
+							   FontSize="{StaticResource PhoneFontSizeSmall}"/>
+
+					<Rectangle Width="10" Height="10"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Margin="15,3,3,0"
+							   Fill="{StaticResource PhoneChromeBrush}"
+							   />
+					<TextBlock Text="Unread"
+							   Margin="0"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontFamily="{StaticResource PhoneFontFamilyLight}"
+							   FontSize="{StaticResource PhoneFontSizeSmall}"/>
+				</StackPanel>
+
+			</Grid>
+			
+
 
 		</Grid>
 
