@@ -1986,6 +1986,10 @@
       <Project>{41d422a7-5968-47df-8b7b-4dbfa1484b07}</Project>
       <Name>MediaViewer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\SourceCode\RateMyApp\RateMyApp.csproj">
+      <Project>{83c47431-2793-48e3-a2fb-cc6702523314}</Project>
+      <Name>RateMyApp</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ThirdParty\SourceCode\TC.CustomControls\TC.CustomControls.csproj">
       <Project>{adaa1108-2694-4e50-8c6f-042e44224475}</Project>
       <Name>TC.CustomControls</Name>
