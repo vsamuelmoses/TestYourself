@@ -21,9 +21,9 @@
 	shell:SystemTray.IsVisible="True">
 
 	<phone:PhoneApplicationPage.Resources>
-		<DataTemplate x:Key="QuestionDataTemplate">
+		<!--<DataTemplate x:Key="QuestionDataTemplate">
 			<views:QuestionUserControl />
-		</DataTemplate>
+		</DataTemplate>-->
 	</phone:PhoneApplicationPage.Resources>
 	
 	<Grid>

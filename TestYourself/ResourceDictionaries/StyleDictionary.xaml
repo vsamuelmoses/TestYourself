@@ -5,6 +5,7 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:customControls="clr-namespace:TC.CustomControls;assembly=TC.CustomControls"
 	xmlns:converters="clr-namespace:TestYourself.Converters"
+	xmlns:views="clr-namespace:TestYourself.Views"
 	mc:Ignorable="d">
 
 	<converters:ImageConverter x:Key="ImageConverter"/>
@@ -14,8 +15,22 @@
 	<converters:QuestionToMarkNumberOfAnswersTextConverter x:Key="QuestionToMarkNumberOfAnswersTextConverter"/>
 	<converters:MarkNumerOfAnswersVisibilityConverter x:Key="MarkNumerOfAnswersVisibilityConverter"/>
 	<converters:SuccessRateToTextConverter x:Key="SuccessRateToTextConverter"/>
-	
-	
+	<converters:QuestionResultToColorConverter x:Key="QuestionResultToColorConverter"/>
+
+	<DataTemplate x:Key="QuestionDataTemplate">
+		<views:QuestionUserControl />
+	</DataTemplate>
+
+	<DataTemplate x:Key="QuestionResultDataTemplate">
+		<Grid>
+			<Rectangle 
+				Width="50" Height="50" Margin="5"
+				Fill="{Binding Path=., Converter={StaticResource QuestionResultToColorConverter}}">
+			</Rectangle>
+			<TextBlock Text="{Binding Index}" VerticalAlignment="Center" HorizontalAlignment="Center" />
+		</Grid>
+	</DataTemplate>
+
 	<Style TargetType="customControls:MenuItem"
 		   x:Key="PageHeader">
 		<Style.Setters>

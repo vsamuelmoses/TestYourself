@@ -21,6 +21,12 @@ namespace TestYourself.ViewModels
                     //VmLocator.Instance.VmQuestionNew.Topic = Topic;
                     this.navigationService.Navigate(new Uri("/Views/Questions.xaml", UriKind.Relative));
                 });
+			CommandMockTest = new RelayCommand(
+                notUsed =>
+                {
+                    VmLocator.Instance.VmMockTest = new VmTimedTopicMockTest(Topic, this.navigationService);
+                    this.navigationService.Navigate(new Uri("/Views/MockTest.xaml", UriKind.Relative));
+                });
 
             TitleName = Topic.Name;
         }
@@ -36,6 +42,7 @@ namespace TestYourself.ViewModels
 		}
 
         public RelayCommand CommandGoToQuestions { get; set; }
+		public RelayCommand CommandMockTest { get; set; }
         public RelayCommand CommandResetProgress { get; set; }
         public Topic Topic { get; set; }
     }

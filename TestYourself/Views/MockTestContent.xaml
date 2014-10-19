@@ -1,0 +1,108 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TestYourself.Views.MockTestContent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    xmlns:customControls="clr-namespace:TC.CustomControls;assembly=TC.CustomControls"
+    xmlns:mediaViewer="clr-namespace:TC.CustomControls.MediaViewer;assembly=TC.CustomControls.MediaViewer"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+
+		<!--<i:Interaction.Triggers>
+			<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="true">
+				<ec:GoToStateAction StateName="DimState"/>
+			</ec:DataTrigger>
+			<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="false">
+				<ec:GoToStateAction StateName="BrightState"/>
+			</ec:DataTrigger>
+		</i:Interaction.Triggers>-->
+
+
+
+		<StackPanel Grid.Row="0" Margin="10"
+						x:Name="headerPanel">
+			<Grid Margin="0,0,0,10">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<TextBlock 
+					Grid.Column="0"
+					Text="{Binding Topic.Name}"
+					Style="{StaticResource PhoneTextNormalStyle}"/>
+
+				<TextBlock HorizontalAlignment="Right"
+					Grid.Column="1"
+					Text="{Binding TimeLeft}"
+					Style="{StaticResource PhoneTextNormalStyle}"/>
+
+			</Grid>
+			
+
+			<customControls:MenuItem
+					Text="{Binding Topic.Name}"
+					Style="{StaticResource PageHeader}"
+					ImagePath="Images/Book.png"
+					IsMonochrome="True"/>
+		</StackPanel>
+
+
+		<Grid Grid.Row="1">
+			<mediaViewer:MediaViewer
+					x:Name="MediaViewer"
+					Items="{Binding Questions}">
+				<!--<i:Interaction.Triggers>
+					<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="true">
+						<ec:GoToStateAction StateName="DisabledState"/>
+					</ec:DataTrigger>
+					<ec:DataTrigger Binding="{Binding IsPopupOpened}" Value="false">
+						<ec:GoToStateAction StateName="EnabledState"/>
+					</ec:DataTrigger>
+				</i:Interaction.Triggers>-->
+
+				<mediaViewer:MediaViewer.ItemTemplate>
+					<DataTemplate>
+						<Grid>
+							<ViewportControl x:Name="Viewport">
+								<Grid x:Name="Canvas" >
+									<mediaViewer:ThumbnailedContentViewer
+											x:Name="ZoomableContent"
+											CacheMode="BitmapCache"
+											RenderTransformOrigin="0,0"
+											DataTemplate="{StaticResource QuestionDataTemplate}">
+										<mediaViewer:ThumbnailedContentViewer.RenderTransform>
+											<ScaleTransform x:Name="ZoomableContentTransform"/>
+										</mediaViewer:ThumbnailedContentViewer.RenderTransform>
+									</mediaViewer:ThumbnailedContentViewer>
+								</Grid>
+							</ViewportControl>
+						</Grid>
+					</DataTemplate>
+				</mediaViewer:MediaViewer.ItemTemplate>
+			</mediaViewer:MediaViewer>
+			
+			
+
+		</Grid>
+		
+		<Button Grid.Row="2" Content="End Test"
+				Command="{Binding CommandEndTest}"/>
+	</Grid>
+</phone:PhoneApplicationPage>

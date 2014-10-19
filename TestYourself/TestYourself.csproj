@@ -150,6 +150,10 @@
     <Compile Include="Repository\QuestionAndAnswerFactory.cs" />
     <Compile Include="Repository\TopicFactory.cs" />
     <Compile Include="ResourceDictionaries\MessageBoxResources.cs" />
+    <Compile Include="ViewModels\VmMockTest.cs" />
+    <Compile Include="ViewModels\VmTestQuestionContent.cs" />
+    <Compile Include="ViewModels\VmTimedMockTest.cs" />
+    <Compile Include="ViewModels\VmTimedTopicMockTest.cs" />
     <Compile Include="ViewModels\VmBase.cs" />
     <Compile Include="ViewModels\VmLocator.cs" />
     <Compile Include="ViewModels\VmQuestionContent.cs" />
@@ -163,6 +167,15 @@
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MockTest.xaml.cs">
+      <DependentUpon>MockTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MockTestContent.xaml.cs">
+      <DependentUpon>MockTestContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MockTestResults.xaml.cs">
+      <DependentUpon>MockTestResults.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Questions.xaml.cs">
       <DependentUpon>Questions.xaml</DependentUpon>
@@ -217,6 +230,18 @@
     <Page Include="Views\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MockTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MockTestContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MockTestResults.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Questions.xaml">
       <Generator>MSBuild:Compile</Generator>

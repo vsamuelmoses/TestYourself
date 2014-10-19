@@ -7,12 +7,9 @@ using TestYourself.Model;
 
 namespace TestYourself.ViewModels
 {
-	public class VmTopicQuestions : VmPage
+	public class VmTopicQuestions : VmPopupHostingPage
 	{
 		private readonly NavigationService navigationService;
-		private bool isPopupOpened;
-		private object popupContent;
-		private DataTemplate popupContentTemplate;
 		private ObservableCollection<object> questions;
 
 		public VmTopicQuestions(Topic topic)
@@ -60,50 +57,6 @@ namespace TestYourself.ViewModels
 				questions = value;
 				InvokePropertyChanged("Questions");
 			}
-		}
-
-		public bool IsPopupOpened
-		{
-			get { return isPopupOpened; }
-			set
-			{
-				isPopupOpened = value;
-				InvokePropertyChanged("IsPopupOpened");
-			}
-		}
-
-
-		public object PopupContent
-		{
-			get { return popupContent; }
-			set
-			{
-				popupContent = value;
-				InvokePropertyChanged("PopupContent");
-			}
-		}
-
-		public DataTemplate PopupContentTemplate
-		{
-			get { return popupContentTemplate; }
-			set
-			{
-				popupContentTemplate = value;
-				InvokePropertyChanged("PopupContentTemplate");
-			}
-		}
-
-		public void SetContentAsPopup(object content, DataTemplate contentTemplate)
-		{
-			PopupContent = content;
-			PopupContentTemplate = contentTemplate;
-			IsPopupOpened = true;
-		}
-
-		public void ClearPopup()
-		{
-			IsPopupOpened = true;
-			IsPopupOpened = false;
 		}
 	}
 }

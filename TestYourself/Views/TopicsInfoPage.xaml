@@ -203,6 +203,15 @@
 								Background="{StaticResource PhoneAccentBrush}"
 								Foreground="{StaticResource PhoneContrastBackgroundBrush}"/>
 
+						<Button Content ="Mock Test"
+								Height="70"
+								Margin="3"
+								BorderThickness="1"
+								Style="{StaticResource ButtonContentWithNoPadding}"
+								Command="{Binding CommandMockTest}"
+								Background="{StaticResource PhoneAccentBrush}"
+								Foreground="{StaticResource PhoneContrastBackgroundBrush}"/>
+
 					</StackPanel>
 				</ScrollViewer>
 

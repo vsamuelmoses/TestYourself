@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Linq.Expressions;
+using System.Windows;
 using TestYourself.Annotations;
 
 namespace TestYourself.ViewModels
@@ -71,4 +72,54 @@ namespace TestYourself.ViewModels
             }
         }
     }
+
+	public abstract class VmPopupHostingPage : VmPage
+	{
+		private bool isPopupOpened;
+		private object popupContent;
+		private DataTemplate popupContentTemplate;
+
+		public bool IsPopupOpened
+		{
+			get { return isPopupOpened; }
+			set
+			{
+				isPopupOpened = value;
+				InvokePropertyChanged("IsPopupOpened");
+			}
+		}
+
+		public object PopupContent
+		{
+			get { return popupContent; }
+			set
+			{
+				popupContent = value;
+				InvokePropertyChanged("PopupContent");
+			}
+		}
+
+		public DataTemplate PopupContentTemplate
+		{
+			get { return popupContentTemplate; }
+			set
+			{
+				popupContentTemplate = value;
+				InvokePropertyChanged("PopupContentTemplate");
+			}
+		}
+
+		public void SetContentAsPopup(object content, DataTemplate contentTemplate)
+		{
+			PopupContent = content;
+			PopupContentTemplate = contentTemplate;
+			IsPopupOpened = true;
+		}
+
+		public void ClearPopup()
+		{
+			IsPopupOpened = true;
+			IsPopupOpened = false;
+		}
+	}
 }

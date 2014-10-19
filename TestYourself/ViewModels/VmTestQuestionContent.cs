@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -11,8 +11,9 @@ using TestYourself.ResourceDictionaries;
 
 namespace TestYourself.ViewModels
 {
-	public class VmQuestionContent : VmPage, IThumbnailedContent, INeedAcknowledgement
+	public class VmTestQuestionContent : VmPage, IThumbnailedContent, INeedAcknowledgement
 	{
+		public int Index { get; set; }
 		private readonly VmPopupHostingPage vmPopupHostingPage;
 
 		public enum States
@@ -25,29 +26,23 @@ namespace TestYourself.ViewModels
 		private const string PropertyNameQuestionAndAnswer = "Question";
 		private const string PropertyState = "State";
 
-		public VmQuestionContent(VmPopupHostingPage vmPopupHostingPage)
+		public VmTestQuestionContent(VmPopupHostingPage vmPopupHostingPage, int index)
 		{
+			Index = index;
 			this.vmPopupHostingPage = vmPopupHostingPage;
 			SelectedAnswers = new ObservableCollection<object>();
-			SelectedAnswers.CollectionChanged += SelectedAnswers_CollectionChanged;
 			CommandShowImage = new RelayCommand(ShowImage);
 		}
 
 		private void ShowImage(object image)
 		{
-			if(vmPopupHostingPage.IsPopupOpened)
+			if (vmPopupHostingPage.IsPopupOpened)
 				throw new Exception("Unexpected");
 
 			vmPopupHostingPage.SetContentAsPopup(image, MessageBoxResources.Instance.ImageDataTemplate);
 		}
 
 		public ICommand CommandShowImage { get; set; }
-
-		void SelectedAnswers_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-		{
-			IsResultVisible = false;
-		}
-
 
 		private ObservableCollection<object> selectedAnswers;
 		public ObservableCollection<object> SelectedAnswers
@@ -56,9 +51,8 @@ namespace TestYourself.ViewModels
 			set
 			{
 				selectedAnswers = value;
+				UpdateIsAcknowledged();
 				InvokePropertyChanged("SelectedAnswers");
-				
-				IsResultVisible = false;
 			}
 		}
 
@@ -74,8 +68,6 @@ namespace TestYourself.ViewModels
 				question = value;
 				InvokePropertyChanged(PropertyNameQuestionAndAnswer);
 				State = States.NotAnsweredYet;
-				UpdateIsAcknowledged();
-				IsResultVisible = false;
 			}
 		}
 
@@ -103,7 +95,6 @@ namespace TestYourself.ViewModels
 					return;
 
 				state = value;
-				//IsAcknowledged = (state == States.AnsweredCorrectly || state == States.AnsweredInCorrectly);
 				InvokePropertyChanged(PropertyState);
 			}
 		}
@@ -119,11 +110,9 @@ namespace TestYourself.ViewModels
 				isResultVisible = value;
 				InvokePropertyChanged("IsResultVisible");
 
-				if(isResultVisible)
+				if (isResultVisible)
 					ValidateAnswers();
-				else
-					State = States.NotAnsweredYet;
-
+				
 				OnResultVisibilityChanged();
 			}
 		}
@@ -131,25 +120,23 @@ namespace TestYourself.ViewModels
 
 		private void ValidateAnswers()
 		{
-			question.Stats.NumberOfHits++;
-
-			if ((selectedAnswers != null) && (AreAnswersCorrect(selectedAnswers.Cast<Answer>())))
+			if ((selectedAnswers != null) && selectedAnswers.Count > 0)
 			{
-				Question.Stats.NumberOfHitsCorrectlyAnswered++;
-				State = States.AnsweredCorrectly;
+				State = (AreAnswersCorrect(selectedAnswers.Cast<Answer>()))
+					? States.AnsweredCorrectly
+					: States.AnsweredInCorrectly;
 			}
 			else
 			{
-				State = States.AnsweredInCorrectly;
+				State = States.NotAnsweredYet;
 			}
 
-			question.AssociatedTopic.UpdateStats();
 			UpdateIsAcknowledged();
 		}
 
 		private void UpdateIsAcknowledged()
 		{
-			IsAcknowledged = question.Stats.NumberOfHits > 0;
+			IsAcknowledged = SelectedAnswers != null && SelectedAnswers.Count > 0;
 		}
 
 		private bool AreAnswersCorrect(IEnumerable<Answer> answers)

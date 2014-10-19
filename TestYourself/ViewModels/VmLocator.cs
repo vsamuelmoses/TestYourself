@@ -24,5 +24,6 @@
 		public VmTopicsInfo VmTopicsInfo { get; set; }
 		public VmTopicQuestions VmTopicQuestions{ get; set; }
 		public VmTopicsPanorama VmTopicsPanorama { get; set; }
+		public VmMockTest VmMockTest { get; set; }
 	}
 }
